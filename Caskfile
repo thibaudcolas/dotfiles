@@ -22,3 +22,14 @@ cask install transmission 2> /dev/null
 cask install ukelele 2> /dev/null
 cask install virtualbox 2> /dev/null
 cask install vlc 2> /dev/null
+
+cask install qlcolorcode 2> /dev/null
+cask install qlstephen 2> /dev/null
+cask install qlmarkdown 2> /dev/null
+cask install quicklook-json 2> /dev/null
+cask install qlprettypatch 2> /dev/null
+cask install quicklook-csv 2> /dev/null
+cask install betterzipql 2> /dev/null
+cask install webp-quicklook 2> /dev/null
+cask install suspicious-package 2> /dev/null
+
