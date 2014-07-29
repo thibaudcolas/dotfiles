@@ -386,10 +386,10 @@ defaults write com.apple.dock dashboard-in-overlay -bool true
 # Don’t automatically rearrange Spaces based on most recent use
 defaults write com.apple.dock mru-spaces -bool false
 
-# Remove the auto-hiding Dock delay
-defaults write com.apple.dock autohide-delay -float 100000
-# Remove the animation when hiding/showing the Dock
-defaults write com.apple.dock autohide-time-modifier -float 100000
+# Speed up the auto-hiding Dock delay
+defaults write com.apple.Dock autohide-delay -float 0.25
+# Speed up the animation when hiding/showing the Dock
+defaults write com.apple.dock autohide-time-modifier -float 0.25
 
 # Enable the 2D Dock
 #defaults write com.apple.dock no-glass -bool true
