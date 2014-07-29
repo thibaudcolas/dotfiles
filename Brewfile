@@ -57,8 +57,41 @@ install ucspi-tcp # `tcpserver` et al.
 install webkit2png
 install xpdf
 install zopfli
-
-install homebrew/versions/lua52
+install whois
+install unzip
+install unrar
+install tmux
+install subversion
+install ruby
+install rsync
+install python
+install python3
+install phantomjs
+install pandoc
+install ngrok
+install nano
+install mysql
+install mozjpeg
+install mongodb
+install make
+install less
+install hub
+install htop-osx
+install nginx
+install heroku-toolbelt
+install gzip
+install google-app-engine
+install go
+install gist
+install fish
+install exif
+install drush
+install dart
+install curl
+install clisp
+install casperjs
+install awk
+install ant
 
 # Remove outdated versions from the cellar
 cleanup
