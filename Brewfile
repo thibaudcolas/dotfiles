@@ -92,6 +92,11 @@ install clisp
 install casperjs
 install awk
 install ant
+install sbcl
+install sbt
+install scala
+install hg
+install lua
 
 # Remove outdated versions from the cellar
 cleanup
