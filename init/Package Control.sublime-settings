@@ -1,0 +1,25 @@
+{
+	"installed_packages":
+	[
+		"AdvancedNewFile",
+		"Alignment",
+		"Autoprefixer",
+		"Devastate",
+		"DocBlockr",
+		"EditorConfig",
+		"Emmet",
+		"GitGutter",
+		"Gutter Color",
+		"HTMLBeautify",
+		"JsFormat",
+		"LiveReload",
+		"Markdown Preview",
+		"MarkdownEditing",
+		"SideBarEnhancements",
+		"SublimeLinter",
+		"Text Pastry",
+		"Theme - Soda",
+		"Theme - Spacegray",
+		"TrailingSpaces"
+	]
+}
