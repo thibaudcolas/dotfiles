@@ -1,4 +1,5 @@
 # Easier navigation: .., ..., ...., ....., ~ and -
+alias .="pwd"
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
@@ -7,12 +8,19 @@ alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
 # Shortcuts
+alias cdu="cd ~"
 alias cdd="cd ~/Desktop"
 alias cddl="cd ~/Downloads"
 alias cdp="cd ~/Projects"
+
 alias g="git"
 alias h="history"
 alias j="jobs"
+alias c="clear"
+alias p="pwd"
+alias s="subl ."
+
+alias cwd="pwd | pbcopy"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
@@ -36,6 +44,9 @@ export LS_COLORS='no=00:fi=00:di=01;34:ln=01;36:pi=40;33:so=01;35:do=01;35:bd=40
 
 # Enable aliases to be sudo’ed
 alias sudo='sudo '
+
+# Alias for redoing the last command with sudo.
+alias redo='sudo !!'
 
 # Get week number
 alias week='date +%V'
@@ -141,3 +152,37 @@ alias reload="exec $SHELL -l"
 
 # Faster npm for Europeans
 command -v npm > /dev/null && alias npme="npm --registry http://registry.npmjs.eu/"
+
+# URL-encode strings.
+alias urlencode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.argv[1]);"'
+
+# DOS2UNIX sample.
+alias tolf='find . -type f | xargs dos2unix'
+
+# Remove all .DS_Store files.
+alias rmds='find . -name .DS_Store -exec rm {} \;'
+
+# Git aliases.
+alias ga='git add'
+alias gr='git rm'
+alias gp='git push'
+alias gpom='git push origin master'
+alias gl='git log'
+alias gh='git hist'
+alias gha='git hist --all'
+alias gt='git tag'
+alias gs='git status'
+alias gd='git diff'
+alias gci='git commit -m'
+alias gcia='git commit -am'
+alias gb='git branch'
+alias gc='git checkout'
+
+# Show/hide hidden files in Finder.
+alias dotshow="defaults write com.apple.Finder AppleShowAllFiles -bool true && killall Finder"
+alias dothide="defaults write com.apple.Finder AppleShowAllFiles -bool false && killall Finder"
+
+# One of @janmoesen’s ProTip™s
+for method in GET HEAD POST PUT DELETE TRACE OPTIONS; do
+  alias "$method"="lwp-request -m '$method'"
+done
