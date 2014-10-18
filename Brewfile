@@ -21,6 +21,11 @@ install gnu-sed --default-names
 install bash
 install bash-completion
 
+# Install Zsh + Oh my Zsh
+install zsh
+install zsh-completions
+curl -L http://install.ohmyz.sh | sh
+
 # Install wget with IRI support
 install wget --enable-iri
 
