@@ -1,11 +1,12 @@
 {
-	"color_scheme": "Packages/User/Monokai (SL).tmTheme",
-	"font_face": "Source Code Pro",
-	"font_size": 15,
-	"ignored_packages":
-	[
-		"Vintage",
-		"Markdown"
-	],
-	"theme": "Devastate.sublime-theme"
+    "color_scheme": "Packages/User/Monokai (SL).tmTheme",
+    "font_face": "Source Code Pro",
+    "word_wrap": false,
+    "font_size": 16,
+    "ignored_packages":
+    [
+        "Vintage",
+        "Markdown"
+    ],
+    "theme": "Devastate.sublime-theme"
 }
