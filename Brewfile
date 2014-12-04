@@ -102,6 +102,7 @@ install sbt
 install scala
 install hg
 install lua
+install git-extras
 
 # Remove outdated versions from the cellar
 cleanup
