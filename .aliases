@@ -179,8 +179,8 @@ alias gb='git branch'
 alias gc='git checkout'
 
 # Show/hide hidden files in Finder.
-alias dotshow="defaults write com.apple.Finder AppleShowAllFiles -bool true && killall Finder"
-alias dothide="defaults write com.apple.Finder AppleShowAllFiles -bool false && killall Finder"
+alias dotshow=show
+alias dothide=hide
 
 # One of @janmoesen’s ProTip™s
 for method in GET HEAD POST PUT DELETE TRACE OPTIONS; do
