@@ -104,6 +104,7 @@ install hg
 install lua
 install git-extras
 install cloc
+install diction
 
 # Remove outdated versions from the cellar
 cleanup
