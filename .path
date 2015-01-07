@@ -1,0 +1,2 @@
+# :node_modules/.bin
+export PATH="/Users/will/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/texbin"

@@ -61,7 +61,6 @@ unset file;
 
 # User configuration
 
-export PATH="/Users/will/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
