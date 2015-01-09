@@ -106,5 +106,9 @@ install git-extras
 install cloc
 install diction
 
+# For gcc
+brew tap homebrew/dupes
+install apple-gcc42
+
 # Remove outdated versions from the cellar
 cleanup
