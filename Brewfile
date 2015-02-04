@@ -105,6 +105,7 @@ install lua
 install git-extras
 install cloc
 install diction
+install iterate-ch/cyberduck/duck
 
 # For gcc
 brew tap homebrew/dupes
