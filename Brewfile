@@ -106,6 +106,7 @@ install git-extras
 install cloc
 install diction
 install iterate-ch/cyberduck/duck
+install shellcheck
 
 # For gcc
 brew tap homebrew/dupes
