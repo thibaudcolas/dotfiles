@@ -88,5 +88,8 @@ unset file;
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# Will make it ask you before executing rm with a star rm folder/*.
+unsetopt RM_STAR_SILENT
+
 # Load RVM into a shell session *as a function*
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
