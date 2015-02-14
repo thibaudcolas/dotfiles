@@ -107,6 +107,7 @@ install cloc
 install diction
 install iterate-ch/cyberduck/duck
 install shellcheck
+install gh
 
 # For gcc
 brew tap homebrew/dupes
