@@ -20,3 +20,6 @@ else
 	fi;
 fi;
 unset doIt;
+
+# curl -o ~/bin/git-open https://raw.githubusercontent.com/paulirish/git-open/master/git-open
+# chmod +x ~/bin/git-open
