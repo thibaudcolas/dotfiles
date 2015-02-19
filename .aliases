@@ -182,6 +182,10 @@ alias gc='git checkout'
 alias dotshow=show
 alias dothide=hide
 
+# Manage node & io.js installs https://gist.github.com/phelma/ce4eeeedb8fb9a9e8e63#file-gistfile1-md
+alias usenode='brew unlink iojs && brew link node && echo Using Node.js'
+alias useio='brew unlink node && brew link --force iojs && echo Using io.js'
+
 # Show file sizes in current directory.
 alias filesizes=fs
 
