@@ -4,23 +4,31 @@
 install caskroom/cask/brew-cask
 tap caskroom/versions
 
-cask install dropbox 2> /dev/null
+# Browsers
 cask install firefox 2> /dev/null
 cask install google-chrome 2> /dev/null
 cask install google-chrome-canary 2> /dev/null
-cask install imagealpha 2> /dev/null
-cask install imageoptim 2> /dev/null
-cask install iterm2 2> /dev/null
-cask install macvim 2> /dev/null
 cask install opera 2> /dev/null
+
+# Developer tools
 cask install sublime-text 2> /dev/null
-cask install the-unarchiver 2> /dev/null
+cask install sublime-text3 2> /dev/null
+cask install atom 2> /dev/null
+cask install macvim 2> /dev/null
+cask install iterm2 2> /dev/null
 cask install transmission 2> /dev/null
 cask install virtualbox 2> /dev/null
+cask install vagrant 2> /dev/null
+cask install imagealpha 2> /dev/null
+cask install imageoptim 2> /dev/null
+
+# Other
+cask install the-unarchiver 2> /dev/null
 cask install vlc 2> /dev/null
 cask install mactex 2> /dev/null
 cask install soundcleod 2> /dev/null
 
+# Quicklook plugins
 cask install qlcolorcode 2> /dev/null
 cask install qlstephen 2> /dev/null
 cask install qlmarkdown 2> /dev/null
