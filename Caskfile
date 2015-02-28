@@ -23,6 +23,11 @@ cask install imagealpha 2> /dev/null
 cask install imageoptim 2> /dev/null
 
 # Other
+cask install slack 2> /dev/null
+cask install sizeup 2> /dev/null
+cask install caffeine 2> /dev/null
+cask install nvalt 2> /dev/null
+cask install dropbox 2> /dev/null
 cask install the-unarchiver 2> /dev/null
 cask install vlc 2> /dev/null
 cask install mactex 2> /dev/null
