@@ -59,6 +59,22 @@ You could also install native apps with [`brew cask`](https://github.com/phinze/
 brew bundle ~/Caskfile
 ```
 
+### Other steps
+
+- Install Oh My ZSH
+- Install global npm packages
+- Install global gem packages
+- Install global pip packages
+
+- Install git-open:
+
+~~~bash
+curl -o /usr/local/bin/git-open https://raw.githubusercontent.com/paulirish/git-open/master/git-open
+chmod +x /usr/local/bin/git-open
+~~~
+
+
+
 ## Thanks to…
 
 ### Original Author
