@@ -108,7 +108,7 @@ install diction
 install iterate-ch/cyberduck/duck
 install shellcheck
 install gh
-install iojs
+# install iojs
 
 # For gcc
 brew tap homebrew/dupes
