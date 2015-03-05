@@ -5,47 +5,47 @@ install caskroom/cask/brew-cask
 tap caskroom/versions
 
 # Browsers
-cask install firefox 2> /dev/null
-cask install google-chrome 2> /dev/null
-cask install google-chrome-canary 2> /dev/null
-cask install opera 2> /dev/null
+cask install firefox
+cask install google-chrome
+cask install google-chrome-canary
+cask install opera
 
 # Developer tools
-cask install sublime-text 2> /dev/null
-cask install sublime-text3 2> /dev/null
-cask install php-storm 2> /dev/null
-cask install atom 2> /dev/null
-cask install macvim 2> /dev/null
-cask install iterm2 2> /dev/null
-cask install cd-to 2> /dev/null
-cask install transmission 2> /dev/null
-cask install virtualbox 2> /dev/null
-cask install vagrant 2> /dev/null
-cask install imagealpha 2> /dev/null
-cask install imageoptim 2> /dev/null
+cask install sublime-text
+cask install sublime-text3
+cask install php-storm
+cask install atom
+cask install macvim
+cask install iterm2
+cask install cd-to
+cask install transmission
+cask install virtualbox
+cask install vagrant
+cask install imagealpha
+cask install imageoptim
 
 # Other
-cask install slack 2> /dev/null
-cask install harvest 2> /dev/null
-cask install sizeup 2> /dev/null
-cask install caffeine 2> /dev/null
-cask install appcleaner 2> /dev/null
-cask install nvalt 2> /dev/null
-cask install dropbox 2> /dev/null
-cask install the-unarchiver 2> /dev/null
-cask install vlc 2> /dev/null
-cask install mactex 2> /dev/null
-cask install soundcleod 2> /dev/null
-cask install gyazo 2> /dev/null
+cask install slack
+cask install harvest
+cask install sizeup
+cask install caffeine
+cask install appcleaner
+cask install nvalt
+cask install dropbox
+cask install the-unarchiver
+cask install vlc
+cask install mactex
+cask install soundcleod
+cask install gyazo
 
 # Quicklook plugins
-cask install qlcolorcode 2> /dev/null
-cask install qlstephen 2> /dev/null
-cask install qlmarkdown 2> /dev/null
-cask install quicklook-json 2> /dev/null
-cask install qlprettypatch 2> /dev/null
-cask install quicklook-csv 2> /dev/null
-cask install betterzipql 2> /dev/null
-cask install webpquicklook 2> /dev/null
-cask install suspicious-package 2> /dev/null
+cask install qlcolorcode
+cask install qlstephen
+cask install qlmarkdown
+cask install quicklook-json
+cask install qlprettypatch
+cask install quicklook-csv
+cask install betterzipql
+cask install webpquicklook
+cask install suspicious-package
 
