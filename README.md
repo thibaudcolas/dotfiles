@@ -6,6 +6,24 @@
 
 A fully automated installation and update process is described in [Mathias's dotfiles repo](https://github.com/mathiasbynens/dotfiles.git). I myself prefer to copy/paste files by hand, since it is quite sensible and not that frequent.
 
+Here are some useful commands:
+
+~~~bash
+    # Let's make sure we are up to date.
+    brew update
+    brew upgrade
+
+    # Install all brew packages listed in the Brewfile.
+    brew install $(cat Brewfile|grep -v "#")
+
+    # Before playing with brew cask:
+    brew install caskroom/cask/brew-cask
+    brew tap caskroom/versions
+
+    # Install all brew cask packages listed in the Caskfile.
+    brew cask install $(cat Caskfile|grep -v "#")
+~~~
+
 ### Specify the `$PATH`
 
 If `~/.path` exists, it will be sourced along with the other files, before any feature testing (such as [detecting which version of `ls` is being used](https://github.com/mathiasbynens/dotfiles/blob/aff769fd75225d8f2e481185a71d5e05b76002dc/.aliases#L21-26)) takes place.

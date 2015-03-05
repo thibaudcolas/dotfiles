@@ -1,51 +1,47 @@
 # Install native apps
-# Usage: `brew bundle Caskfile`
-
-install caskroom/cask/brew-cask
-tap caskroom/versions
 
 # Browsers
-cask install firefox
-cask install google-chrome
-cask install google-chrome-canary
-cask install opera
+firefox
+google-chrome
+google-chrome-canary
+opera
 
 # Developer tools
-cask install sublime-text
-cask install sublime-text3
-cask install php-storm
-cask install atom
-cask install macvim
-cask install iterm2
-cask install cd-to
-cask install transmission
-cask install virtualbox
-cask install vagrant
-cask install imagealpha
-cask install imageoptim
+sublime-text
+sublime-text3
+php-storm
+atom
+macvim
+iterm2
+cd-to
+transmission
+virtualbox
+vagrant
+imagealpha
+imageoptim
 
 # Other
-cask install slack
-cask install harvest
-cask install sizeup
-cask install caffeine
-cask install appcleaner
-cask install nvalt
-cask install dropbox
-cask install the-unarchiver
-cask install vlc
-cask install mactex
-cask install soundcleod
-cask install gyazo
+slack
+harvest
+sizeup
+caffeine
+appcleaner
+nvalt
+dropbox
+the-unarchiver
+vlc
+mactex
+soundcleod
+gyazo
 
 # Quicklook plugins
-cask install qlcolorcode
-cask install qlstephen
-cask install qlmarkdown
-cask install quicklook-json
-cask install qlprettypatch
-cask install quicklook-csv
-cask install betterzipql
-cask install webpquicklook
-cask install suspicious-package
+qlcolorcode
+qlstephen
+qlmarkdown
+quicklook-json
+qlprettypatch
+quicklook-csv
+betterzipql
+webpquicklook
+suspicious-package
 
