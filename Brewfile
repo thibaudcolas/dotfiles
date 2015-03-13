@@ -110,7 +110,7 @@ diction
 iterate-ch/cyberduck/duck
 shellcheck
 gh
-# install iojs
+# iojs
 
 # For gcc
 apple-gcc42
