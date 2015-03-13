@@ -19,6 +19,7 @@ virtualbox
 vagrant
 imagealpha
 imageoptim
+dash
 
 # Other
 slack
@@ -33,6 +34,7 @@ vlc
 mactex
 soundcleod
 gyazo
+bettertouchtool
 
 # Quicklook plugins
 qlcolorcode
