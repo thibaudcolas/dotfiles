@@ -1,6 +1,6 @@
 # ThibWeb's dotfiles
 
-![Screenshot of my shell prompt](http://i.imgur.com/EkEtphC.png)
+![Screenshot of my shell prompt](dotfiles-screenshot.png)
 
 ## How to use the dotfiles
 
