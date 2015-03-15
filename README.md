@@ -6,6 +6,8 @@
 
 A fully automated installation and update process is described in [Mathias's dotfiles repo](https://github.com/mathiasbynens/dotfiles). I myself prefer to copy/paste files by hand, since it is quite sensible and not that frequent.
 
+### Installing from the repository
+
 Install brew: http://brew.sh/
 
 Here are some useful commands:
@@ -76,6 +78,16 @@ When setting up a new Mac, you may want to set some sensible OS X defaults:
 curl -o /usr/local/bin/git-open https://raw.githubusercontent.com/paulirish/git-open/master/git-open
 chmod +x /usr/local/bin/git-open
 ~~~
+
+## Adding things to the repository
+
+### Adding packages
+
+~~~bash
+gem list | cut -d ' ' -f 1 > packages/gem-packages.txt
+pip list | cut -d ' ' -f 1 > packages/pip-packages.txt
+npm list -g --depth=0 | cut -d ' ' -f 2 | cut -d '@' -f 1 > packages/npm-packages.txt
+~~
 
 ## Useful links
 
