@@ -26,6 +26,14 @@ Here are some useful commands:
 
     # Install all brew cask packages listed in the Caskfile.
     brew cask install $(cat Caskfile|grep -v "#")
+
+    # Install all packages listed in our packages folder:
+    npm install -g $(cat packages/npm-packages.txt)
+    gem install $(cat packages/gem-packages.txt)
+    pip install $(cat packages/pip-packages.txt)
+
+    # Install atom packages
+    apm install --packages-file packages/atom-packages.txt
 ~~~
 
 ### Specify the `$PATH`
@@ -84,10 +92,16 @@ chmod +x /usr/local/bin/git-open
 ### Adding packages
 
 ~~~bash
+# Ruby
 gem list | cut -d ' ' -f 1 > packages/gem-packages.txt
+# Python
 pip list | cut -d ' ' -f 1 > packages/pip-packages.txt
+# JavaScript
 npm list -g --depth=0 | cut -d ' ' -f 2 | cut -d '@' -f 1 > packages/npm-packages.txt
-~~
+# Atom
+apm list --installed --bare > packages/atom-packages.txt
+# TODO Sublime
+~~~
 
 ## Useful links
 
