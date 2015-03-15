@@ -4,7 +4,9 @@
 
 ## How to use the dotfiles
 
-A fully automated installation and update process is described in [Mathias's dotfiles repo](https://github.com/mathiasbynens/dotfiles.git). I myself prefer to copy/paste files by hand, since it is quite sensible and not that frequent.
+A fully automated installation and update process is described in [Mathias's dotfiles repo](https://github.com/mathiasbynens/dotfiles). I myself prefer to copy/paste files by hand, since it is quite sensible and not that frequent.
+
+Install brew: http://brew.sh/
 
 Here are some useful commands:
 
@@ -61,22 +63,6 @@ When setting up a new Mac, you may want to set some sensible OS X defaults:
 ./.osx
 ```
 
-### Install Homebrew formulae
-
-When setting up a new Mac, you may want to install some common [Homebrew](http://brew.sh/) formulae (after installing Homebrew, of course):
-
-```bash
-brew bundle ~/Brewfile
-```
-
-### Install native apps with `brew cask`
-
-You could also install native apps with [`brew cask`](https://github.com/phinze/homebrew-cask):
-
-```bash
-brew bundle ~/Caskfile
-```
-
 ### Other steps
 
 - Install Oh My ZSH
@@ -91,7 +77,11 @@ curl -o /usr/local/bin/git-open https://raw.githubusercontent.com/paulirish/git-
 chmod +x /usr/local/bin/git-open
 ~~~
 
+## Useful links
 
+- http://brew.sh/
+- http://brewformulas.org/
+- http://caskroom.io/
 
 ## Thanks to…
 
