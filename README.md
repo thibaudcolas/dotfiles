@@ -13,6 +13,9 @@ Install brew: http://brew.sh/
 Here are some useful commands:
 
 ~~~bash
+    # This may be quite useful when you work with so many dotfiles:
+    defaults write com.apple.finder AppleShowAllFiles -bool true
+
     # Let's make sure we are up to date.
     brew update
     brew upgrade
