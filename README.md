@@ -112,7 +112,7 @@ apm list --installed --bare > packages/atom-packages.txt
 - http://brewformulas.org/
 - http://caskroom.io/
 
-## Thanks to…
+## Thanks to
 
 ### Original Author
 

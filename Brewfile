@@ -111,6 +111,8 @@ iterate-ch/cyberduck/duck
 shellcheck
 gh
 # iojs
+tig
+gource
 
 # For gcc
 apple-gcc42
