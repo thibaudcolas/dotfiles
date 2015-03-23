@@ -1,4 +1,3 @@
-/usr/local/lib
 ampersand
 async-you
 bootlint
@@ -43,3 +42,6 @@ tmi
 uglify-js
 webgl-workshop
 ungit
+hyperlink
+eslint
+plato
