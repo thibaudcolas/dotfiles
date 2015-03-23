@@ -113,6 +113,8 @@ gh
 # iojs
 tig
 gource
+automake
+ffmpeg
 
 # For gcc
 apple-gcc42
