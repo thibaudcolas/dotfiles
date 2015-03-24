@@ -112,6 +112,11 @@ apm list --installed --bare > packages/atom-packages.txt
 - http://brewformulas.org/
 - http://caskroom.io/
 
+### Alfred Workflows
+
+- https://github.com/zenorocha/alfred-workflows
+- https://github.com/willfarrell/alfred-workflows
+
 ## Thanks to
 
 ### Original Author
