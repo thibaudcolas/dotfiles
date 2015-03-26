@@ -7,7 +7,9 @@
         "Vintage",
         "Markdown"
     ],
+    "origami_auto_zoom_on_focus": true,
     "scroll_past_end": true,
     "theme": "Devastate.sublime-theme",
-    "word_wrap": false
+    "word_wrap": false,
+    "folder_exclude_patterns": [".svn", ".git", ".hg", "CVS", "node_modules", "build", "dist"]
 }
