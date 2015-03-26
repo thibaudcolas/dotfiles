@@ -178,6 +178,14 @@ alias gcia='git commit -am'
 alias gb='git branch'
 alias gc='git checkout'
 
+
+alias sa='svn add'
+alias sr='svn rm'
+alias sl='svn log'
+alias ss='svn status'
+alias sd='svn diff'
+alias sci='svn commit -m'
+
 # Show/hide hidden files in Finder.
 alias dotshow=show
 alias dothide=hide
