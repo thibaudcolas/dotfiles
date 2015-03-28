@@ -45,3 +45,5 @@ ungit
 hyperlink
 eslint
 plato
+webpack
+react-native-cli

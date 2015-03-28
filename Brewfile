@@ -115,6 +115,8 @@ tig
 gource
 automake
 ffmpeg
+watchman
+flow
 
 # For gcc
 apple-gcc42
