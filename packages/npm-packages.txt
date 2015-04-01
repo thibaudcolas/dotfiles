@@ -47,3 +47,5 @@ eslint
 plato
 webpack
 react-native-cli
+parker
+specificity-graph
