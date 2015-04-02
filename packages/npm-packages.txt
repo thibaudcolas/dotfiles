@@ -49,3 +49,4 @@ webpack
 react-native-cli
 parker
 specificity-graph
+jest-cli
