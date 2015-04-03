@@ -25,7 +25,6 @@ Here are some useful commands:
 
     # Before playing with brew cask:
     brew install caskroom/cask/brew-cask
-    brew tap caskroom/versions
 
     # Install all brew cask packages listed in the Caskfile.
     brew cask install $(cat Caskfile|grep -v "#")
@@ -37,6 +36,12 @@ Here are some useful commands:
 
     # Install atom packages
     apm install --packages-file packages/atom-packages.txt
+
+    # Before installing fonts:
+    brew tap caskroom/fonts
+
+    # Install all brew cask fonts listed in the Fontfile.
+    brew cask install $(cat Fontfile|grep -v "#")
 ~~~
 
 ### Specify the `$PATH`
@@ -107,6 +112,7 @@ apm list --installed --bare > packages/atom-packages.txt
 - http://brew.sh/
 - http://brewformulas.org/
 - http://caskroom.io/
+- https://github.com/caskroom/homebrew-fonts
 
 ### Alfred Workflows
 
