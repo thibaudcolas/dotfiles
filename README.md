@@ -83,13 +83,6 @@ When setting up a new Mac, you may want to set some sensible OS X defaults:
 - Install global gem packages
 - Install global pip packages
 
-- Install git-open:
-
-~~~bash
-curl -o /usr/local/bin/git-open https://raw.githubusercontent.com/paulirish/git-open/master/git-open
-chmod +x /usr/local/bin/git-open
-~~~
-
 ## Adding things to the repository
 
 ### Adding packages
@@ -116,6 +109,14 @@ apm list --installed --bare > packages/atom-packages.txt
 
 - https://github.com/zenorocha/alfred-workflows
 - https://github.com/willfarrell/alfred-workflows
+
+## Alternative for Windows
+
+Try a mix of the following:
+
+- https://ninite.com/
+- http://boxstarter.org/
+- https://chocolatey.org/
 
 ## Thanks to
 
