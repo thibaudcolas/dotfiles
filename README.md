@@ -87,6 +87,9 @@ When setting up a new Mac, you may want to set some sensible OS X defaults:
 
 ### Adding packages
 
+- For Brew: `brew list`
+- For Brew Cask: `brew cask list`
+
 ~~~bash
 # Ruby
 gem list | cut -d ' ' -f 1 > packages/gem-packages.txt
