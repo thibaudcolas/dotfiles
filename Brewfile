@@ -26,26 +26,19 @@ bash-completion
 # Install Zsh + Oh my Zsh
 zsh
 zsh-completions
-curl -L http://install.ohmyz.sh | sh
 
 # Install wget with IRI support
 wget --enable-iri
-
-# Install RingoJS and Narwhal
-# Note that the order in which these are installed is important; see http://git.io/brew-narwhal-ringo.
-ringojs
-narwhal
 
 # Install more recent versions of some OS X tools
 vim --override-system-vi
 homebrew/dupes/grep
 homebrew/dupes/screen
-homebrew/php/php55 --with-gmp
 
 # Install other useful binaries
 ack
 bfg
-#install exiv2
+exiv2
 foremost
 git
 hashpump
@@ -62,7 +55,6 @@ sqlmap
 tree
 ucspi-tcp # `tcpserver` et al.
 webkit2png
-xpdf
 zopfli
 whois
 unzip
@@ -107,7 +99,6 @@ lua
 git-extras
 cloc
 diction
-iterate-ch/cyberduck/duck
 shellcheck
 gh
 # iojs

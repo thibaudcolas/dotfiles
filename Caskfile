@@ -7,14 +7,9 @@ google-chrome-canary
 opera
 
 # Developer tools
-sublime-text
 sublime-text3
-php-storm
 atom
-macvim
 iterm2
-cd-to
-transmission
 virtualbox
 vagrant
 imagealpha
@@ -34,13 +29,13 @@ appcleaner
 nvalt
 dropbox
 the-unarchiver
+transmission
 vlc
 mactex
 soundcleod
 gyazo
 bettertouchtool
 sequential
-avast
 
 # Quicklook plugins
 qlcolorcode
