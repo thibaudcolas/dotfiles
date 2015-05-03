@@ -108,6 +108,7 @@ automake
 ffmpeg
 watchman
 flow
+peco
 
 # For gcc
 apple-gcc42
