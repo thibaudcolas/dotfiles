@@ -33,7 +33,9 @@
         "dist",
         ".sass-cache",
         "env",
-        ".githooks"
+        ".githooks",
+        ".vagrant",
+        "__pycache__"
     ],
     "font_face": "Source Code Pro",
     "font_size": 16,
