@@ -1,0 +1,301 @@
+scss_files: 'src/sass/**/*.scss'
+exclude: 'src/sass/normalize.scss'
+
+
+linters:
+    BorderZero:
+        enabled: true
+
+    Indentation:
+        severity: warning
+        width: 4
+        allow_non_nested_indentation: true
+        character: space
+
+    ColorKeyword:
+        enabled: true
+
+    ColorVariable:
+        enabled: true
+
+    BangFormat:
+        space_before_bang: true
+        space_after_bang: false
+
+    Comment:
+        enabled: true
+
+    DeclarationOrder:
+        enabled: true
+
+    DuplicateProperty:
+        enabled: false
+
+    ElsePlacement:
+        enabled: true
+
+    EmptyLineBetweenBlocks:
+        enabled: true
+
+    EmptyRule:
+        enabled: true
+
+    FinalNewline:
+        present: true
+
+    HexLength:
+        style: short
+
+    HexNotation:
+        style: lowercase
+
+    HexValidation:
+        enabled: true
+
+    IdSelector:
+        enabled: true
+
+    ImportantRule:
+        enabled: true
+
+    ImportPath:
+        enabled: true
+
+    LeadingZero:
+        style: exclude_zero
+
+    MergeableSelector:
+        enabled: false
+
+    NameFormat:
+        allow_leading_underscore: true
+
+    NestingDepth:
+        max_depth: 4
+
+    SelectorDepth:
+        max_depth: 3
+
+    SelectorFormat:
+        convention: hyphenated_BEM
+        ignored_names:
+            - js_class
+        ignored_types:
+            - element
+
+    PlaceholderInExtend:
+        enabled: true
+
+    PropertyCount:
+        enabled: false
+
+    QualifyingElement:
+        allow_element_with_attribute: false
+        allow_element_with_class: false
+        allow_element_with_id: false
+
+    Shorthand:
+        enabled: true
+
+    SingleLinePerProperty:
+        enabled: true
+        allow_single_line_rule_sets: true
+
+    SingleLinePerSelector:
+        enabled: true
+
+    SpaceAfterComma:
+        enabled: true
+
+    SpaceAfterPropertyColon:
+        style: at_least_one_space
+
+    SpaceAfterPropertyName:
+        enabled: true
+
+    SpaceBeforeBrace:
+        enabled: true
+        allow_single_line_padding: true
+        style: space
+
+    SpaceBetweenParens:
+        enabled: true
+
+    StringQuotes:
+        style: single_quotes
+
+    TrailingSemicolon:
+        enabled: true
+
+    TrailingZero:
+        enabled: true
+
+    UnnecessaryMantissa:
+        enabled: true
+
+    UnnecessaryParentReference:
+        enbabled: true
+
+    UrlFormat:
+        enabled: true
+
+    UrlQuotes:
+        enabled: true
+
+    VariableForProperty:
+        enabled: false
+
+    VendorPrefix:
+        enabled: false
+
+    ZeroUnit:
+        enabled: true
+
+    PropertySortOrder:
+        order:
+        - position
+        - top
+        - right
+        - bottom
+        - left
+        - z-index
+        - display
+        - float
+        - width
+        - height
+        - max-width
+        - max-height
+        - min-width
+        - min-height
+        - padding
+        - padding-top
+        - padding-right
+        - padding-bottom
+        - padding-left
+        - margin
+        - margin-top
+        - margin-right
+        - margin-bottom
+        - margin-left
+        - margin-collapse
+        - margin-top-collapse
+        - margin-right-collapse
+        - margin-bottom-collapse
+        - margin-left-collapse
+        - overflow
+        - overflow-x
+        - overflow-y
+        - clip
+        - clear
+        - font
+        - font-family
+        - font-size
+        - font-smoothing
+        - osx-font-smoothing
+        - font-style
+        - font-weight
+        - hyphens
+        - src
+        - line-height
+        - letter-spacing
+        - word-spacing
+        - color
+        - text-align
+        - text-decoration
+        - text-indent
+        - text-overflow
+        - text-rendering
+        - text-size-adjust
+        - text-shadow
+        - text-transform
+        - word-break
+        - word-wrap
+        - white-space
+        - vertical-align
+        - list-style
+        - list-style-type
+        - list-style-position
+        - list-style-image
+        - pointer-events
+        - cursor
+        - background
+        - background-attachment
+        - background-color
+        - background-image
+        - background-position
+        - background-repeat
+        - background-size
+        - border
+        - border-collapse
+        - border-top
+        - border-right
+        - border-bottom
+        - border-left
+        - border-color
+        - border-image
+        - border-top-color
+        - border-right-color
+        - border-bottom-color
+        - border-left-color
+        - border-spacing
+        - border-style
+        - border-top-style
+        - border-right-style
+        - border-bottom-style
+        - border-left-style
+        - border-width
+        - border-top-width
+        - border-right-width
+        - border-bottom-width
+        - border-left-width
+        - border-radius
+        - border-top-right-radius
+        - border-bottom-right-radius
+        - border-bottom-left-radius
+        - border-top-left-radius
+        - border-radius-topright
+        - border-radius-bottomright
+        - border-radius-bottomleft
+        - border-radius-topleft
+        - content
+        - quotes
+        - outline
+        - outline-offset
+        - opacity
+        - filter
+        - visibility
+        - size
+        - zoom
+        - transform
+        - box-align
+        - box-flex
+        - box-orient
+        - box-pack
+        - box-shadow
+        - box-sizing
+        - table-layout
+        - animation
+        - animation-delay
+        - animation-duration
+        - animation-iteration-count
+        - animation-name
+        - animation-play-state
+        - animation-timing-function
+        - animation-fill-mode
+        - transition
+        - transition-delay
+        - transition-duration
+        - transition-property
+        - transition-timing-function
+        - background-clip
+        - backface-visibility
+        - resize
+        - appearance
+        - user-select
+        - interpolation-mode
+        - direction
+        - marks
+        - page
+        - set-link-source
+        - unicode-bidi
+        - speak
