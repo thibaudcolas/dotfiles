@@ -35,7 +35,8 @@
         "env",
         ".githooks",
         ".vagrant",
-        "__pycache__"
+        "__pycache__",
+        "tmp"
     ],
     "font_face": "Source Code Pro",
     "font_size": 16,
