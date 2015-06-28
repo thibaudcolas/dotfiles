@@ -49,6 +49,6 @@
     "origami_auto_zoom_on_focus": true,
     "overlay_scroll_bars": "enabled",
     "scroll_past_end": true,
-    "theme": "Seti.sublime-theme",
+    "theme": "Seti_orig.sublime-theme",
     "word_wrap": false
 }
