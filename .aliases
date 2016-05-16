@@ -1,11 +1,8 @@
 # Easier navigation: .., ..., ...., ....., ~ and -
-alias .="pwd"
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
-alias ~="cd ~" # `cd` is probably faster to type though
-alias -- -="cd -"
 
 # Shortcuts
 alias cdu="cd ~"
