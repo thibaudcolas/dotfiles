@@ -133,6 +133,11 @@
 	# `git config --global push.default simple`. See http://git.io/mMah-w.
 	default = matching
 
+[pull]
+
+    # Always use rebase when pulling
+    rebase = true
+
 # URL shorthands
 
 [url "git@github.com:"]
