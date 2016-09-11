@@ -1,4 +1,4 @@
-# ThibWeb's dotfiles
+# thibaudcolas’s dotfiles
 
 ![Screenshot of my shell prompt](dotfiles-screenshot.png)
 
@@ -71,7 +71,7 @@ GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
 git config --global user.email "$GIT_AUTHOR_EMAIL"
 ```
 
-You could also use `~/.extra` to override settings, functions and aliases from my dotfiles repository. It’s probably better to [fork this repository](https://github.com/thibweb/dotfiles/fork) instead, though.
+You could also use `~/.extra` to override settings, functions and aliases from my dotfiles repository. It’s probably better to [fork this repository](https://github.com/thibaudcolas/dotfiles/fork) instead, though.
 
 ### Sensible OS X defaults
 
