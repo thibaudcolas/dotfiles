@@ -55,6 +55,7 @@ if [[ $unixresponse =~ ^(y|yes|Y) ]];then
     require_brew nano
     require_brew tree
     require_brew whois
+    require_brew openssh
     require_brew unzip
     require_brew rsync
     require_brew cloc
@@ -64,6 +65,7 @@ if [[ $unixresponse =~ ^(y|yes|Y) ]];then
     require_brew lynx
     require_brew rename
     require_brew zopfli
+    require_brew knock
     require_brew shellcheck
 
     brew tap bramstein/webfonttools

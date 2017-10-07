@@ -48,6 +48,7 @@ if [[ $everydayresponse =~ ^(y|yes|Y) ]];then
     require_cask vlc
     require_cask dropbox
     require_cask sketch
+    require_cask nvalt
 
     ok "casks installed..."
 else
