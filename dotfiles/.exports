@@ -1,5 +1,6 @@
 # Make vim the default editor
 export EDITOR="vim";
+export REACT_EDITOR="code";
 
 # Larger bash history (allow 32³ entries; default is 500)
 export HISTSIZE=32768;
@@ -20,3 +21,10 @@ export MANPAGER="less -X";
 
 # Link Homebrew casks in `/Applications` rather than `~/Applications`
 export HOMEBREW_CASK_OPTS="--appdir=/Applications";
+
+# This loads nvm.
+export NVM_DIR="/Users/thibaud/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+
+# Android SDK for React Native.
+export ANDROID_HOME=/usr/local/opt/android-sdk
