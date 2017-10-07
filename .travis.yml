@@ -1,0 +1,7 @@
+language: sh
+
+script:
+- ./test.sh
+
+notifications:
+  email: false
