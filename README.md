@@ -1,9 +1,9 @@
 # dotfiles
 
 ```txt
-      ██            ██     ████ ██  ██
-     ░██           ░██    ░██░ ░░  ░██
-     ░██  ██████  ██████ ██████ ██ ░██  █████   ██████
+       ██            ██     ████ ██  ██
+      ░██           ░██    ░██░ ░░  ░██
+      ░██  ██████  ██████ ██████ ██ ░██  █████   ██████
   ██████ ██░░░░██░░░██░ ░░░██░ ░██ ░██ ██░░░██ ██░░░░
  ██░░░██░██   ░██  ░██    ░██  ░██ ░██░███████░░█████
 ░██  ░██░██   ░██  ░██    ░██  ░██ ░██░██░░░░  ░░░░░██
@@ -38,18 +38,15 @@ The installation process should start, and ask you questions. You'll also be ask
 
 |:book:|
 |-----------------------------------------|
-|[Command-line tools](#command-line)|
+|[Command-line](#command-line)|
 |[Fonts](#fonts)|
-|[OSX Preferences](#osx-preferences)|
+|[macOS Preferences](#macos-preferences)|
 |[Alfred workflows (requires Powerpack)](#alfred-workflows-requires-powerpack)|
-|[Shell pimping](#shell-pimping)|
-|[Dotfiles](#dotfiles)|
-|[IE VMs](#ie-vms)|
 |[Sublime Text configuration](#sublime-text-3)|
 |[Visual Studio Code configuration](/config/visual-studio-code/)|
 |[Extra documentation: `docs/`](docs/)|
 
-### Command-line tools
+### Command-line
 
 > This section requires some command-line knowledge.
 
@@ -174,8 +171,7 @@ shellcheck *.sh
 - Spectacle
 - Fonts
 - ls colors
-- Terminal theme
-- https://github.com/robbyrussell/oh-my-zsh
 - https://github.com/ptb/mac-setup
-- VS Code theme
 - GPG signed commits
+- gems
+- more docs

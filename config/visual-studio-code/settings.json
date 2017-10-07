@@ -32,7 +32,6 @@
         "**/.DS_Store": true,
         "**/.expo": true,
         "**/.git": true,
-        "**/.githooks": true,
         "**/.hg": true,
         "**/.pygments-cache": true,
         "**/.sass-cache": true,
@@ -57,6 +56,7 @@
         "**/node_modules*": true,
         "**/npm-debug.log*": true,
         "**/npm-shrinkwrap.json": true,
+        "**/package-lock.json": true,
         "**/static/**/*.css": false,
         "**/static/**/*.js": false,
         "**/static/wagtailadmin": true,
@@ -93,5 +93,6 @@
     "scss.validate": true,
     "workbench.iconTheme": "seti",
     "typescript.check.npmIsInstalled": false,
-    "workbench.startupEditor": "newUntitledFile"
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.colorTheme": "Monokai"
 }
