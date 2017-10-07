@@ -290,6 +290,13 @@ function gifify() {
   fi
 }
 
+# Commit in the past
+function pastcommit() {
+    local timestamp=$1
+    local message=$2
+    GIT_AUTHOR_DATE="$timestamp" GIT_COMMITTER_DATE="$timestamp" git commit -m "$message" --no-verify
+}
+
 # https://twitter.com/paul_irish/status/749077251539341313
 auto-ls () {
     # explicit sexy ls'ing as aliases arent honored in here.
