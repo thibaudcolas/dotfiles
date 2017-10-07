@@ -45,7 +45,7 @@ ZSH_THEME="ys"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git git-extras bower brew bundler npm osx sublime sudo z)
+plugins=(git git-extras bundler npm osx sudo autojump)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -60,6 +60,9 @@ done;
 unset file;
 
 # User configuration
+
+# http://docs.python-guide.org/en/latest/writing/gotchas/#disabling-bytecode-pyc-files
+PYTHONDONTWRITEBYTECODE=1
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -93,3 +96,25 @@ unsetopt RM_STAR_SILENT
 
 # Load RVM into a shell session *as a function*
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+
+# Load .NET stack
+# source dnvm.sh
+# export MONO_MANAGED_WATCHER=disabled
+
+# Rbenv
+# eval "$(rbenv init -)"
+
+# added by travis gem
+[ -f /Users/thibaud/.travis/travis.sh ] && source /Users/thibaud/.travis/travis.sh
+
+# test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+# Add pyenv init to your shell to enable shims and autocompletion
+eval "$(pyenv init -)"
+
+export PATH="$HOME/.yarn/bin:$PATH"
+
+# Initialise opam
+. /Users/thibaud/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
+
+[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh

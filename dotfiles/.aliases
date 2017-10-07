@@ -11,6 +11,9 @@ alias c="clear"
 alias p="pwd"
 alias s="subl ."
 
+# autojump
+alias z="j"
+
 # Git aliases.
 alias ga='git add'
 alias gl='git log'
