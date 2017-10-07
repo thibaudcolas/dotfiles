@@ -68,6 +68,9 @@
     # List contributors with number of commits
     contributors = shortlog --summary --numbered
 
+    # List aliases
+	aliases = config --get-regexp alias
+
 [apply]
 
     # Detect whitespace errors when applying a patch
@@ -87,6 +90,15 @@
     # Make `git rebase` safer on OS X
     # More info: <http://www.git-tower.com/blog/make-git-rebase-safe-on-osx/>
     trustctime = false
+
+    # Prevent showing files whose names contain non-ASCII symbols as unversioned.
+	# http://michael-kuehnel.de/git/2014/11/21/git-mac-osx-and-german-umlaute.html
+	precomposeunicode = false
+
+	# Speed up commands involving untracked files such as `git status`.
+	# https://git-scm.com/docs/git-update-index#_untracked_cache
+	untrackedCache = true
+
     pager = less --tabs=4 -RFX
     ignorecase = false
 
@@ -115,11 +127,21 @@
     changed = green
     untracked = cyan
 
+[commit]
+
+	# https://help.github.com/articles/signing-commits-using-gpg/
+	gpgsign = false
+
 [diff]
 
     # Detect copies as well as renames
     renames = copies
     compactionHeuristic = true
+
+[diff "bin"]
+
+	# Use `hexdump` to diff binary files
+	textconv = hexdump -v -C
 
 [help]
 
@@ -137,6 +159,8 @@
     # installations. To use `simple` instead, add this to your `~/.extra` file:
     # `git config --global push.default simple`. See http://git.io/mMah-w.
     default = matching
+    # Make `git push` push relevant annotated tags when pushing branches out.
+	followTags = true
 
 # URL shorthands
 
