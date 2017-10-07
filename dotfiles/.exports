@@ -37,6 +37,9 @@ export HOMEBREW_CASK_OPTS="--appdir=/Applications";
 # https://stackoverflow.com/a/42265848/96656
 export GPG_TTY=$(tty);
 
+# http://docs.python-guide.org/en/latest/writing/gotchas/#disabling-bytecode-pyc-files
+PYTHONDONTWRITEBYTECODE=1
+
 # Runtimes
 # ========
 
@@ -49,3 +52,21 @@ export ANDROID_HOME=/usr/local/opt/android-sdk
 
 # Load RVM into a shell session *as a function*
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+
+# Load .NET stack
+# source dnvm.sh
+# export MONO_MANAGED_WATCHER=disabled
+
+# Rbenv
+eval "$(rbenv init -)"
+
+# added by travis gem
+[ -f /Users/thibaud/.travis/travis.sh ] && source /Users/thibaud/.travis/travis.sh
+
+# Add pyenv init to your shell to enable shims and autocompletion
+eval "$(pyenv init -)"
+
+# Initialise opam
+. /Users/thibaud/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
+
+[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh

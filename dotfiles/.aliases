@@ -6,7 +6,6 @@ alias .....="cd ../../../.."
 
 alias g="git"
 alias h="history"
-alias j="jobs"
 alias p="pwd"
 alias s="subl ."
 alias c="code ."
@@ -141,3 +140,6 @@ alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && kil
 
 # Print each PATH entry on a separate line
 alias path='echo -e ${PATH//:/\\n}'
+
+alias zshconfig="code ~/.zshrc"
+alias ohmyzsh="code ~/.oh-my-zsh"
