@@ -1,152 +1,173 @@
-# thibaudcolas’s dotfiles
+# dotfiles
 
-![Screenshot of my shell prompt](dotfiles-screenshot.png)
+```txt
+      ██            ██     ████ ██  ██
+     ░██           ░██    ░██░ ░░  ░██
+     ░██  ██████  ██████ ██████ ██ ░██  █████   ██████
+  ██████ ██░░░░██░░░██░ ░░░██░ ░██ ░██ ██░░░██ ██░░░░
+ ██░░░██░██   ░██  ░██    ░██  ░██ ░██░███████░░█████
+░██  ░██░██   ░██  ░██    ░██  ░██ ░██░██░░░░  ░░░░░██
+░░██████░░██████   ░░██   ░██  ░██ ███░░██████ ██████
 
-## How to use the dotfiles
-
-A fully automated installation and update process is described in [Mathias's dotfiles repo](https://github.com/mathiasbynens/dotfiles). I myself prefer to copy/paste files by hand, since it is quite sensible and not that frequent.
-
-### Installing from the repository
-
-Install brew: http://brew.sh/
-
-Here are some useful commands:
-
-~~~bash
-    # This may be quite useful when you work with so many dotfiles:
-    defaults write com.apple.finder AppleShowAllFiles -bool true
-
-    # Let's make sure we are up to date.
-    brew update
-    brew upgrade
-
-    # Install all brew packages listed in the Brewfile.
-    brew install $(cat Brewfile|grep -v "#")
-
-    # Before playing with brew cask:
-    brew install caskroom/cask/brew-cask
-
-    # Install all brew cask packages listed in the Caskfile.
-    brew cask install $(cat Caskfile|grep -v "#")
-
-    # Install all packages listed in our packages folder:
-    npm install -g $(cat packages/npm-packages.txt)
-    gem install $(cat packages/gem-packages.txt)
-    pip install $(cat packages/pip-packages.txt)
-
-    # Install atom packages
-    apm install --packages-file packages/atom-packages.txt
-
-    # Before installing fonts:
-    brew tap caskroom/fonts
-
-    # Install all brew cask fonts listed in the Fontfile.
-    brew cask install $(cat Fontfile|grep -v "#")
-~~~
-
-### Specify the `$PATH`
-
-If `~/.path` exists, it will be sourced along with the other files, before any feature testing (such as [detecting which version of `ls` is being used](https://github.com/mathiasbynens/dotfiles/blob/aff769fd75225d8f2e481185a71d5e05b76002dc/.aliases#L21-26)) takes place.
-
-Here’s an example `~/.path` file that adds `~/utils` to the `$PATH`:
-
-```bash
-export PATH="$HOME/utils:$PATH"
+  ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+ ░▓ Software Installation, Configuration and Preferences for     ▓
+ ░▓ https://github.com/thibaudcolas/dotfiles                     ▓
+ ░▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
 ```
 
-### Add custom commands without creating a new fork
+[![Built with love](http://forthebadge.com/images/badges/built-with-love.svg)](http://www.thibaudcolas.co.nz/) [![Build Status](https://img.shields.io/travis/thibaudcolas/dotfiles.svg?style=flat-square)](https://travis-ci.org/thibaudcolas/dotfiles)
 
-If `~/.extra` exists, it will be sourced along with the other files. You can use this to add a few custom commands without the need to fork this entire repository, or to add commands you don’t want to commit to a public repository.
+## Setting up your new Mac `(◕‿◕)`
 
-My `~/.extra` looks something like this:
+> The goal is to automate __80%__ of the setup of your new computer.
 
-```bash
-# Git credentials
-# Not in the repository, to prevent people from accidentally committing under my name
-GIT_AUTHOR_NAME="Author Name Example"
-GIT_COMMITTER_NAME="$GIT_AUTHOR_NAME"
-git config --global user.name "$GIT_AUTHOR_NAME"
-GIT_AUTHOR_EMAIL="mail@example.com"
-GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
-git config --global user.email "$GIT_AUTHOR_EMAIL"
-```
-
-You could also use `~/.extra` to override settings, functions and aliases from my dotfiles repository. It’s probably better to [fork this repository](https://github.com/thibaudcolas/dotfiles/fork) instead, though.
-
-### Sensible OS X defaults
-
-When setting up a new Mac, you may want to set some sensible OS X defaults:
+- Download a [ZIP of this repository](https://github.com/thibaudcolas/dotfiles/archive/master.zip).
+- Unzip the file if necessary. You should have a `dotfiles-master` folder in your `Downloads` folder.
+- Launch the Terminal app, found in `/Applications/Utilities/`
+- Copy and paste the following line into the Terminal, and press `Enter`:
 
 ```bash
-./.osx
+cd ~/Downloads/dotfiles-master && ./install.sh
 ```
 
-### Other steps
+The installation process should start, and ask you questions. You'll also be asked to enter your password from time to time. __If this is your first run on a fresh Mac, you'll have to start it again after the first install.__
 
-- Install Oh My ZSH
-- Install global npm packages
-- Install global gem packages
-- Install global pip packages
+![GIF recording of the install](docs/install-recording.gif)
 
-## Adding things to the repository
+## Going further
 
-### Adding packages
+|:book:|
+|-----------------------------------------|
+|[Command-line tools](#command-line)|
+|[Fonts](#fonts)|
+|[OSX Preferences](#osx-preferences)|
+|[Alfred workflows (requires Powerpack)](#alfred-workflows-requires-powerpack)|
+|[Shell pimping](#shell-pimping)|
+|[Dotfiles](#dotfiles)|
+|[IE VMs](#ie-vms)|
+|[Sublime Text configuration](#sublime-text-3)|
+|[Visual Studio Code configuration](/config/visual-studio-code/)|
+|[Extra documentation: `docs/`](docs/)|
 
-- For Brew: `brew list`
-- For Brew Cask: `brew cask list`
+### Command-line tools
 
-~~~bash
-# Ruby
-gem list | cut -d ' ' -f 1 > packages/gem-packages.txt
-# Python
-pip list | cut -d ' ' -f 1 > packages/pip-packages.txt
-# JavaScript
-npm list -g --depth=0 | cut -d ' ' -f 2 | cut -d '@' -f 1 > packages/npm-packages.txt
-# Atom
-apm list --installed --bare > packages/atom-packages.txt
-# TODO Sublime
-~~~
+> This section requires some command-line knowledge.
 
-## Useful links
+Requires `brew`. The first group of tools contains `node`, `ruby` & `python` which are required to install the second group of tools.
 
-- http://brew.sh/
-- http://brewformulas.org/
-- http://caskroom.io/
-- https://github.com/caskroom/homebrew-fonts
+```bash
+cd ~/Downloads/dotfiles-master && ./cli.sh
+```
 
-### Alfred Workflows
+While you're waiting for this to finish, go [generate your SSH keys](https://help.github.com/articles/generating-ssh-keys/) for GitHub and beyond.
+
+After that, head over to http://brewformulas.org/ to find other things that you might like!
+
+#### Shell pimping
+
+Have a look at https://github.com/robbyrussell/oh-my-zsh, then grab a terminal theme from https://github.com/mbadolato/iTerm2-Color-Schemes.olarized.
+
+#### Dotfiles
+
+The `dotfiles` subfolder contains configuration for all things CLI. Have a look, peek around, use what you like.
+
+#### Fonts
+
+[Font Casks](https://github.com/caskroom/homebrew-fonts) are still experimental. Careful.
+
+If you want to proceed, open the Terminal, copy and paste that line and press `Enter`:
+
+```bash
+cd ~/Downloads/dotfiles-master && ./fonts.sh
+```
+
+### macOS Preferences
+
+You can set macOS preferences by using [osx-for-hackers.sh](https://gist.github.com/brandonb927/3195465). Beware, this can be dangerous!
+
+When setting up a new Mac, you may want to set some sensible defaults:
+
+```bash
+./macos.sh
+```
+
+### Apps configuration
+
+> This section requires some command-line knowledge.
+
+[Mackup](https://github.com/lra/mackup) is awesome. It uses Dropbox / Google Drive / Copy & Paste to backup your configuration for:
+
+```txt
+1Password 4, Ack, Adium, Adobe Camera Raw, Adobe Lightroom, AppCode, aria2c, Arara, Artistic Style, Arm, asciinema, Aspell, Atom, AusKey, Autokey, Awareness, AWS Command Line Interface, Microsoft Azure CLI, Bartender, Bash it, Bash, BetterSnapTool, BetterTouchTool, BibDesk, Billings Pro Server Admin, Bitchx, Boto, Brackets, Bundler, Byobu, Caffeine, Cartographica, Charles, Chef, Chicken, Clementine, ClipMenu, CloudApp, Coda 2... and more
+```
+
+... so that you can forget about reconfiguring everything. Give it a look.
+
+### Alfred workflows (requires Powerpack)
+
+Have a look at:
 
 - https://github.com/zenorocha/alfred-workflows
 - https://github.com/willfarrell/alfred-workflows
 
-## Alternative for Windows
+## Software configuration
 
-Try a mix of the following:
+### Visual Studio Code
 
-- https://ninite.com/
-- http://boxstarter.org/
-- https://chocolatey.org/
+Have a look at our resources in [`config/visual-studio-code`](config/visual-studio-code).
 
-## Thanks to
+### Sublime Text 3
 
-### Original Author
+> You will need [Package Control](https://packagecontrol.io/). You may also need a nice font, like [Source Code Pro](https://github.com/adobe-fonts/source-code-pro).
 
-| [![twitter/mathias](http://gravatar.com/avatar/24e08a9ea84deb17ae121074d0f17125?s=70)](http://twitter.com/mathias "Follow @mathias on Twitter") |
-|---|
-| [Mathias Bynens](http://mathiasbynens.be/) |
+Have a look at the default configuration and the list of packages in [`config/sublime`](config/sublime).
 
-* @ptb and [his _OS X Lion Setup_ repository](https://github.com/ptb/Mac-OS-X-Lion-Setup)
-* [Ben Alman](http://benalman.com/) and his [dotfiles repository](https://github.com/cowboy/dotfiles)
-* [Chris Gerke](http://www.randomsquared.com/) and his [tutorial on creating an OS X SOE master image](http://chris-gerke.blogspot.com/2012/04/mac-osx-soe-master-image-day-7.html) + [_Insta_ repository](https://github.com/cgerke/Insta)
-* [Cãtãlin Mariş](https://github.com/alrra) and his [dotfiles repository](https://github.com/alrra/dotfiles)
-* [Gianni Chiappetta](http://gf3.ca/) for sharing his [amazing collection of dotfiles](https://github.com/gf3/dotfiles)
-* [Jan Moesen](http://jan.moesen.nu/) and his [ancient `.bash_profile`](https://gist.github.com/1156154) + [shiny _tilde_ repository](https://github.com/janmoesen/tilde)
-* [Lauri ‘Lri’ Ranta](http://lri.me/) for sharing [loads of hidden preferences](http://osxnotes.net/defaults.html)
-* [Matijs Brinkhuis](http://hotfusion.nl/) and his [dotfiles repository](https://github.com/matijs/dotfiles)
-* [Nicolas Gallagher](http://nicolasgallagher.com/) and his [dotfiles repository](https://github.com/necolas/dotfiles)
-* [Sindre Sorhus](http://sindresorhus.com/)
-* [Tom Ryder](http://blog.sanctum.geek.nz/) and his [dotfiles repository](https://github.com/tejr/dotfiles)
-* [Kevin Suttle](http://kevinsuttle.com/) and his [dotfiles repository](https://github.com/kevinSuttle/dotfiles) and [OSXDefaults project](https://github.com/kevinSuttle/OSXDefaults), which aims to provide better documentation for [`~/.osx`](http://mths.be/osx)
-* [Haralan Dobrev](http://hkdobrev.com/)
+To install the packages, open your Command Palette _(Cmd+Maj+P)_, type `Browse packages` and go edit the file `Packages/User/Package Control.sublime-settings`. Save the file, and restart Sublime Text.
 
-* anyone who [contributed a patch](https://github.com/mathiasbynens/dotfiles/contributors) or [made a helpful suggestion](https://github.com/mathiasbynens/dotfiles/issues)
+Once this is all done, you will want to use Babel Sublime for your JavaScript syntax highlighting. [Here's how to](https://github.com/babel/babel-sublime#setting-as-the-default-syntax).
+
+## Contributing to this project
+
+If you want to tinker with the bash scripts, please install [ShellCheck](https://github.com/koalaman/shellcheck) and use it to check your changes.
+
+```bash
+# Debian distribs
+apt-get install shellcheck
+# OSX
+brew install shellcheck
+
+shellcheck *.sh
+
+# Its output should be empty:
+# $ shellcheck *.sh | wc -l
+#        0
+```
+
+## See also
+
+- http://brew.sh/
+- http://caskroom.io/
+- https://dotfiles.github.io/
+- http://lapwinglabs.com/blog/hacker-guide-to-setting-up-your-mac
+
+## Credits
+
+- Actual dotfiles originally from https://github.com/mathiasbynens/dotfiles
+- Dotfiles lib from https://github.com/atomantic/dotfiles
+- ASCII Art from https://github.com/xero/dotfiles
+- ASCII faces from https://github.com/maxogden/cool-ascii-faces
+
+## Manual tasks
+
+- Install [Transmission](https://transmissionbt.com/)
+
+## TODO
+
+- Spectacle
+- Fonts
+- ls colors
+- Terminal theme
+- https://github.com/robbyrussell/oh-my-zsh
+- https://github.com/ptb/mac-setup
+- VS Code theme
+- GPG signed commits
