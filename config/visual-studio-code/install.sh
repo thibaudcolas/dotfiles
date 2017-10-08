@@ -50,7 +50,7 @@ if [[ $? -eq 0 ]];then
             cp $HOME/Library/Application\ Support/Code/User/settings.json $HOME/Library/Application\ Support/Code/User/settings.backup.json
             ok "Your previous config has been saved to: $HOME/Library/Application Support/Code/User/settings.backup.json"
         fi
-        cp ./settings.json $HOME/Library/Application\ Support/Code/User/settings.json
+        cp ./config/settings.json $HOME/Library/Application\ Support/Code/User/settings.json
 
         ok "New user config has been written. Please restart your VSC."
     else
