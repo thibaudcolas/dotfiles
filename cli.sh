@@ -154,7 +154,6 @@ if [[ $packagesresponse =~ ^(y|yes|Y) ]];then
     require_pip flake8
     require_pip pyflakes
 
-
     # Ideally should check if command is already available
     # require_curl [COMMAND] [URL]
     function require_curl() {
@@ -170,6 +169,8 @@ if [[ $packagesresponse =~ ^(y|yes|Y) ]];then
     }
 
     require_curl nvm https://raw.githubusercontent.com/creationix/nvm/v0.33.5/install.sh
+
+    require_curl oh-my-zsh https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh
 
     ok "packages installed..."
 else
