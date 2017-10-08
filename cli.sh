@@ -67,6 +67,7 @@ if [[ $unixresponse =~ ^(y|yes|Y) ]];then
     require_brew zopfli
     require_brew knock
     require_brew shellcheck
+    require_brew mackup
 
     brew tap bramstein/webfonttools
     require_brew sfnt2woff
