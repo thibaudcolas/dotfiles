@@ -69,6 +69,7 @@ if [[ $unixresponse =~ ^(y|yes|Y) ]];then
     require_brew shellcheck
     require_brew mackup
     require_brew hub
+    require_brew heroku/brew/heroku
 
     brew tap bramstein/webfonttools
     require_brew sfnt2woff
@@ -144,6 +145,7 @@ if [[ $packagesresponse =~ ^(y|yes|Y) ]];then
     require_npm eslint-plugin-springload
     require_npm hyperlink
     require_npm csscomb
+    require_npm flow-bin
 
     require_gem bundler
     require_gem rake
