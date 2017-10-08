@@ -40,6 +40,9 @@ export GPG_TTY=$(tty);
 # http://docs.python-guide.org/en/latest/writing/gotchas/#disabling-bytecode-pyc-files
 PYTHONDONTWRITEBYTECODE=1
 
+# https://github.com/github/hub
+eval "$(hub alias -s)"
+
 # Runtimes
 # ========
 

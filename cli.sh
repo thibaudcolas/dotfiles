@@ -68,6 +68,7 @@ if [[ $unixresponse =~ ^(y|yes|Y) ]];then
     require_brew knock
     require_brew shellcheck
     require_brew mackup
+    require_brew hub
 
     brew tap bramstein/webfonttools
     require_brew sfnt2woff
@@ -148,6 +149,7 @@ if [[ $packagesresponse =~ ^(y|yes|Y) ]];then
     require_gem rake
     require_gem sass
     require_gem scss_lint
+    require_gem travis
 
     require_pip pip
     require_pip virtualenv
