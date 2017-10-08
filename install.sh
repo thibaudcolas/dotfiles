@@ -16,7 +16,7 @@ awesome_header
 
 fullname=$(osascript -e "long user name of (system info)")
 
-bot "Hi $fullname. I'm going to make your OSX system better. We're going to:"
+bot "Hi $fullname. I'm going to make your macOS system better. We're going to:"
 action "install Xcode's command line tools"
 action "install Homebrew and brew cask"
 action "install all the apps that are used at Springload"
@@ -92,6 +92,20 @@ else
     ok "will skip folder structure.";
 fi
 
+read -r -p "install dotfiles? [y|N] " dotfiles_response
+if [[ $dotfiles_response =~ ^(y|yes|Y) ]];then
+    ok "will install dotfiles."
+else
+    ok "will skip dotfiles.";
+fi
+
+read -r -p "install fonts? [y|N] " fonts_response
+if [[ $fonts_response =~ ^(y|yes|Y) ]];then
+    ok "will install fonts."
+else
+    ok "will skip fonts.";
+fi
+
 if [[ $cli_response =~ ^(y|yes|Y) ]];then
     ./cli.sh
 else
@@ -107,10 +121,16 @@ else
     ok "skipped common folders.";
 fi
 
-bot "That's it for the automated process. If you want to do more, have a look at the Going Further section:"
-running "https://github.com/springload/dotfiles#going-further"
+if [[ $dotfiles_response =~ ^(y|yes|Y) ]];then
+    ./dotfiles.sh --force
+else
+    ok "skipped dotfiles.";
+fi
 
-bot "Here are the most useful resources. Have fun!"
-running "OSX preferences for hackers: https://github.com/springload/dotfiles#osx-preferences"
-running "Mac apps configuration with Mackup: https://github.com/springload/dotfiles#apps-configuration"
-running "Dotfiles: https://github.com/springload/dotfiles#dotfiles"
+if [[ $fonts_response =~ ^(y|yes|Y) ]];then
+    ./fonts.sh
+else
+    ok "skipped fonts.";
+fi
+
+bot "That's it for the automated process. If you want to do more, have a look at the README!"
