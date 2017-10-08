@@ -1,4 +1,4 @@
-# dotfiles
+# dotfiles [![Build Status](https://img.shields.io/travis/thibaudcolas/dotfiles.svg?style=flat-square)](https://travis-ci.org/thibaudcolas/dotfiles)
 
 ```txt
        ██            ██     ████ ██  ██
@@ -9,13 +9,11 @@
 ░██  ░██░██   ░██  ░██    ░██  ░██ ░██░██░░░░  ░░░░░██
 ░░██████░░██████   ░░██   ░██  ░██ ███░░██████ ██████
 
-  ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
- ░▓ Software Installation, Configuration and Preferences for     ▓
- ░▓ https://github.com/thibaudcolas/dotfiles                     ▓
- ░▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+  ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+ ░▓ Software Installation, Configuration and Preferences for          ▓
+ ░▓ https://github.com/thibaudcolas/dotfiles                          ▓
+ ░▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
 ```
-
-[![Built with love](http://forthebadge.com/images/badges/built-with-love.svg)](http://www.thibaudcolas.co.nz/) [![Build Status](https://img.shields.io/travis/thibaudcolas/dotfiles.svg?style=flat-square)](https://travis-ci.org/thibaudcolas/dotfiles)
 
 ## Setting up your new Mac `(◕‿◕)`
 
@@ -168,9 +166,7 @@ shellcheck *.sh
 
 ## TODO
 
-- Spectacle
 - Fonts
-- ls colors
 - https://github.com/ptb/mac-setup
 - GPG signed commits
 - gems
