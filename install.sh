@@ -85,8 +85,8 @@ else
     ok "will skip command-line tools.";
 fi
 
-read -r -p "create our development folder structure (~/Development/sites)? [y|N] " dev_folder_response
-if [[ $dev_folder_response =~ ^(y|yes|Y) ]];then
+read -r -p "create reusable folder structure? [y|N] " folder_response
+if [[ $folder_response =~ ^(y|yes|Y) ]];then
     ok "will create the folder structure."
 else
     ok "will skip folder structure.";
@@ -98,12 +98,13 @@ else
     ok "skipped command-line tools.";
 fi
 
-if [[ $cli_response =~ ^(y|yes|Y) ]];then
-    mkdir -p ~/Development/sites/
+if [[ $folder_response =~ ^(y|yes|Y) ]];then
+    mkdir -p ~/Dev
+    mkdir -p ~/Screenshots
 
-    ok "Created ~/Development/sites/"
+    ok "Created common folders"
 else
-    ok "skipped development folder structure.";
+    ok "skipped common folders.";
 fi
 
 bot "That's it for the automated process. If you want to do more, have a look at the Going Further section:"
