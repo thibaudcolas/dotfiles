@@ -52,6 +52,12 @@ if [[ $everydayresponse =~ ^(y|yes|Y) ]];then
     require_cask nvalt
     require_cask sizeup
     require_cask the-unarchiver
+    require_cask cyberduck
+    require_cask caffeine
+    require_cask screenhero
+    require_cask betterzip
+    require_cask bettertouchtool
+    require_cask appcleaner
 
     ok "casks installed..."
 else
@@ -72,8 +78,6 @@ if [[ $developerresponse =~ ^(y|yes|Y) ]];then
     require_cask vagrant
     require_cask virtualbox
     require_cask ngrok
-    require_cask screenhero
-    require_cask betterzip
 
     require_cask imagealpha
     require_cask imageoptim
