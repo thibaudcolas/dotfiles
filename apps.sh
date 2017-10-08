@@ -47,8 +47,11 @@ if [[ $everydayresponse =~ ^(y|yes|Y) ]];then
     require_cask harvest
     require_cask vlc
     require_cask dropbox
+    require_cask steam
     require_cask sketch
     require_cask nvalt
+    require_cask sizeup
+    require_cask the-unarchiver
 
     ok "casks installed..."
 else
