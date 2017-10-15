@@ -61,7 +61,6 @@ if [[ $unixresponse =~ ^(y|yes|Y) ]];then
     require_brew cloc
     require_brew diff-so-fancy
     require_brew dos2unix
-    require_brew imagemagick --with-webp
     require_brew lynx
     require_brew rename
     require_brew zopfli
@@ -75,6 +74,9 @@ if [[ $unixresponse =~ ^(y|yes|Y) ]];then
     require_brew sfnt2woff
     require_brew sfnt2woff-zopfli
     require_brew woff2
+
+    require_brew ffmpeg
+    require_brew imagemagick --with-webp
 
     ok "packages installed..."
 else
