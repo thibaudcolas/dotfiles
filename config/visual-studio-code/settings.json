@@ -48,12 +48,14 @@
         "**/backstop_data": true,
         "**/build": true,
         "**/coverage": true,
+        "**/coverage_html_report": true,
         "**/css_regression_data": true,
         "**/CVS": true,
         "**/db.sqlite3": true,
         "**/dist": true,
         "**/env": true,
         "**/es5": true,
+        "**/es": true,
         "**/logs*": true,
         "**/node_modules*": true,
         "**/npm-debug.log*": true,
@@ -98,5 +100,8 @@
     "workbench.iconTheme": "seti",
     "typescript.check.npmIsInstalled": false,
     "workbench.startupEditor": "newUntitledFile",
-    "workbench.colorTheme": "Monokai"
+    "workbench.colorTheme": "Monokai",
+    "prettier.tabWidth": 4,
+    "prettier.trailingComma": "all",
+    "prettier.singleQuote": true
 }
