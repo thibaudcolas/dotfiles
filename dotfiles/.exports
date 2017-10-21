@@ -69,6 +69,9 @@ eval "$(rbenv init -)"
 # Add pyenv init to your shell to enable shims and autocompletion
 eval "$(pyenv init -)"
 
+export CFLAGS="-I$(brew --prefix openssl)/include";
+export LDFLAGS="-L$(brew --prefix openssl)/lib";
+
 # Initialise opam
 . /Users/thibaud/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
 
