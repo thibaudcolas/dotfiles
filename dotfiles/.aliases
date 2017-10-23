@@ -143,3 +143,6 @@ alias path='echo -e ${PATH//:/\\n}'
 
 alias zshconfig="code ~/.zshrc"
 alias ohmyzsh="code ~/.oh-my-zsh"
+
+# Activate Python virtualenv
+alias venv='source .venv/bin/activate'
