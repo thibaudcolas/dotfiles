@@ -12,11 +12,14 @@ ZSH_THEME="ys"
 # The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
 HIST_STAMPS="yyyy-mm-dd"
 
+# Automatically upgrade itself without prompting.
+DISABLE_UPDATE_PROMPT=true
+
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(gitfast git-extras npm vagrant last-working-dir)
+plugins=(git git-extras npm vagrant last-working-dir)
 
 source $ZSH/oh-my-zsh.sh
 
