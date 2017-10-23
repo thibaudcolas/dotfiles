@@ -5,7 +5,7 @@ export ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="ys"
+ZSH_THEME="spaceship"
 
 # Uncomment the following line if you want to change the command execution time
 # stamp shown in the history command output.
@@ -38,3 +38,21 @@ unset file;
 
 # Will make it ask you before executing rm with a star rm folder/*.
 unsetopt RM_STAR_SILENT
+
+# https://github.com/denysdovhan/spaceship-zsh-theme
+SPACESHIP_PROMPT_SYMBOL='$'
+SPACESHIP_PROMPT_ADD_NEWLINE=false
+SPACESHIP_TIME_SHOW=true
+SPACESHIP_PACKAGE_SHOW=false
+SPACESHIP_BATTERY_SHOW=false
+SPACESHIP_EXIT_CODE_SHOW=true
+SPACESHIP_GIT_PREFIX=''
+SPACESHIP_DIR_PREFIX=':'
+SPACESHIP_DIR_TRUNC=2
+SPACESHIP_TIME_SUFFIX=''
+SPACESHIP_TIME_COLOR='white'
+SPACESHIP_VENV_PREFIX=''
+SPACESHIP_EXEC_TIME_SHOW=false
+
+NEWLINE=$'\n'
+PS1="$NEWLINE# $PS1"
