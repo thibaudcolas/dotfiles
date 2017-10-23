@@ -149,6 +149,7 @@ if [[ $packagesresponse =~ ^(y|yes|Y) ]];then
     require_npm csscomb
     require_npm flow-bin
     require_npm irish-pub
+    require_npm spaceship-zsh-theme
 
     require_gem bundler
     require_gem rake

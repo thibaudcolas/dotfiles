@@ -44,6 +44,12 @@ The installation process should start, and ask you questions. You'll also be ask
 |[Visual Studio Code configuration](/config/visual-studio-code/)|
 |[Extra documentation: `docs/`](docs/)|
 
+### Fonts
+
+```bash
+cd ~/Downloads/dotfiles-master && ./fonts.sh
+```
+
 ### Command-line
 
 > This section requires some command-line knowledge.
@@ -60,21 +66,20 @@ After that, head over to http://brewformulas.org/ to find other things that you 
 
 #### Shell pimping
 
-Have a look at https://github.com/robbyrussell/oh-my-zsh, then grab a terminal theme from https://github.com/mbadolato/iTerm2-Color-Schemes.olarized.
+Have a look at https://github.com/robbyrussell/oh-my-zsh, then:
+
+- Grab a terminal theme from https://github.com/mbadolato/iTerm2-Color-Schemes.
+- Grab Powerline fonts https://github.com/powerline/fonts.
+
+Grab a zsh prompt theme from:
+
+- https://github.com/denysdovhan/spaceship-zsh-theme
+- https://github.com/caiogondim/bullet-train.zsh
+- https://github.com/bhilburn/powerlevel9k
 
 #### Dotfiles
 
 The `dotfiles` subfolder contains configuration for all things CLI. Have a look, peek around, use what you like.
-
-#### Fonts
-
-[Font Casks](https://github.com/caskroom/homebrew-fonts) are still experimental. Careful.
-
-If you want to proceed, open the Terminal, copy and paste that line and press `Enter`:
-
-```bash
-cd ~/Downloads/dotfiles-master && ./fonts.sh
-```
 
 ### macOS Preferences
 
@@ -166,7 +171,6 @@ shellcheck *.sh
 
 ## TODO
 
-- Fonts
 - https://github.com/ptb/mac-setup
 - GPG signed commits
 - gems

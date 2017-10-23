@@ -15,6 +15,8 @@ require_cask font-droid-sans
 require_cask font-droid-sans-mono
 require_cask font-fontawesome
 require_cask font-inconsolata
+require_cask font-inconsolata-for-powerline
+require_cask font-inconsolata-g-for-powerline
 require_cask font-open-sans
 require_cask font-pt-sans
 require_cask font-source-code-pro
