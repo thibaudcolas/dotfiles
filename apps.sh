@@ -50,6 +50,7 @@ if [[ $everydayresponse =~ ^(y|yes|Y) ]];then
     require_cask dropbox
     require_cask soundcleod
     require_cask diskwave
+    require_cask pgadmin3
     require_cask licecap
     require_cask steam
     require_cask sketch
@@ -58,7 +59,6 @@ if [[ $everydayresponse =~ ^(y|yes|Y) ]];then
     require_cask the-unarchiver
     require_cask cyberduck
     require_cask caffeine
-    require_cask screenhero
     require_cask betterzip
     require_cask bettertouchtool
     require_cask appcleaner
