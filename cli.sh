@@ -56,6 +56,8 @@ if [[ $unixresponse =~ ^(y|yes|Y) ]];then
     require_brew tree
     require_brew whois
     require_brew openssh
+    require_brew postgres
+    require_brew ag
     require_brew unzip
     require_brew rsync
     require_brew cloc
@@ -161,6 +163,7 @@ if [[ $packagesresponse =~ ^(y|yes|Y) ]];then
     require_pip virtualenv
     require_pip wrangler
     require_pip flake8
+    require_pip isort
     require_pip pyflakes
 
     # Ideally should check if command is already available
