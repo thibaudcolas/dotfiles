@@ -163,6 +163,7 @@ if [[ $packagesresponse =~ ^(y|yes|Y) ]];then
     require_pip virtualenv
     require_pip wrangler
     require_pip flake8
+    require_pip autopep8
     require_pip isort
     require_pip pyflakes
 
