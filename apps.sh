@@ -47,6 +47,8 @@ if [[ $everydayresponse =~ ^(y|yes|Y) ]];then
     require_cask caprine
     require_cask harvest
     require_cask vlc
+    require_cask airflow
+    require_cask twitch
     require_cask dropbox
     require_cask soundcleod
     require_cask diskwave
