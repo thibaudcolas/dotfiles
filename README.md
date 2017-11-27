@@ -171,6 +171,7 @@ shellcheck *.sh
 * http://caskroom.io/
 * https://dotfiles.github.io/
 * http://lapwinglabs.com/blog/hacker-guide-to-setting-up-your-mac
+* https://github.com/ptb/mac-setup
 
 ## Credits
 
@@ -190,10 +191,3 @@ shellcheck *.sh
 * [Copy all URLs](https://chrome.google.com/webstore/detail/copy-all-urls/djdmadneanknadilpjiknlnanaolmbfk?hl=en-US)
 * [React DevTools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en-US)
 * [Redux DevTools](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en-US)
-
-## TODO
-
-* https://github.com/ptb/mac-setup
-* GPG signed commits
-* gems
-* more docs
