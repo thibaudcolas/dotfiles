@@ -19,10 +19,8 @@
 
 > The goal is to automate **80%** of the setup of your new computer.
 
-* Download a
-  [ZIP of this repository](https://github.com/thibaudcolas/dotfiles/archive/master.zip).
-* Unzip the file if necessary. You should have a `dotfiles-master` folder in
-  your `Downloads` folder.
+* Download a [ZIP of this repository](https://github.com/thibaudcolas/dotfiles/archive/master.zip).
+* Unzip the file if necessary. You should have a `dotfiles-master` folder in your `Downloads` folder.
 * Launch the Terminal app, found in `/Applications/Utilities/`
 * Copy and paste the following line into the Terminal, and press `Enter`:
 
@@ -30,9 +28,7 @@
 cd ~/Downloads/dotfiles-master && ./install.sh
 ```
 
-The installation process should start, and ask you questions. You'll also be
-asked to enter your password from time to time. **If this is your first run on a
-fresh Mac, you'll have to start it again after the first install.**
+The installation process should start, and ask you questions. You'll also be asked to enter your password from time to time. **If this is your first run on a fresh Mac, you'll have to start it again after the first install.**
 
 ![GIF recording of the install](docs/install-recording.gif)
 
@@ -58,19 +54,15 @@ cd ~/Downloads/dotfiles-master && ./fonts.sh
 
 > This section requires some command-line knowledge.
 
-Requires `brew`. The first group of tools contains `node`, `ruby` & `python`
-which are required to install the second group of tools.
+Requires `brew`. The first group of tools contains `node`, `ruby` & `python` which are required to install the second group of tools.
 
 ```bash
 cd ~/Downloads/dotfiles-master && ./cli.sh
 ```
 
-While you're waiting for this to finish, go
-[generate your SSH keys](https://help.github.com/articles/generating-ssh-keys/)
-for GitHub and beyond.
+While you're waiting for this to finish, go [generate your SSH keys](https://help.github.com/articles/generating-ssh-keys/) for GitHub and beyond.
 
-After that, head over to http://brewformulas.org/ to find other things that you
-might like!
+After that, head over to http://brewformulas.org/ to find other things that you might like!
 
 #### Shell pimping
 
@@ -87,14 +79,11 @@ Grab a zsh prompt theme from:
 
 #### Dotfiles
 
-The `dotfiles` subfolder contains configuration for all things CLI. Have a look,
-peek around, use what you like.
+The `dotfiles` subfolder contains configuration for all things CLI. Have a look, peek around, use what you like.
 
 ### macOS Preferences
 
-You can set macOS preferences by using
-[osx-for-hackers.sh](https://gist.github.com/brandonb927/3195465). Beware, this
-can be dangerous!
+You can set macOS preferences by using [osx-for-hackers.sh](https://gist.github.com/brandonb927/3195465). Beware, this can be dangerous!
 
 When setting up a new Mac, you may want to set some sensible defaults:
 
@@ -106,8 +95,7 @@ When setting up a new Mac, you may want to set some sensible defaults:
 
 > This section requires some command-line knowledge.
 
-[Mackup](https://github.com/lra/mackup) is awesome. It uses Dropbox / Google
-Drive / Copy & Paste to backup your configuration for:
+[Mackup](https://github.com/lra/mackup) is awesome. It uses Dropbox / Google Drive / Copy & Paste to backup your configuration for:
 
 ```txt
 1Password 4, Ack, Adium, Adobe Camera Raw, Adobe Lightroom, AppCode, aria2c, Arara, Artistic Style, Arm, asciinema, Aspell, Atom, AusKey, Autokey, Awareness, AWS Command Line Interface, Microsoft Azure CLI, Bartender, Bash it, Bash, BetterSnapTool, BetterTouchTool, BibDesk, Billings Pro Server Admin, Bitchx, Boto, Brackets, Bundler, Byobu, Caffeine, Cartographica, Charles, Chef, Chicken, Clementine, ClipMenu, CloudApp, Coda 2... and more
@@ -126,31 +114,21 @@ Have a look at:
 
 ### Visual Studio Code
 
-Have a look at our resources in
-[`config/visual-studio-code`](config/visual-studio-code).
+Have a look at our resources in [`config/visual-studio-code`](config/visual-studio-code).
 
 ### Sublime Text 3
 
-> You will need [Package Control](https://packagecontrol.io/). You may also need
-> a nice font, like
-> [Source Code Pro](https://github.com/adobe-fonts/source-code-pro).
+> You will need [Package Control](https://packagecontrol.io/). You may also need a nice font, like [Source Code Pro](https://github.com/adobe-fonts/source-code-pro).
 
-Have a look at the default configuration and the list of packages in
-[`config/sublime`](config/sublime).
+Have a look at the default configuration and the list of packages in [`config/sublime`](config/sublime).
 
-To install the packages, open your Command Palette _(Cmd+Maj+P)_, type `Browse
-packages` and go edit the file `Packages/User/Package Control.sublime-settings`.
-Save the file, and restart Sublime Text.
+To install the packages, open your Command Palette _(Cmd+Maj+P)_, type `Browse packages` and go edit the file `Packages/User/Package Control.sublime-settings`. Save the file, and restart Sublime Text.
 
-Once this is all done, you will want to use Babel Sublime for your JavaScript
-syntax highlighting.
-[Here's how to](https://github.com/babel/babel-sublime#setting-as-the-default-syntax).
+Once this is all done, you will want to use Babel Sublime for your JavaScript syntax highlighting. [Here's how to](https://github.com/babel/babel-sublime#setting-as-the-default-syntax).
 
 ## Contributing to this project
 
-If you want to tinker with the bash scripts, please install
-[ShellCheck](https://github.com/koalaman/shellcheck) and use it to check your
-changes.
+If you want to tinker with the bash scripts, please install [ShellCheck](https://github.com/koalaman/shellcheck) and use it to check your changes.
 
 ```bash
 # Debian distribs
