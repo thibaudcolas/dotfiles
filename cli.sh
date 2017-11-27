@@ -92,6 +92,8 @@ if [[ $runtimesresponse =~ ^(y|yes|Y) ]];then
     require_brew ruby
     require_brew python
     require_brew python3
+    require_brew r
+    require_brew octave
 
     require_brew pyenv
     require_brew rbenv
