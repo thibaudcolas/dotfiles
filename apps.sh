@@ -55,6 +55,7 @@ if [[ $everydayresponse =~ ^(y|yes|Y) ]];then
     require_cask pgadmin3
     require_cask licecap
     require_cask steam
+    require_cask controllermate
     require_cask sketch
     require_cask nvalt
     require_cask sizeup
