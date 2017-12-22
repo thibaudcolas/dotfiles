@@ -160,7 +160,20 @@ shellcheck *.sh
 
 ## Manual tasks
 
-* Install [Transmission](https://transmissionbt.com/)
+### Installs
+
+* [Transmission](https://transmissionbt.com/)
+* From App Store: Pages, Keynotes, Numbers
+
+### Manual configuration
+
+* iTunes
+* Dropbox
+* Notification center widgets
+* Internet accounts
+* VS Code
+* Licenses
+* `/etc/hosts`
 
 ### Chrome extensions
 
@@ -169,3 +182,4 @@ shellcheck *.sh
 * [Copy all URLs](https://chrome.google.com/webstore/detail/copy-all-urls/djdmadneanknadilpjiknlnanaolmbfk?hl=en-US)
 * [React DevTools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en-US)
 * [Redux DevTools](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en-US)
+* [Browserstack](https://chrome.google.com/webstore/detail/browserstack/nkihdmlheodkdfojglpcjjmioefjahjb?hl=en)
