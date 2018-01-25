@@ -69,6 +69,8 @@ if [[ $unixresponse =~ ^(y|yes|Y) ]];then
     require_brew zopfli
     require_brew knock
     require_brew shellcheck
+    require_brew aspell
+    require_brew diction
     require_brew mackup
     require_brew hub
     require_brew heroku/brew/heroku
