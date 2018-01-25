@@ -61,6 +61,7 @@ if [[ $unixresponse =~ ^(y|yes|Y) ]];then
     require_brew unzip
     require_brew rsync
     require_brew cloc
+    require_brew watchman
     require_brew diff-so-fancy
     require_brew dos2unix
     require_brew lynx
