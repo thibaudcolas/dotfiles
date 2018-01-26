@@ -163,6 +163,7 @@ shellcheck *.sh
 ### Installs
 
 * [Transmission](https://transmissionbt.com/)
+* [Geotag](http://geotag.sourceforge.net/)
 * From App Store: Pages, Keynotes, Numbers
 
 ### Manual configuration
