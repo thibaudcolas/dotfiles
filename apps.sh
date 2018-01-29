@@ -63,6 +63,9 @@ if [[ $everydayresponse =~ ^(y|yes|Y) ]];then
     require_cask the-unarchiver
     require_cask cyberduck
     require_cask houdahgeo
+    require_cask sequential
+    require_cask simple-comic
+    require_cask keycastr
     require_cask caffeine
     require_cask betterzip
     require_cask bettertouchtool
