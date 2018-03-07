@@ -53,6 +53,7 @@ if [[ $everydayresponse =~ ^(y|yes|Y) ]];then
     require_cask soundcleod
     require_cask diskwave
     require_cask pgadmin3
+    require_cask postman
     require_cask java8
     require_cask licecap
     require_cask steam
