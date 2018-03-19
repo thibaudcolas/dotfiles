@@ -57,6 +57,7 @@ if [[ $unixresponse =~ ^(y|yes|Y) ]];then
     require_brew whois
     require_brew gpg
     require_brew postgres
+    require_brew autojump
     require_brew exiftool
     require_brew ag
     require_brew unzip
