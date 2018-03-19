@@ -79,6 +79,7 @@ if [[ $unixresponse =~ ^(y|yes|Y) ]];then
     require_brew docker
     require_brew docker-compose
     require_brew git-crypt
+    require_brew youtube-dl
 
     brew tap bramstein/webfonttools
     require_brew sfnt2woff
