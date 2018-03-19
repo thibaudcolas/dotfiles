@@ -56,6 +56,7 @@ if [[ $unixresponse =~ ^(y|yes|Y) ]];then
     require_brew tree
     require_brew whois
     require_brew openssh
+    require_brew gpg
     require_brew postgres
     require_brew exiftool
     require_brew ag
