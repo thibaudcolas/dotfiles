@@ -75,6 +75,9 @@ if [[ $unixresponse =~ ^(y|yes|Y) ]];then
     require_brew mackup
     require_brew hub
     require_brew heroku/brew/heroku
+    require_brew docker
+    require_brew docker-compose
+    require_brew git-crypt
 
     brew tap bramstein/webfonttools
     require_brew sfnt2woff
@@ -101,6 +104,7 @@ if [[ $runtimesresponse =~ ^(y|yes|Y) ]];then
     require_brew elm
     require_brew ocaml
     require_brew ocamlbuild
+    require_brew yarn --without-node
 
     require_brew pyenv
     require_brew rbenv
