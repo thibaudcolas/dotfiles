@@ -56,6 +56,7 @@ if [[ $everydayresponse =~ ^(y|yes|Y) ]];then
     require_cask postman
     require_cask tunnelblick
     require_cask java8
+    require_cask docker
     require_cask licecap
     require_cask 1password
     require_cask steam
