@@ -19,7 +19,7 @@ fullname=$(osascript -e "long user name of (system info)")
 bot "Hi $fullname. I'm going to make your macOS system better. We're going to:"
 action "install Xcode's command line tools"
 action "install Homebrew and brew cask"
-action "install all the apps that are used at Springload"
+action "install all the apps that are commonly used"
 action "if you feel like it, we will also install more things"
 
 bot "One more thing: I'll need your password from time to time."

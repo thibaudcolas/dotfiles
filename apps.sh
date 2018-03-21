@@ -7,7 +7,7 @@ source ./lib.sh
 #Install GUI tools using Homebrew                                             #
 ###############################################################################
 
-bot "installing Springload Tools™"
+bot "installing common tools"
 
 read -r -p "install the everyday tools? (Browsers, Slack, etc) [y|N] " everydayresponse
 if [[ $everydayresponse =~ ^(y|yes|Y) ]];then
