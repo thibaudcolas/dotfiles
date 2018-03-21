@@ -44,6 +44,7 @@ if [[ $everydayresponse =~ ^(y|yes|Y) ]];then
     require_cask skype
     require_cask google-hangouts
     require_cask slack
+    require_cask telegram
     require_cask caprine
     require_cask harvest
     require_cask vlc
