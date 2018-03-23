@@ -13,42 +13,45 @@ if [[ $? -eq 0 ]];then
 
         code --install-extension DavidAnson.vscode-markdownlint
         code --install-extension EditorConfig.EditorConfig
+        code --install-extension PeterJausovec.vscode-docker
         code --install-extension Zignd.html-css-class-completion
         code --install-extension abusaidm.html-snippets
+        code --install-extension asvetliakov.snapshot-tools
+        code --install-extension bogdan-sinitsa.theme-dark-monokai
         code --install-extension christian-kohler.npm-intellisense
         code --install-extension christian-kohler.path-intellisense
         code --install-extension cssho.vscode-svgviewer
         code --install-extension dbaeumer.vscode-eslint
-        code --install-extension eg2.vscode-npm-script
-        code --install-extension esbenp.prettier-vscode
-        code --install-extension flowtype.flow-for-vscode
-        code --install-extension freebroccolo.reasonml
-        code --install-extension mgmcdermott.vscode-language-babel
-        code --install-extension dzannotti.vscode-babel-coloring
-        code --install-extension mkaufman.HTMLHint
-        code --install-extension bogdan-sinitsa.theme-dark-monokai
-        code --install-extension mohsen1.prettify-json
-        code --install-extension mrmlnc.vscode-scss
-        code --install-extension qinjia.seti-icons
-        code --install-extension robinbentley.sass-indented
-        code --install-extension sbrink.elm
-        code --install-extension shinnn.stylelint
-        code --install-extension wix.vscode-import-cost
         code --install-extension donjayamanne.githistory
         code --install-extension dt.ghlink
+        code --install-extension dzannotti.vscode-babel-coloring
+        code --install-extension eg2.vscode-npm-script
+        code --install-extension esbenp.prettier-vscode
         code --install-extension florianloch.text-transform
         code --install-extension flowtype.flow-for-vscode
+        code --install-extension freebroccolo.reasonml
         code --install-extension glen-84.sass-lint
         code --install-extension hackwaly.ocaml
         code --install-extension jkjustjoshing.vscode-text-pastry
         code --install-extension joelday.docthis
         code --install-extension jpoissonnier.vscode-styled-components
         code --install-extension lextudio.restructuredtext
+        code --install-extension mgmcdermott.vscode-language-babel
+        code --install-extension mkaufman.HTMLHint
+        code --install-extension mohsen1.prettify-json
+        code --install-extension monokai.theme-monokai-pro-vscode
         code --install-extension mrmlnc.vscode-scss
-        code --install-extension ms-vscode.theme-markdownkit
+        code --install-extension ms-vscode.Theme-MarkdownKit
+        code --install-extension patrys.vscode-code-outline
+        code --install-extension qinjia.seti-icons
+        code --install-extension robinbentley.sass-indented
+        code --install-extension ryu1kn.partial-diff
+        code --install-extension sbrink.elm
+        code --install-extension shinnn.stylelint
         code --install-extension sysoev.vscode-open-in-github
         code --install-extension toasty-technologies.octave
         code --install-extension travisthetechie.write-good-linter
+        code --install-extension wix.vscode-import-cost
 
         ok "Extensions for VSC have been installed. Please restart your VSC."
     else
