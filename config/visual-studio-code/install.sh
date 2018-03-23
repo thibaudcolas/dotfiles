@@ -19,7 +19,6 @@ if [[ $? -eq 0 ]];then
         code --install-extension christian-kohler.path-intellisense
         code --install-extension cssho.vscode-svgviewer
         code --install-extension dbaeumer.vscode-eslint
-        code --install-extension donjayamanne.python
         code --install-extension eg2.vscode-npm-script
         code --install-extension esbenp.prettier-vscode
         code --install-extension flowtype.flow-for-vscode
@@ -41,7 +40,6 @@ if [[ $? -eq 0 ]];then
         code --install-extension flowtype.flow-for-vscode
         code --install-extension glen-84.sass-lint
         code --install-extension hackwaly.ocaml
-        code --install-extension jaysonsantos.vscode-flake8
         code --install-extension jkjustjoshing.vscode-text-pastry
         code --install-extension joelday.docthis
         code --install-extension jpoissonnier.vscode-styled-components
