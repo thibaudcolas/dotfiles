@@ -1,11 +1,12 @@
 // Place your settings in this file to overwrite the default settings
 {
-    "editor.fontFamily": "'Operator Mono', Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontFamily":
+        "'Operator Mono', Menlo, Monaco, 'Courier New', monospace",
     "editor.fontSize": 16,
     "editor.wordWrap": "off",
     "editor.minimap.enabled": false,
     "editor.formatOnPaste": false,
-    "editor.formatOnSave": false,
+    "editor.formatOnSave": true,
     "files.exclude": {
         "**/*.pyc": true,
         "**/*.a": true,
@@ -27,15 +28,18 @@
         "**/*.so": true,
         "**/*.sublime-workspace": true,
         "**/*.suo": true,
-        "**/.bundle": true,
+        "**/.bundle*": true,
+        "**/.bundle.js": true,
         "**/.coverage": true,
         "**/.DS_Store": true,
         "**/.expo": true,
+        "**/.env": true,
         "**/.git": true,
         "**/.hg": true,
         "**/.pygments-cache": true,
         "**/.sass-cache": true,
         "**/.svn": true,
+        "**/.tmp": true,
         "**/.tox": true,
         "**/.vagrant": true,
         "**/.venv": true,
@@ -63,7 +67,9 @@
         "**/package-lock.json": true,
         "**/core/static/css/*": true,
         "**/core/static/js/*": true,
+        "**/source-map-explorer.html": true,
         "**/static/wagtailadmin": true,
+        "**/svg.html": true,
         "**/tmp": true,
         "**/var": true,
         "**/venv": true,
@@ -77,10 +83,14 @@
     "telemetry.enableCrashReporter": false,
     "python.linting.flake8Enabled": true,
     "python.linting.pylintEnabled": false,
+    "javascript.validate.enable": true,
+    "flow.useNPMPackagedFlow": true,
     "markdownlint.config": {
         "MD003": false,
         "MD013": false,
-        "MD024": false
+        "MD024": false,
+        "MD041": false,
+        "MD029": false
     },
     "workbench.editor.enablePreview": false,
     "workbench.editor.openPositioning": "right",
@@ -97,11 +107,16 @@
     "git.countBadge": "all",
     "css.validate": true,
     "scss.validate": true,
-    "workbench.iconTheme": "seti",
+    "workbench.colorTheme": "Monokai Pro (Filter Spectrum)",
     "typescript.check.npmIsInstalled": false,
     "workbench.startupEditor": "newUntitledFile",
-    "workbench.colorTheme": "Monokai",
     "prettier.tabWidth": 4,
     "prettier.trailingComma": "all",
-    "prettier.singleQuote": true
+    "prettier.singleQuote": true,
+    "prettier.proseWrap": "preserve",
+    "files.associations": {
+        "*.j2": "html"
+    },
+    "explorer.confirmDragAndDrop": false,
+    "extensions.ignoreRecommendations": false
 }
