@@ -174,6 +174,7 @@ shellcheck *.sh
 * Internet accounts
 * VS Code
 * Licenses
+* Dictionnaries - `File > Open Dictionaries Folder`.
 * `/etc/hosts`
 * iTerm2 – "Load preferences from a custom folder or URL:" `/Users/thibaud/Dropbox/Sync/iTerm2`.
 
