@@ -47,6 +47,7 @@ if [[ $everydayresponse =~ ^(y|yes|Y) ]];then
     require_cask telegram
     require_cask caprine
     require_cask harvest
+    require_cask monodraw
     require_cask vlc
     require_cask airflow
     require_cask twitch
