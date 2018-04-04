@@ -4,9 +4,9 @@
 
 Automated Software Installation is not supported. Please have a look at the following ressources:
 
-- [Ninite](https://ninite.com/) – Install and update all your programs at once
-- [Chocolatey](https://chocolatey.org/) – Chocolatey is a Machine Package Manager
-- [Boxstarter](http://boxstarter.org/) – Repeatable, reboot resilient windows environment installations
+* [Ninite](https://ninite.com/) – Install and update all your programs at once
+* [Chocolatey](https://chocolatey.org/) – Chocolatey is a Machine Package Manager
+* [Boxstarter](http://boxstarter.org/) – Repeatable, reboot resilient windows environment installations
 
 ## Automated Installation on Linux `(¬.¬)`
 
