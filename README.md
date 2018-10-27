@@ -164,6 +164,7 @@ shellcheck *.sh
 
 * [Transmission](https://transmissionbt.com/)
 * [Geotag](http://geotag.sourceforge.net/)
+* [Soundflower](https://github.com/mattingalls/Soundflower)
 * From App Store: Pages, Keynotes, Numbers
 
 ### Manual configuration
