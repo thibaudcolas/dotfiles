@@ -154,17 +154,11 @@ if [[ $packagesresponse =~ ^(y|yes|Y) ]];then
     }
 
     require_npm npm
-    require_npm babel-core
-    require_npm babel-eslint
     require_npm browser-sync
     require_npm nodemon
     require_npm sass-lint
     require_npm stylelint
-    require_npm gulp
     require_npm eslint
-    require_npm eslint-plugin-springload
-    require_npm hyperlink
-    require_npm csscomb
     require_npm flow-bin
     require_npm irish-pub
     require_npm spaceship-zsh-theme
@@ -177,7 +171,7 @@ if [[ $packagesresponse =~ ^(y|yes|Y) ]];then
 
     require_pip pip
     require_pip virtualenv
-    require_pip wrangler
+    require_pip cookiecutter
     require_pip flake8
     require_pip autopep8
     require_pip isort
