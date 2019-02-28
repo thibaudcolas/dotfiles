@@ -57,7 +57,6 @@ if [[ $everydayresponse =~ ^(y|yes|Y) ]];then
     require_cask pgadmin3
     require_cask postman
     require_cask tunnelblick
-    require_cask java8
     require_cask docker
     require_cask licecap
     require_cask 1password
@@ -90,7 +89,7 @@ if [[ $developerresponse =~ ^(y|yes|Y) ]];then
     require_cask sublime-text3
     require_cask visual-studio-code
 
-    require_cask google-chrome-canary
+    require_cask homebrew/cask-versions/google-chrome-canary 
     require_cask opera
 
     require_cask iterm2
@@ -102,7 +101,6 @@ if [[ $developerresponse =~ ^(y|yes|Y) ]];then
     require_cask imageoptim
 
     require_cask sequel-pro
-    require_cask pgadmin3
     require_cask postgres
 
     ok "casks installed..."
