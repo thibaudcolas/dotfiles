@@ -165,6 +165,7 @@ shellcheck *.sh
 * [Transmission](https://transmissionbt.com/)
 * [Geotag](http://geotag.sourceforge.net/)
 * [Soundflower](https://github.com/mattingalls/Soundflower)
+* [360Controller](https://github.com/360Controller/360Controller)
 * From App Store: Pages, Keynotes, Numbers
 
 ### Manual configuration
