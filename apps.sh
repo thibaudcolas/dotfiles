@@ -71,6 +71,7 @@ if [[ $everydayresponse =~ ^(y|yes|Y) ]];then
     require_cask sequential
     require_cask simple-comic
     require_cask obs
+    require_cask pdf-squeezer
     require_cask keycastr
     require_cask caffeine
     require_cask betterzip
