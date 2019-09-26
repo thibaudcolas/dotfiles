@@ -145,10 +145,9 @@ shellcheck *.sh
 
 ## See also
 
-* http://brew.sh/
-* http://caskroom.io/
+* https://brew.sh/
+* https://formulae.brew.sh/cask/
 * https://dotfiles.github.io/
-* http://lapwinglabs.com/blog/hacker-guide-to-setting-up-your-mac
 * https://github.com/ptb/mac-setup
 
 ## Credits
