@@ -1,5 +1,5 @@
 # Defines the coding style for different editors and IDEs.
-# http://editorconfig.org
+# https://editorconfig.org/
 
 # top-most EditorConfig file
 root = true
@@ -14,6 +14,7 @@ indent_style = space
 indent_size = 2
 max_line_length = 80
 
+# Documentation.
 [*.md]
 max_line_length = 0
 trim_trailing_whitespace = false
@@ -22,3 +23,8 @@ trim_trailing_whitespace = false
 [COMMIT_EDITMSG]
 max_line_length = 0
 trim_trailing_whitespace = false
+
+# Makefiles require tabs.
+[Makefile]
+indent_style = tab
+indent_size = 8

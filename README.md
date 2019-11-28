@@ -1,4 +1,4 @@
-# dotfiles [![Build Status](https://img.shields.io/travis/thibaudcolas/dotfiles.svg?style=flat-square)](https://travis-ci.org/thibaudcolas/dotfiles)
+# dotfiles [![Build Status](https://travis-ci.org/thibaudcolas/dotfiles.svg?branch=master)](https://travis-ci.org/thibaudcolas/dotfiles)
 
 ```txt
        ██            ██     ████ ██  ██
@@ -10,7 +10,7 @@
 ░░██████░░██████   ░░██   ░██  ░██ ███░░██████ ██████
 
   ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
- ░▓ Software Installation, Configuration and Preferences for    ▓
+ ░▓ Software installation, configuration and preferences        ▓
  ░▓ https://github.com/thibaudcolas/dotfiles                    ▓
  ░▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
 ```
@@ -19,10 +19,10 @@
 
 > The goal is to automate **80%** of the setup of your new computer.
 
-* Download a [ZIP of this repository](https://github.com/thibaudcolas/dotfiles/archive/master.zip).
-* Unzip the file if necessary. You should have a `dotfiles-master` folder in your `Downloads` folder.
-* Launch the Terminal app, found in `/Applications/Utilities/`
-* Copy and paste the following line into the Terminal, and press `Enter`:
+- Download a [ZIP of this repository](https://github.com/thibaudcolas/dotfiles/archive/master.zip).
+- Unzip the file if necessary. You should have a `dotfiles-master` folder in your `Downloads` folder.
+- Launch the Terminal app, found in `/Applications/Utilities/`
+- Copy and paste the following line into the Terminal, and press `Enter`:
 
 ```bash
 cd ~/Downloads/dotfiles-master && ./install.sh
@@ -68,14 +68,14 @@ After that, head over to http://brewformulas.org/ to find other things that you 
 
 Have a look at https://github.com/robbyrussell/oh-my-zsh, then:
 
-* Grab a terminal theme from https://github.com/mbadolato/iTerm2-Color-Schemes.
-* Grab Powerline fonts https://github.com/powerline/fonts.
+- Grab a terminal theme from https://github.com/mbadolato/iTerm2-Color-Schemes.
+- Grab Powerline fonts https://github.com/powerline/fonts.
 
 Grab a zsh prompt theme from:
 
-* https://github.com/denysdovhan/spaceship-zsh-theme
-* https://github.com/caiogondim/bullet-train.zsh
-* https://github.com/bhilburn/powerlevel9k
+- https://github.com/denysdovhan/spaceship-zsh-theme
+- https://github.com/caiogondim/bullet-train.zsh
+- https://github.com/bhilburn/powerlevel9k
 
 #### Dotfiles
 
@@ -107,8 +107,8 @@ When setting up a new Mac, you may want to set some sensible defaults:
 
 Have a look at:
 
-* https://github.com/zenorocha/alfred-workflows
-* https://github.com/willfarrell/alfred-workflows
+- https://github.com/zenorocha/alfred-workflows
+- https://github.com/willfarrell/alfred-workflows
 
 ## Software configuration
 
@@ -145,50 +145,50 @@ shellcheck *.sh
 
 ## See also
 
-* https://brew.sh/
-* https://formulae.brew.sh/cask/
-* https://dotfiles.github.io/
-* https://github.com/ptb/mac-setup
+- https://brew.sh/
+- https://formulae.brew.sh/cask/
+- https://dotfiles.github.io/
+- https://github.com/ptb/mac-setup
 
 ## Credits
 
-* Actual dotfiles originally from https://github.com/mathiasbynens/dotfiles
-* Dotfiles lib from https://github.com/atomantic/dotfiles
-* ASCII Art from https://github.com/xero/dotfiles
-* ASCII faces from https://github.com/maxogden/cool-ascii-faces
+- Actual dotfiles originally from https://github.com/mathiasbynens/dotfiles
+- Dotfiles lib from https://github.com/atomantic/dotfiles
+- ASCII Art from https://github.com/xero/dotfiles
+- ASCII faces from https://github.com/maxogden/cool-ascii-faces
 
 ## Manual tasks
 
 ### Installs
 
-* [Transmission](https://transmissionbt.com/)
-* [Geotag](http://geotag.sourceforge.net/)
-* [Soundflower](https://github.com/mattingalls/Soundflower)
-* [360Controller](https://github.com/360Controller/360Controller)
-* From App Store: Pages, Keynotes, Numbers
+- [Transmission](https://transmissionbt.com/)
+- [Geotag](http://geotag.sourceforge.net/)
+- [Soundflower](https://github.com/mattingalls/Soundflower)
+- [360Controller](https://github.com/360Controller/360Controller)
+- From App Store: Pages, Keynotes, Numbers
 
 ### Manual configuration
 
-* iTunes
-* Dropbox
-* Notification center widgets
-* Internet accounts
-* VS Code
-* Licenses
-* Dictionnaries - `File > Open Dictionaries Folder`.
-* `/etc/hosts`
-* iTerm2 – "Load preferences from a custom folder or URL:" `/Users/thibaud/Dropbox/Sync/iTerm2`.
+- iTunes
+- Dropbox
+- Notification center widgets
+- Internet accounts
+- VS Code
+- Licenses
+- Dictionnaries - `File > Open Dictionaries Folder`.
+- `/etc/hosts`
+- iTerm2 – "Load preferences from a custom folder or URL:" `/Users/thibaud/Dropbox/Sync/iTerm2`.
 
 ### Chrome extensions
 
-* [Hangouts](https://chrome.google.com/webstore/detail/google-hangouts/nckgahadagoaajjgafhacjanaoiihapd?hl=en-US)
-* [The Great Suspender](https://chrome.google.com/webstore/detail/the-great-suspender/klbibkeccnjlkjkiokjodocebajanakg?hl=en-US)
-* [Copy all URLs](https://chrome.google.com/webstore/detail/copy-all-urls/djdmadneanknadilpjiknlnanaolmbfk?hl=en-US)
-* [React DevTools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en-US)
-* [Redux DevTools](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en-US)
-* [Browserstack](https://chrome.google.com/webstore/detail/browserstack/nkihdmlheodkdfojglpcjjmioefjahjb?hl=en)
-* [uBlock Origin](https://github.com/gorhill/uBlock)
-* [Google Docs Offline](https://chrome.google.com/webstore/detail/google-docs-offline/ghbmnnjooekpmoecnnnilnnbdlolhkhi)
-* [Fauxbar Lite](https://chrome.google.com/webstore/detail/fauxbar-lite/bfimmnpbjccjihohjkimphfmmebffbmk)
-* [JSONView](https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc)
-* [OctoLinker](https://chrome.google.com/webstore/detail/octolinker/jlmafbaeoofdegohdhinkhilhclaklkp)
+- [Hangouts](https://chrome.google.com/webstore/detail/google-hangouts/nckgahadagoaajjgafhacjanaoiihapd?hl=en-US)
+- [The Great Suspender](https://chrome.google.com/webstore/detail/the-great-suspender/klbibkeccnjlkjkiokjodocebajanakg?hl=en-US)
+- [Copy all URLs](https://chrome.google.com/webstore/detail/copy-all-urls/djdmadneanknadilpjiknlnanaolmbfk?hl=en-US)
+- [React DevTools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en-US)
+- [Redux DevTools](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en-US)
+- [Browserstack](https://chrome.google.com/webstore/detail/browserstack/nkihdmlheodkdfojglpcjjmioefjahjb?hl=en)
+- [uBlock Origin](https://github.com/gorhill/uBlock)
+- [Google Docs Offline](https://chrome.google.com/webstore/detail/google-docs-offline/ghbmnnjooekpmoecnnnilnnbdlolhkhi)
+- [Fauxbar Lite](https://chrome.google.com/webstore/detail/fauxbar-lite/bfimmnpbjccjihohjkimphfmmebffbmk)
+- [JSONView](https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc)
+- [OctoLinker](https://chrome.google.com/webstore/detail/octolinker/jlmafbaeoofdegohdhinkhilhclaklkp)
