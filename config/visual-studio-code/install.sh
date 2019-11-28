@@ -11,22 +11,25 @@ if [[ $? -eq 0 ]];then
     if [[ $configresponse =~ ^(y|yes|Y) ]];then
         ok "Installing extensions please wait..."
 
-        code --install-extension DavidAnson.vscode-markdownlint
-        code --install-extension EditorConfig.EditorConfig
-        code --install-extension PeterJausovec.vscode-docker
-        code --install-extension Zignd.html-css-class-completion
+        # Update this with code --list-extensions
         code --install-extension abusaidm.html-snippets
+        code --install-extension andys8.jest-snippets
         code --install-extension asvetliakov.snapshot-tools
-        code --install-extension bogdan-sinitsa.theme-dark-monokai
+        code --install-extension batisteo.vscode-django
+        code --install-extension bibhasdn.unique-lines
+        code --install-extension bpruitt-goddard.mermaid-markdown-syntax-highlighting
+        code --install-extension bungcip.better-toml
         code --install-extension christian-kohler.npm-intellisense
         code --install-extension christian-kohler.path-intellisense
         code --install-extension cssho.vscode-svgviewer
+        code --install-extension DavidAnson.vscode-markdownlint
         code --install-extension dbaeumer.vscode-eslint
         code --install-extension donjayamanne.githistory
         code --install-extension dt.ghlink
-        code --install-extension dzannotti.vscode-babel-coloring
+        code --install-extension EditorConfig.EditorConfig
         code --install-extension eg2.vscode-npm-script
         code --install-extension esbenp.prettier-vscode
+        code --install-extension fb-pyre-check.pyre-vscode
         code --install-extension florianloch.text-transform
         code --install-extension flowtype.flow-for-vscode
         code --install-extension freebroccolo.reasonml
@@ -40,18 +43,23 @@ if [[ $? -eq 0 ]];then
         code --install-extension mkaufman.HTMLHint
         code --install-extension mohsen1.prettify-json
         code --install-extension monokai.theme-monokai-pro-vscode
+        code --install-extension mrmlnc.vscode-json5
         code --install-extension mrmlnc.vscode-scss
+        code --install-extension ms-azuretools.vscode-docker
+        code --install-extension ms-python.python
         code --install-extension ms-vscode.Theme-MarkdownKit
-        code --install-extension patrys.vscode-code-outline
-        code --install-extension qinjia.seti-icons
-        code --install-extension robinbentley.sass-indented
-        code --install-extension ryu1kn.partial-diff
+        code --install-extension OfHumanBondage.react-proptypes-intellisense
+        code --install-extension PKief.material-icon-theme
+        code --install-extension rust-lang.rust
         code --install-extension sbrink.elm
         code --install-extension shinnn.stylelint
         code --install-extension sysoev.vscode-open-in-github
-        code --install-extension toasty-technologies.octave
-        code --install-extension travisthetechie.write-good-linter
-        code --install-extension wix.vscode-import-cost
+        code --install-extension VisualStudioExptTeam.vscodeintellicode
+        code --install-extension vstirbu.vscode-mermaid-preview
+        code --install-extension whatwedo.twig
+        code --install-extension wix.glean
+        code --install-extension Zignd.html-css-class-completion
+        code --install-extension ziyasal.vscode-open-in-github
 
         ok "Extensions for VSC have been installed. Please restart your VSC."
     else
