@@ -40,14 +40,11 @@ export GPG_TTY=$(tty);
 # http://docs.python-guide.org/en/latest/writing/gotchas/#disabling-bytecode-pyc-files
 PYTHONDONTWRITEBYTECODE=1
 
-# https://github.com/github/hub
-eval "$(hub alias -s)"
-
 # Runtimes
 # ========
 
 # This loads nvm.
-export NVM_DIR="/Users/thibaud/.nvm"
+export NVM_DIR="/Users/tcolas/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 
 # Android SDK for React Native.
@@ -64,7 +61,7 @@ export ANDROID_HOME=/usr/local/opt/android-sdk
 eval "$(rbenv init -)"
 
 # added by travis gem
-[ -f /Users/thibaud/.travis/travis.sh ] && source /Users/thibaud/.travis/travis.sh
+[ -f /Users/tcolas/.travis/travis.sh ] && source /Users/tcolas/.travis/travis.sh
 
 # Add pyenv init to your shell to enable shims and autocompletion
 eval "$(pyenv init -)"
@@ -73,6 +70,9 @@ export CFLAGS="-I$(brew --prefix openssl)/include";
 export LDFLAGS="-L$(brew --prefix openssl)/lib";
 
 # Initialise opam
-. /Users/thibaud/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
+. /Users/tcolas/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
 
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
+
+# added by travis gem
+[ -f /Users/tcolas/.travis/travis.sh ] && source /Users/tcolas/.travis/travis.sh

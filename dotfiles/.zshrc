@@ -56,3 +56,12 @@ SPACESHIP_EXEC_TIME_SHOW=false
 
 NEWLINE=$'\n'
 PS1="$NEWLINE# $PS1"
+
+
+source "/Users/tcolas/.oh-my-zsh/custom/themes/spaceship.zsh-theme"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/tcolas/.google-cloud-sdk/path.zsh.inc' ]; then . '/Users/tcolas/.google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/tcolas/.google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/tcolas/.google-cloud-sdk/completion.zsh.inc'; fi

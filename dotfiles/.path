@@ -1,2 +1,2 @@
 # :node_modules/.bin
-export PATH="~/.rvm/bin:/usr/local/bin:/usr/local/opt/python/libexec/bin:/usr/bin:/bin:/usr/sbin:/sbin:~/.rbenv/bin:$HOME/.yarn/bin:"
+export PATH="~/.rvm/bin:/usr/local/bin:/usr/local/opt/python/libexec/bin:/usr/bin:/bin:/usr/sbin:/sbin:~/.rbenv/bin:$HOME/.yarn/bin:$HOME/.poetry/bin:"

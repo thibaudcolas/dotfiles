@@ -145,4 +145,7 @@ alias zshconfig="code ~/.zshrc"
 alias ohmyzsh="code ~/.oh-my-zsh"
 
 # Activate Python virtualenv
-alias venv='source .venv/bin/activate'
+alias venv='source .venv/bin/activate || source venv/bin/activate'
+
+# Show hidden files with ag by default
+alias ag='ag --hidden'
