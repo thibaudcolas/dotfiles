@@ -57,9 +57,11 @@ if [[ $unixresponse =~ ^(y|yes|Y) ]];then
     require_brew whois
     require_brew gpg
     require_brew postgres
+    require_brew redis
     require_brew autojump
     require_brew exiftool
     require_brew ag
+    require_brew ripgrep
     require_brew unzip
     require_brew rsync
     require_brew cloc
@@ -104,6 +106,7 @@ if [[ $runtimesresponse =~ ^(y|yes|Y) ]];then
     require_brew python3
     require_brew r
     require_brew octave
+    require_brew rust
     require_brew elm
     require_brew ocaml
     require_brew ocamlbuild
@@ -156,26 +159,29 @@ if [[ $packagesresponse =~ ^(y|yes|Y) ]];then
     require_npm npm
     require_npm browser-sync
     require_npm nodemon
-    require_npm sass-lint
     require_npm stylelint
     require_npm eslint
     require_npm flow-bin
-    require_npm irish-pub
     require_npm spaceship-zsh-theme
+    require_npm trello-backup
+    require_npm serve
+    require_npm prettier
+    require_npm renovate
+    require_npm pa11y
 
     require_gem bundler
     require_gem rake
-    require_gem sass
-    require_gem scss_lint
     require_gem travis
 
     require_pip pip
     require_pip virtualenv
     require_pip cookiecutter
     require_pip flake8
-    require_pip autopep8
     require_pip isort
-    require_pip pyflakes
+    require_pip black
+    require_pip Sphinx
+    require_pip mkdocs
+    require_pip jinjalint
 
     # Ideally should check if command is already available
     # require_curl [COMMAND] [URL]

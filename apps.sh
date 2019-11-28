@@ -39,7 +39,6 @@ if [[ $everydayresponse =~ ^(y|yes|Y) ]];then
     require_cask google-chrome
 
     require_cask google-drive
-    require_cask lastpass
     require_cask alfred
     require_cask skype
     require_cask google-hangouts
@@ -54,7 +53,6 @@ if [[ $everydayresponse =~ ^(y|yes|Y) ]];then
     require_cask dropbox
     require_cask soundcleod
     require_cask diskwave
-    require_cask pgadmin3
     require_cask postman
     require_cask tunnelblick
     require_cask docker
@@ -77,6 +75,7 @@ if [[ $everydayresponse =~ ^(y|yes|Y) ]];then
     require_cask betterzip
     require_cask bettertouchtool
     require_cask appcleaner
+    require_cask zoomus
 
     ok "casks installed..."
 else
@@ -90,8 +89,9 @@ if [[ $developerresponse =~ ^(y|yes|Y) ]];then
     require_cask sublime-text3
     require_cask visual-studio-code
 
-    require_cask homebrew/cask-versions/google-chrome-canary 
+    require_cask homebrew/cask-versions/google-chrome-canary
     require_cask opera
+    require_cask microsoft-edge-canary
 
     require_cask iterm2
     require_cask vagrant
