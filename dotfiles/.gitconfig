@@ -167,5 +167,5 @@
   prune = true
 
 [protocol]
-	# https://github.blog/2020-03-22-highlights-from-git-2-26/
+  # https://github.blog/2020-03-22-highlights-from-git-2-26/
   version = 2
