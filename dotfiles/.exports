@@ -40,18 +40,20 @@ export GPG_TTY=$(tty);
 # http://docs.python-guide.org/en/latest/writing/gotchas/#disabling-bytecode-pyc-files
 PYTHONDONTWRITEBYTECODE=1
 
+export CFLAGS="-I$(brew --prefix openssl)/include";
+export LDFLAGS="-L$(brew --prefix openssl)/lib";
+
 # Runtimes
 # ========
 
-# This loads nvm.
-export NVM_DIR="/Users/tcolas/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
 # Android SDK for React Native.
-export ANDROID_HOME=/usr/local/opt/android-sdk
+# export ANDROID_HOME=/usr/local/opt/android-sdk
 
 # Load RVM into a shell session *as a function*
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+# [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
 # Load .NET stack
 # source dnvm.sh
@@ -60,19 +62,13 @@ export ANDROID_HOME=/usr/local/opt/android-sdk
 # Rbenv
 eval "$(rbenv init -)"
 
-# added by travis gem
-[ -f /Users/tcolas/.travis/travis.sh ] && source /Users/tcolas/.travis/travis.sh
+# Travis gem
+[ -f ~/.travis/travis.sh ] && source ~/.travis/travis.sh
 
 # Add pyenv init to your shell to enable shims and autocompletion
 eval "$(pyenv init -)"
 
-export CFLAGS="-I$(brew --prefix openssl)/include";
-export LDFLAGS="-L$(brew --prefix openssl)/lib";
-
 # Initialise opam
-. /Users/tcolas/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
+# . ~/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
 
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
-
-# added by travis gem
-[ -f /Users/tcolas/.travis/travis.sh ] && source /Users/tcolas/.travis/travis.sh

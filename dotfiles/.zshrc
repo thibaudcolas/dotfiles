@@ -19,7 +19,7 @@ DISABLE_UPDATE_PROMPT=true
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git git-extras docker docker-compose npm yarn last-working-dir)
+plugins=(git git-extras docker docker-compose last-working-dir)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -58,10 +58,10 @@ NEWLINE=$'\n'
 PS1="$NEWLINE# $PS1"
 
 
-source "/Users/tcolas/.oh-my-zsh/custom/themes/spaceship.zsh-theme"
+source "$HOME/.oh-my-zsh/custom/themes/spaceship.zsh-theme"
 
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/tcolas/.google-cloud-sdk/path.zsh.inc' ]; then . '/Users/tcolas/.google-cloud-sdk/path.zsh.inc'; fi
+# if [ -f '~/.google-cloud-sdk/path.zsh.inc' ]; then . '~/.google-cloud-sdk/path.zsh.inc'; fi
 
 # The next line enables shell command completion for gcloud.
-if [ -f '/Users/tcolas/.google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/tcolas/.google-cloud-sdk/completion.zsh.inc'; fi
+# if [ -f '~/.google-cloud-sdk/completion.zsh.inc' ]; then . '~/.google-cloud-sdk/completion.zsh.inc'; fi
