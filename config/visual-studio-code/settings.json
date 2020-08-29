@@ -1,5 +1,6 @@
 // Place your settings in this file to overwrite the default settings
 {
+  "workbench.settings.editor": "json",
   "editor.fontFamily": "'Fira Code', 'Operator Mono', Menlo, Monaco, 'Courier New', monospace",
   "editor.fontLigatures": "'ss02', 'ss19'",
   "editor.fontSize": 16,
@@ -7,9 +8,9 @@
   "editor.minimap.enabled": false,
   "editor.formatOnPaste": false,
   "editor.formatOnSave": true,
-  "emmet.includeLanguages": {
-    "django-html": "html"
-  },
+  "editor.tabSize": 4,
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.iconTheme": "seti",
   "files.exclude": {
     "**/*.pyc": true,
     "**/*.a": true,
@@ -36,11 +37,16 @@
     "**/*.so": true,
     "**/*.sublime-workspace": true,
     "**/*.suo": true,
+    "**/*.vsix": true,
     "**/.coverage": true,
+    "**/.docusaurus": true,
     "**/.DS_Store": true,
     "**/.expo": true,
     "**/.git": true,
     "**/.hg": true,
+    "**/.jekyll-cache": true,
+    "**/.next": true,
+    "**/.nyc_output": true,
     "**/.mypy_cache": true,
     "**/.pytest_cache": true,
     "**/.pygments-cache": true,
@@ -52,6 +58,7 @@
     "**/.venv": true,
     "**/.virtualenv": true,
     "**/.vscode": true,
+    "**/.vscode-test": true,
     "**/__pycache__": true,
     "**/_book": true,
     "**/_build": true,
@@ -72,10 +79,13 @@
     "**/npm-debug.log*": true,
     "**/npm-shrinkwrap.json": true,
     "**/package-lock.json": true,
+    "**/poetry.lock": true,
     "**/source-map-explorer.html": true,
     "**/static/wagtailadmin": true,
     "**/static_compiled": true,
+    "**/storybook-static": true,
     "media": true,
+    "target": true,
     "**/tmp": true,
     "**/var": true,
     "**/venv": true,
@@ -84,13 +94,15 @@
     "**/webpack-stats.html": true,
     "**/yarn.lock": true
   },
-  "window.zoomLevel": 0,
+  "window.zoomLevel": 1,
   "terminal.external.osxExec": "iTerm.app",
   "telemetry.enableTelemetry": false,
   "telemetry.enableCrashReporter": false,
   "python.linting.flake8Enabled": true,
-  "python.linting.mypyEnabled": false,
   "python.linting.pylintEnabled": false,
+  "python.linting.mypyEnabled": false,
+  "python.formatting.provider": "black",
+  "python.jediEnabled": false,
   "javascript.validate.enable": true,
   "markdownlint.config": {
     "MD003": false,
@@ -105,21 +117,45 @@
   "html.format.enable": false,
   "html.format.wrapLineLength": 0,
   "html.format.extraLiners": "object",
-  "editor.tabSize": 4,
   "git.enabled": true,
   "git.autorefresh": true,
   "git.autofetch": true,
   "git.countBadge": "all",
   "css.validate": true,
   "scss.validate": true,
-  "workbench.colorTheme": "Monokai Pro (Filter Spectrum)",
+  "workbench.colorTheme": "Monokai Pro (Filter Machine)",
   "typescript.check.npmIsInstalled": false,
-  "workbench.startupEditor": "newUntitledFile",
+  "explorer.confirmDragAndDrop": false,
+  "extensions.ignoreRecommendations": false,
+  "editor.accessibilitySupport": "off",
+  "breadcrumbs.enabled": true,
+  "explorer.confirmDelete": false,
+  "editor.suggestSelection": "first",
+  "terminal.integrated.rendererType": "experimentalWebgl",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "flow.useNPMPackagedFlow": true,
+  "python.languageServer": "Microsoft",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "editor.codeActionsOnSave": {
+    "source.fixAll": false,
+    "source.fixAll.eslint": true
+  },
   "files.associations": {
-    "*.j2": "html",
-    "*.html": "html",
-    "**/templates/**/*.html": "html",
-    "Vagrantfile": "ruby"
+    "*.j2": "twig",
+    "**/templates/**/*.html": "twig",
+    "*.njk": "twig",
+    "*.liquid": "twig",
+    "Vagrantfile": "ruby",
+    ".coveragerc": "ini",
+    "*.in": "ini",
+    ".pyre_configuration": "json",
+    ".{aliases,exports,path,extra,functions}": "shellscript"
+  },
+  "emmet.includeLanguages": {
+    "django-html": "html",
+    "twig": "html",
+    "javascript": "html"
   },
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -127,23 +163,18 @@
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "explorer.confirmDragAndDrop": false,
-  "extensions.ignoreRecommendations": false,
-  "workbench.statusBar.feedback.visible": false,
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "breadcrumbs.enabled": false,
-  "editor.accessibilitySupport": "off",
-  "flow.useNPMPackagedFlow": true,
-  "htmlhint.options": {
-    "doctype-first": false
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "explorer.confirmDelete": false,
-  // "javascript.implicitProjectConfig.checkJs": true,
-  "workbench.settings.editor": "json",
-  "workbench.iconTheme": "material-icon-theme",
-  "python.formatting.provider": "black",
-  "typescript.updateImportsOnFileMove.enabled": "always",
-  "editor.suggestSelection": "first",
-  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-  "python.jediEnabled": false
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "tailwindCSS.includeLanguages": {
+    "Vue": "html",
+    "scss": "css"
+  },
+  "tailwindCSS.emmetCompletions": true
 }
