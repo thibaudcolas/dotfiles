@@ -35,47 +35,56 @@ bot "Let's go! Make sure to check on your computer regularly in case something n
 if [[ $everydayresponse =~ ^(y|yes|Y) ]];then
     action "install brew cask packages..."
 
+    require_cask 1password
+    require_cask airflow
+    require_cask alfred
+    require_cask appcleaner
+    require_cask bettertouchtool
+    require_cask betterzip
+    require_cask caffeine
+    require_cask controllermate
+    require_cask cyberduck
+    require_cask diskwave
+    require_cask docker
+    require_cask dropbox
+    require_cask google-backup-and-sync
     require_cask firefox
     require_cask google-chrome
-
-    require_cask google-drive
-    require_cask alfred
-    require_cask skype
     require_cask google-hangouts
-    require_cask slack
-    require_cask telegram
-    require_cask caprine
     require_cask harvest
-    require_cask monodraw
-    require_cask vlc
-    require_cask airflow
-    require_cask twitch
-    require_cask dropbox
-    require_cask soundcleod
-    require_cask diskwave
-    require_cask postman
-    require_cask tunnelblick
-    require_cask docker
+    require_cask keycastr
     require_cask licecap
-    require_cask 1password
-    require_cask steam
-    require_cask controllermate
-    require_cask sketch
+    require_cask monodraw
     require_cask nvalt
-    require_cask sizeup
-    require_cask the-unarchiver
-    require_cask cyberduck
-    require_cask houdahgeo
-    require_cask sequential
-    require_cask simple-comic
     require_cask obs
     require_cask pdf-squeezer
-    require_cask keycastr
-    require_cask caffeine
-    require_cask betterzip
-    require_cask bettertouchtool
-    require_cask appcleaner
+    require_cask postman
+    require_cask sequential
+    require_cask simple-comic
+    require_cask sizeup
+    require_cask sketch
+    require_cask skype
+    require_cask bluejeans
+    require_cask slack
+    require_cask soundcleod
+    require_cask steam
+    require_cask the-unarchiver
+    require_cask tunnelblick
+    require_cask twitch
+    require_cask vlc
     require_cask zoomus
+    require_cask webex-meetings
+    require_cask discord
+    require_cask loopback
+    require_cask nordvpn
+    require_cask psequel
+    require_cask ukelele
+    require_cask zeplin
+    require_cask transmission
+
+    brew tap homebrew/cask-drivers
+
+    require_cask logitech-g-hub
 
     ok "casks installed..."
 else
@@ -86,12 +95,10 @@ if [[ $developerresponse =~ ^(y|yes|Y) ]];then
 
     action "install brew cask packages..."
 
-    require_cask sublime-text3
+    require_cask sublime-text
     require_cask visual-studio-code
 
     require_cask homebrew/cask-versions/google-chrome-canary
-    require_cask opera
-    require_cask microsoft-edge-canary
 
     require_cask iterm2
     require_cask vagrant
@@ -103,6 +110,7 @@ if [[ $developerresponse =~ ^(y|yes|Y) ]];then
 
     require_cask sequel-pro
     require_cask postgres
+    require_cask screaming-frog-seo-spider
 
     ok "casks installed..."
 else
@@ -117,6 +125,7 @@ if [[ $quicklookresponse =~ ^(y|yes|Y) ]];then
     require_cask qlmarkdown
     require_cask quicklook-json
     require_cask suspicious-package
+    require_cask WebPQuickLook
 
     ok "casks installed..."
 else

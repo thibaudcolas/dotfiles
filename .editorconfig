@@ -19,6 +19,9 @@ max_line_length = 80
 max_line_length = 0
 trim_trailing_whitespace = false
 
+[*.py]
+indent_size = 4
+
 # Git commit messages.
 [COMMIT_EDITMSG]
 max_line_length = 0

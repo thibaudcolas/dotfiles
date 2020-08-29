@@ -161,21 +161,18 @@ shellcheck *.sh
 
 ### Installs
 
-- [Transmission](https://transmissionbt.com/)
 - [Geotag](http://geotag.sourceforge.net/)
 - [Soundflower](https://github.com/mattingalls/Soundflower)
 - [360Controller](https://github.com/360Controller/360Controller)
-- From App Store: Pages, Keynotes, Numbers
+- From App Store: Harvest
 
 ### Manual configuration
 
-- iTunes
 - Dropbox
 - Notification center widgets
 - Internet accounts
 - VS Code
 - Licenses
-- Dictionnaries - `File > Open Dictionaries Folder`.
 - `/etc/hosts`
 - iTerm2 – "Load preferences from a custom folder or URL:" `/Users/thibaud/Dropbox/Sync/iTerm2`.
 

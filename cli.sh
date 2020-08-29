@@ -90,6 +90,7 @@ if [[ $unixresponse =~ ^(y|yes|Y) ]];then
     require_brew woff2
 
     require_brew ffmpeg
+    require_brew webp
     require_brew imagemagick --with-webp
 
     ok "packages installed..."
@@ -181,25 +182,11 @@ if [[ $packagesresponse =~ ^(y|yes|Y) ]];then
     require_pip black
     require_pip Sphinx
     require_pip mkdocs
-    require_pip jinjalint
+    require_pip curlylint
 
-    # Ideally should check if command is already available
-    # require_curl [COMMAND] [URL]
-    function require_curl() {
-        running "curl $1"
-        curl --output /dev/null --silent --head --fail "$2"
-        if [[ $? -eq 0 ]]; then
-            action "curl $2 | bash"
-            curl -o- "$2" | sh
-            ok "Close and reopen your terminal to start using nvm"
-        else
-            error "Could not install $1"
-        fi
-    }
+    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 
-    require_curl nvm https://raw.githubusercontent.com/creationix/nvm/v0.33.5/install.sh
-
-    require_curl oh-my-zsh https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
     ok "packages installed..."
 else

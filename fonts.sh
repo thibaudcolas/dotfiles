@@ -9,18 +9,16 @@ source ./lib.sh
 
 bot "installing fonts"
 
-brew tap caskroom/fonts
+brew tap homebrew/cask-fonts
 
-require_cask font-droid-sans
-require_cask font-droid-sans-mono
-require_cask font-fontawesome
 require_cask font-inconsolata
-require_cask font-inconsolata-for-powerline
 require_cask font-inconsolata-g-for-powerline
 require_cask font-open-sans
 require_cask font-pt-sans
 require_cask font-source-code-pro
 require_cask font-source-sans-pro
 require_cask font-ubuntu
+require_cask font-dejavu
+require_cask font-fira-code
 
 bot "Woot! All done."
