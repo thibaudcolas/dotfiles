@@ -22,9 +22,6 @@
 
   dsf = "!git diff --color $@ | diff-so-fancy"
 
-  # Pull in remote changes for the current repository and all its submodules
-  p = !"git pull; git submodule foreach git pull origin master"
-
   # Clone a repository including all submodules
   c = clone --recursive
 
@@ -60,7 +57,7 @@
   # Find commits by commit message
   fm = "!f() { git log --pretty=format:'%C(yellow)%h  %Cblue%ad  %Creset%s%Cgreen  [%cn] %Cred%d' --decorate --date=short --grep=$1; }; f"
 
-  # Remove branches that have already been merged with master
+  # Remove branches that have already been merged with the base branch
   # a.k.a. ‘delete merged’
   dm = "!git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"
 

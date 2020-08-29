@@ -1,4 +1,4 @@
-# dotfiles [![Build Status](https://travis-ci.org/thibaudcolas/dotfiles.svg?branch=master)](https://travis-ci.org/thibaudcolas/dotfiles)
+# dotfiles [![Build Status](https://travis-ci.com/thibaudcolas/dotfiles.svg?branch=main)](https://travis-ci.com/thibaudcolas/dotfiles)
 
 ```txt
        ██            ██     ████ ██  ██
@@ -19,13 +19,13 @@
 
 > The goal is to automate **80%** of the setup of your new computer.
 
-- Download a [ZIP of this repository](https://github.com/thibaudcolas/dotfiles/archive/master.zip).
-- Unzip the file if necessary. You should have a `dotfiles-master` folder in your `Downloads` folder.
+- Download a [ZIP of this repository](https://github.com/thibaudcolas/dotfiles/archive/main.zip).
+- Unzip the file if necessary. You should have a `dotfiles-main` folder in your `Downloads` folder.
 - Launch the Terminal app, found in `/Applications/Utilities/`
 - Copy and paste the following line into the Terminal, and press `Enter`:
 
 ```bash
-cd ~/Downloads/dotfiles-master && ./install.sh
+cd ~/Downloads/dotfiles-main && ./install.sh
 ```
 
 The installation process should start, and ask you questions. You'll also be asked to enter your password from time to time. **If this is your first run on a fresh Mac, you'll have to start it again after the first install.**
@@ -47,7 +47,7 @@ The installation process should start, and ask you questions. You'll also be ask
 ### Fonts
 
 ```bash
-cd ~/Downloads/dotfiles-master && ./fonts.sh
+cd ~/Downloads/dotfiles-main && ./fonts.sh
 ```
 
 ### Command-line
@@ -57,7 +57,7 @@ cd ~/Downloads/dotfiles-master && ./fonts.sh
 Requires `brew`. The first group of tools contains `node`, `ruby` & `python` which are required to install the second group of tools.
 
 ```bash
-cd ~/Downloads/dotfiles-master && ./cli.sh
+cd ~/Downloads/dotfiles-main && ./cli.sh
 ```
 
 While you're waiting for this to finish, go [generate your SSH keys](https://help.github.com/articles/generating-ssh-keys/) for GitHub and beyond.
