@@ -165,6 +165,8 @@ shellcheck *.sh
 - [Soundflower](https://github.com/mattingalls/Soundflower)
 - [360Controller](https://github.com/360Controller/360Controller)
 - From App Store: Harvest
+- WebP Quicklook
+- AVIF Quicklook
 
 ### Manual configuration
 
