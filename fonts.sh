@@ -13,6 +13,7 @@ brew tap homebrew/cask-fonts
 
 require_cask font-inconsolata
 require_cask font-inconsolata-g-for-powerline
+require_cask font-inconsolata-go-nerd-font
 require_cask font-open-sans
 require_cask font-pt-sans
 require_cask font-source-code-pro

@@ -49,11 +49,11 @@ function awesome_header() {
 }
 
 function require_cask() {
-    running "brew cask $1"
+    running "brew --cask $1"
     brew cask list "$1" > /dev/null 2>&1 | true
     if [[ ${PIPESTATUS[0]} != 0 ]]; then
-        action "brew cask install $1"
-        brew cask install "$1"
+        action "brew install --cask $1"
+        brew install --cask "$1"
         if [[ $? != 0 ]]; then
             error "failed to install $1!"
         fi
