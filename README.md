@@ -1,4 +1,4 @@
-# dotfiles [![Build Status](https://travis-ci.com/thibaudcolas/dotfiles.svg?branch=main)](https://travis-ci.com/thibaudcolas/dotfiles)
+# dotfiles
 
 ```txt
        ██            ██     ████ ██  ██

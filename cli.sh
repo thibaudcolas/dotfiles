@@ -172,7 +172,6 @@ if [[ $packagesresponse =~ ^(y|yes|Y) ]];then
 
     require_gem bundler
     require_gem rake
-    require_gem travis
 
     require_pip pip
     require_pip virtualenv
