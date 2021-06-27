@@ -1,4 +1,4 @@
-# dotfiles
+# dotfiles [![Build status](https://github.com/thibaudcolas/dotfiles/workflows/CI/badge.svg)](https://github.com/thibaudcolas/dotfiles/actions)
 
 ```txt
        ██            ██     ████ ██  ██
