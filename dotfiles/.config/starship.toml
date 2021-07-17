@@ -1,0 +1,85 @@
+# Inserts a blank line between shell prompts
+add_newline = true
+
+# Replace the "❯" symbol in the prompt with "➜"
+[character]                            # The name of the module we are configuring is "character"
+success_symbol = "[➜](bold green)"     # The "success_symbol" segment is being set to "➜" with the color "bold green"
+
+[conda]
+disabled = true
+[crystal]
+disabled = true
+[dart]
+disabled = true
+[deno]
+disabled = true
+[dotnet]
+disabled = true
+[elixir]
+disabled = true
+[elm]
+disabled = true
+[erlang]
+disabled = true
+[gcloud]
+disabled = true
+[golang]
+disabled = true
+[helm]
+disabled = true
+[java]
+disabled = true
+[jobs]
+disabled = true
+[julia]
+disabled = true
+[kotlin]
+disabled = true
+[kubernetes]
+disabled = true
+[lua]
+disabled = true
+[hg_branch]
+disabled = true
+[nim]
+disabled = true
+[nix_shell]
+disabled = true
+[openstack]
+disabled = true
+[perl]
+disabled = true
+[php]
+disabled = true
+[purescript]
+disabled = true
+[rlang]
+disabled = true
+[red]
+disabled = true
+[scala]
+disabled = true
+[shlvl]
+disabled = true
+[singularity]
+disabled = true
+[swift]
+disabled = true
+[terraform]
+disabled = true
+[zig]
+disabled = true
+
+
+[nodejs]
+symbol = "⬢ "
+
+[status]
+disabled = false
+
+[package]
+disabled = true
+
+[time]
+disabled = false
+format = "[$time]($style) "

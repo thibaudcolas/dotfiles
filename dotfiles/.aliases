@@ -1,7 +1,7 @@
 # Easier navigation: .., ..., ...., ....., ~ and -
 alias ..="cd .."
 
-alias g="git"
+# alias g="git"
 alias h="history"
 
 # autojump
@@ -44,7 +44,7 @@ alias ll="ls -lF ${colorflag}"
 alias la="ls -lAF ${colorflag}"
 
 # List only directories
-alias lsd="ls -lF ${colorflag} | grep --color=never '^d'"
+# alias lsd="ls -lF ${colorflag} | grep --color=never '^d'"
 
 # Always use color output for `ls`
 alias ls="command ls ${colorflag}"
@@ -67,10 +67,10 @@ alias redo='sudo !!'
 # alias ips="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[0-9]\+\)\|[a-fA-F0-9:]\+\)' | awk '{ sub(/inet6? (addr:)? ?/, \"\"); print }'"
 
 # Flush Directory Service cache
-alias flush="dscacheutil -flushcache && killall -HUP mDNSResponder"
+# alias flush="dscacheutil -flushcache && killall -HUP mDNSResponder"
 
 # Clean up LaunchServices to remove duplicates in the “Open With” menu
-alias lscleanup="/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder"
+# alias lscleanup="/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder"
 
 # Canonical hex dump; some systems have this symlinked
 command -v hd > /dev/null || alias hd="hexdump -C"
@@ -82,26 +82,26 @@ command -v md5sum > /dev/null || alias md5sum="md5"
 command -v sha1sum > /dev/null || alias sha1sum="shasum"
 
 # Recursively delete `.DS_Store` files
-alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
+# alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
 
 # URL-encode strings
-alias urlencode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.argv[1]);"'
+# alias urlencode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.argv[1]);"'
 
 # Reload the shell (i.e. invoke as a login shell)
 alias reload="exec $SHELL -l"
 
 # DOS2UNIX sample.
-alias tolf='find . -type f | xargs dos2unix'
+# alias tolf='find . -type f | xargs dos2unix'
 
 # Show/hide hidden files in Finder.
-alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
-alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
+# alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
+# alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
 
 # Print each PATH entry on a separate line
-alias path='echo -e ${PATH//:/\\n}'
+# alias path='echo -e ${PATH//:/\\n}'
 
-alias zshconfig="code ~/.zshrc"
-alias ohmyzsh="code ~/.oh-my-zsh"
+# alias zshconfig="code ~/.zshrc"
+# alias ohmyzsh="code ~/.oh-my-zsh"
 
 # Activate Python virtualenv
 alias venv='source .venv/bin/activate || source venv/bin/activate'

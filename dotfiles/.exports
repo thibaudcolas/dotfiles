@@ -40,7 +40,8 @@ export GPG_TTY=$(tty);
 # http://docs.python-guide.org/en/latest/writing/gotchas/#disabling-bytecode-pyc-files
 export PYTHONDONTWRITEBYTECODE=1
 
-BREWPREFIX="$(brew --prefix openssl)"
+# BREWPREFIX="$(brew --prefix openssl)"
+BREWPREFIX="/usr/local/opt/openssl@1.1"
 export CFLAGS="-I$BREWPREFIX/include";
 export LDFLAGS="-L$BREWPREFIX/lib";
 
@@ -49,8 +50,8 @@ export BROWSER="Google Chrome"
 # Runtimes
 # ========
 
-export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 
 # Android SDK for React Native.
 export ANDROID_HOME=$HOME/Library/Android/sdk
@@ -76,3 +77,9 @@ eval "$(pyenv init -)"
 # . ~/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
 
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
+
+#### FIG ENV VARIABLES ####
+[[ -s ~/.fig/fig.sh ]] && source ~/.fig/fig.sh
+#### END FIG ENV VARIABLES ####
+
+source /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc
