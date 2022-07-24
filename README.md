@@ -37,18 +37,11 @@ The installation process should start, and ask you questions. You'll also be ask
 | :book:                                                                        |
 | ----------------------------------------------------------------------------- |
 | [Command-line](#command-line)                                                 |
-| [Fonts](#fonts)                                                               |
 | [macOS Preferences](#macos-preferences)                                       |
 | [Alfred workflows (requires Powerpack)](#alfred-workflows-requires-powerpack) |
 | [Sublime Text configuration](#sublime-text-3)                                 |
 | [Visual Studio Code configuration](/config/visual-studio-code/)               |
 | [Extra documentation: `docs/`](docs/)                                         |
-
-### Fonts
-
-```bash
-cd ~/Downloads/dotfiles-main && ./fonts.sh
-```
 
 ### Command-line
 
@@ -118,7 +111,7 @@ Have a look at our resources in [`config/visual-studio-code`](config/visual-stud
 
 ### Sublime Text 3
 
-> You will need [Package Control](https://packagecontrol.io/). You may also need a nice font, like [Source Code Pro](https://github.com/adobe-fonts/source-code-pro).
+> You will need [Package Control](https://packagecontrol.io/).
 
 Have a look at the default configuration and the list of packages in [`config/sublime`](config/sublime).
 
@@ -164,9 +157,6 @@ shellcheck *.sh
 - [Geotag](http://geotag.sourceforge.net/)
 - [Soundflower](https://github.com/mattingalls/Soundflower)
 - [360Controller](https://github.com/360Controller/360Controller)
-- From App Store: Harvest
-- WebP Quicklook
-- AVIF Quicklook
 
 ### Manual configuration
 
@@ -177,17 +167,20 @@ shellcheck *.sh
 - Licenses
 - `/etc/hosts`
 - iTerm2 – "Load preferences from a custom folder or URL:" `/Users/thibaud/Dropbox/Sync/iTerm2`.
+- Refined GitHub
 
 ### Chrome extensions
 
-- [The Great Suspender](https://chrome.google.com/webstore/detail/the-great-suspender/klbibkeccnjlkjkiokjodocebajanakg)
-- [Copy all URLs](https://chrome.google.com/webstore/detail/copy-all-urls/djdmadneanknadilpjiknlnanaolmbfk)
+- [AutoHideDownloadsBar](https://chrome.google.com/webstore/detail/autohidedownloadsbar/gkmndgjgpolmikgnipipfekglbbgjcel)
+- [Tablist](https://chrome.google.com/webstore/detail/tablist/eagbohciligljbgpbdbflaloangiodhe)
 - [React DevTools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi)
 - [Redux DevTools](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd)
 - [Browserstack](https://chrome.google.com/webstore/detail/browserstack/nkihdmlheodkdfojglpcjjmioefjahjb)
 - [uBlock Origin](https://github.com/gorhill/uBlock)
 - [Google Docs Offline](https://chrome.google.com/webstore/detail/google-docs-offline/ghbmnnjooekpmoecnnnilnnbdlolhkhi)
 - [Fauxbar Lite](https://chrome.google.com/webstore/detail/fauxbar-lite/bfimmnpbjccjihohjkimphfmmebffbmk)
-- [JSONView](https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc)
+- [JSONVue](https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc)
 - [OctoLinker](https://chrome.google.com/webstore/detail/octolinker/jlmafbaeoofdegohdhinkhilhclaklkp)
 - [Accessibility Insights](https://chrome.google.com/webstore/detail/accessibility-insights-fo/pbjjkligggfmakdaogkfomddhfmpjeni)
+- [Refined GitHub](https://chrome.google.com/webstore/detail/refined-github/hlepfoohegkhhmjieoechaddaejaokhf)
+- [SingleFile](https://chrome.google.com/webstore/detail/singlefile/mpiodijhokgodhhofbcjdecpffjipkle)

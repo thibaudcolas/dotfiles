@@ -99,13 +99,6 @@ else
     ok "will skip dotfiles.";
 fi
 
-read -r -p "install fonts? [y|N] " fonts_response
-if [[ $fonts_response =~ ^(y|yes|Y) ]];then
-    ok "will install fonts."
-else
-    ok "will skip fonts.";
-fi
-
 if [[ $cli_response =~ ^(y|yes|Y) ]];then
     ./cli.sh
 else
@@ -125,12 +118,6 @@ if [[ $dotfiles_response =~ ^(y|yes|Y) ]];then
     ./dotfiles.sh --force
 else
     ok "skipped dotfiles.";
-fi
-
-if [[ $fonts_response =~ ^(y|yes|Y) ]];then
-    ./fonts.sh
-else
-    ok "skipped fonts.";
 fi
 
 bot "That's it for the automated process. If you want to do more, have a look at the README!"

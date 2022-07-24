@@ -12,42 +12,49 @@ if [[ $? -eq 0 ]];then
         ok "Installing extensions please wait..."
 
         # Update this with code --list-extensions
+        code --install-extension asvetliakov.snapshot-tools
         code --install-extension bibhasdn.unique-lines
         code --install-extension bierner.lit-html
+        code --install-extension bpruitt-goddard.mermaid-markdown-syntax-highlighting
+        code --install-extension bradgashler.htmltagwrap
+        code --install-extension bradlc.vscode-tailwindcss
         code --install-extension bungcip.better-toml
         code --install-extension christian-kohler.npm-intellisense
         code --install-extension christian-kohler.path-intellisense
-        code --install-extension cssho.vscode-svgviewer
+        code --install-extension daohong-emilio.yash
         code --install-extension DavidAnson.vscode-markdownlint
         code --install-extension dbaeumer.vscode-eslint
         code --install-extension ecmel.vscode-html-css
         code --install-extension EditorConfig.EditorConfig
         code --install-extension esbenp.prettier-vscode
         code --install-extension florianloch.text-transform
-        code --install-extension flowtype.flow-for-vscode
-        code --install-extension hackwaly.ocaml
-        code --install-extension jaredly.reason-vscode
+        code --install-extension GitHub.copilot
+        code --install-extension GraphQL.vscode-graphql
+        code --install-extension jcbuisson.vue
         code --install-extension jkjustjoshing.vscode-text-pastry
         code --install-extension jpoissonnier.vscode-styled-components
-        code --install-extension lextudio.restructuredtext
-        code --install-extension mgmcdermott.vscode-language-babel
+        code --install-extension mechatroner.rainbow-csv
         code --install-extension monokai.theme-monokai-pro-vscode
         code --install-extension mrmlnc.vscode-json5
         code --install-extension mrmlnc.vscode-scss
         code --install-extension mrorz.language-gettext
         code --install-extension ms-azuretools.vscode-docker
         code --install-extension ms-python.python
+        code --install-extension ms-python.vscode-pylance
+        code --install-extension ms-vscode-remote.remote-containers
         code --install-extension ms-vscode.Theme-MarkdownKit
-        code --install-extension NathHorrigan.code-svgr
-        code --install-extension OfHumanBondage.react-proptypes-intellisense
-        code --install-extension PKief.material-icon-theme
+        code --install-extension ms-vsliveshare.vsliveshare
+        code --install-extension octref.vetur
+        code --install-extension qinjia.seti-icons
         code --install-extension rust-lang.rust
         code --install-extension silvenon.mdx
+        code --install-extension streetsidesoftware.code-spell-checker
         code --install-extension stylelint.vscode-stylelint
+        code --install-extension syler.sass-indented
         code --install-extension sysoev.vscode-open-in-github
-        code --install-extension tlent.jest-snapshot-language-support
         code --install-extension VisualStudioExptTeam.vscodeintellicode
         code --install-extension whatwedo.twig
+
 
         ok "Extensions for VSC have been installed. Please restart your VSC."
     else

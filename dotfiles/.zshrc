@@ -18,7 +18,7 @@ DISABLE_UPDATE_PROMPT=true
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git git-extras docker docker-compose last-working-dir)
+plugins=(git git-extras docker docker-compose last-working-dir fnm)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -39,3 +39,4 @@ unset file;
 unsetopt RM_STAR_SILENT
 
 eval "$(starship init zsh)"
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

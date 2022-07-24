@@ -50,8 +50,9 @@ export BROWSER="Google Chrome"
 # Runtimes
 # ========
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+# export NVM_DIR="$HOME/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+eval "$(fnm env)"
 
 # Android SDK for React Native.
 export ANDROID_HOME=$HOME/Library/Android/sdk
@@ -66,10 +67,7 @@ export ANDROID_HOME=$HOME/Library/Android/sdk
 # Rbenv
 # eval "$(rbenv init -)"
 
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init --path)"
-
 # Add pyenv init to your shell to enable shims and autocompletion
 eval "$(pyenv init -)"
 
@@ -78,8 +76,5 @@ eval "$(pyenv init -)"
 
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
 
-#### FIG ENV VARIABLES ####
-[[ -s ~/.fig/fig.sh ]] && source ~/.fig/fig.sh
-#### END FIG ENV VARIABLES ####
 
-source /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc
+# source /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc
