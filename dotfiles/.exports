@@ -45,7 +45,7 @@ BREWPREFIX="/usr/local/opt/openssl@1.1"
 export CFLAGS="-I$BREWPREFIX/include";
 export LDFLAGS="-L$BREWPREFIX/lib";
 
-export BROWSER="Google Chrome"
+export BROWSER="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
 
 # Runtimes
 # ========

@@ -10,7 +10,7 @@ alias z="j"
 # Git aliases.
 alias ga='git add'
 alias gl='git log'
-alias gh='git hist'
+alias ghi='git hist'
 alias gha='git hist --all'
 alias gs='git status'
 alias gd='git diff'

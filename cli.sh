@@ -46,12 +46,14 @@ if [[ $unixresponse =~ ^(y|yes|Y) ]];then
     require_brew exiftool
     require_brew fizz
     require_brew flac
+    require_brew flyctl
     require_brew fmt
     require_brew fnm
     require_brew gcc
     require_brew git
     require_brew git-extras
     require_brew git-lfs
+    require_brew gh
     require_brew gron
     require_brew guile
     require_brew heroku
