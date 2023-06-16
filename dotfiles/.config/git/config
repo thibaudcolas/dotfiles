@@ -101,6 +101,8 @@
 
   pager = less --tabs=4 -RFX
   ignorecase = false
+  # Don’t use this because it trips up newcomers.
+	# excludesfile = /Users/thibaudcolas/.gitignore_global
 
 [color]
   # Use colors in Git commands that are capable of colored output when
@@ -117,6 +119,7 @@
   frag = magenta bold # line info
   old = red # deletions
   new = green # additions
+  whitespace = red reverse
 
 [color "status"]
   added = yellow
@@ -140,7 +143,7 @@
 
 [help]
   # Automatically correct and execute mistyped commands
-  autocorrect = 1
+  autocorrect = immediate
 
 [merge]
   # Include summaries of merged commits in newly created merge commit messages
