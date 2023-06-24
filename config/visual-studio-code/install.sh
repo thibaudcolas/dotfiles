@@ -28,11 +28,12 @@ if [[ $? -eq 0 ]];then
         code --install-extension EditorConfig.EditorConfig
         code --install-extension esbenp.prettier-vscode
         code --install-extension florianloch.text-transform
-        code --install-extension GitHub.copilot
+        code --install-extension GitHub.copilot-chat
+        code --install-extension GitHub.copilot-labs
+        code --install-extension GitHub.copilot-nightly
         code --install-extension GraphQL.vscode-graphql
-        code --install-extension jcbuisson.vue
+        code --install-extension GraphQL.vscode-graphql-syntax
         code --install-extension jkjustjoshing.vscode-text-pastry
-        code --install-extension jpoissonnier.vscode-styled-components
         code --install-extension mechatroner.rainbow-csv
         code --install-extension monokai.theme-monokai-pro-vscode
         code --install-extension mrmlnc.vscode-json5
@@ -42,17 +43,20 @@ if [[ $? -eq 0 ]];then
         code --install-extension ms-python.python
         code --install-extension ms-python.vscode-pylance
         code --install-extension ms-vscode-remote.remote-containers
+        code --install-extension ms-vscode.makefile-tools
         code --install-extension ms-vscode.Theme-MarkdownKit
         code --install-extension ms-vsliveshare.vsliveshare
         code --install-extension octref.vetur
+        code --install-extension prograhammer.tslint-vue
         code --install-extension qinjia.seti-icons
-        code --install-extension rust-lang.rust
-        code --install-extension silvenon.mdx
         code --install-extension streetsidesoftware.code-spell-checker
         code --install-extension stylelint.vscode-stylelint
         code --install-extension syler.sass-indented
         code --install-extension sysoev.vscode-open-in-github
+        code --install-extension unifiedjs.vscode-mdx
+        code --install-extension VisualStudioExptTeam.intellicode-api-usage-examples
         code --install-extension VisualStudioExptTeam.vscodeintellicode
+        code --install-extension Vue.volar
         code --install-extension whatwedo.twig
 
 
