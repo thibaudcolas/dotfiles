@@ -169,18 +169,25 @@ shellcheck *.sh
 - iTerm2 – "Load preferences from a custom folder or URL:" `/Users/thibaud/Dropbox/Sync/iTerm2`.
 - Refined GitHub
 
-### Chrome extensions
+### Browser extensions
 
-- [AutoHideDownloadsBar](https://chrome.google.com/webstore/detail/autohidedownloadsbar/gkmndgjgpolmikgnipipfekglbbgjcel)
-- [Tablist](https://chrome.google.com/webstore/detail/tablist/eagbohciligljbgpbdbflaloangiodhe)
-- [React DevTools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi)
-- [Redux DevTools](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd)
-- [Browserstack](https://chrome.google.com/webstore/detail/browserstack/nkihdmlheodkdfojglpcjjmioefjahjb)
+### Google Chrome
+
+View at: `chrome://extensions/`.
+
+- [AutoHideDownloadsBar](https://chromewebstore.google.com/detail/autohidedownloadsbar/gkmndgjgpolmikgnipipfekglbbgjcel)
+- [Tablist](https://chromewebstore.google.com/detail/tablist/eagbohciligljbgpbdbflaloangiodhe)
+- [React DevTools](https://chromewebstore.google.com/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi)
+- [Redux DevTools](https://chromewebstore.google.com/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd)
+- [Browserstack](https://chromewebstore.google.com/detail/browserstack/nkihdmlheodkdfojglpcjjmioefjahjb)
 - [uBlock Origin](https://github.com/gorhill/uBlock)
-- [Google Docs Offline](https://chrome.google.com/webstore/detail/google-docs-offline/ghbmnnjooekpmoecnnnilnnbdlolhkhi)
-- [Fauxbar Lite](https://chrome.google.com/webstore/detail/fauxbar-lite/bfimmnpbjccjihohjkimphfmmebffbmk)
-- [JSONVue](https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc)
-- [OctoLinker](https://chrome.google.com/webstore/detail/octolinker/jlmafbaeoofdegohdhinkhilhclaklkp)
-- [Accessibility Insights](https://chrome.google.com/webstore/detail/accessibility-insights-fo/pbjjkligggfmakdaogkfomddhfmpjeni)
-- [Refined GitHub](https://chrome.google.com/webstore/detail/refined-github/hlepfoohegkhhmjieoechaddaejaokhf)
-- [SingleFile](https://chrome.google.com/webstore/detail/singlefile/mpiodijhokgodhhofbcjdecpffjipkle)
+- [uBlacklist](https://chromewebstore.google.com/detail/ublacklist/pncfbmialoiaghdehhbnbhkkgmjanfhe?hl=en)
+- [GitHub Issue Link Status](https://chromewebstore.google.com/detail/github-issue-link-status/nbiddhncecgemgccalnoanpnenalmkic)
+- [Google Docs Offline](https://chromewebstore.google.com/detail/google-docs-offline/ghbmnnjooekpmoecnnnilnnbdlolhkhi)
+- [JSONVue](https://chromewebstore.google.com/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc)
+- [OctoLinker](https://chromewebstore.google.com/detail/octolinker/jlmafbaeoofdegohdhinkhilhclaklkp)
+- [Accessibility Insights](https://chromewebstore.google.com/detail/accessibility-insights-fo/pbjjkligggfmakdaogkfomddhfmpjeni)
+- [Refined GitHub](https://chromewebstore.google.com/detail/refined-github/hlepfoohegkhhmjieoechaddaejaokhf)
+- [SingleFile](https://chromewebstore.google.com/detail/singlefile/mpiodijhokgodhhofbcjdecpffjipkle)
+
+### Firefox

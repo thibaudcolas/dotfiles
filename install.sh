@@ -88,6 +88,13 @@ fi
 read -r -p "create reusable folder structure? [y|N] " folder_response
 if [[ $folder_response =~ ^(y|yes|Y) ]];then
     ok "will create the folder structure."
+
+    read -r -p "fetch default projects? [y|N] " default_projects
+    if [[ $default_projects =~ ^(y|yes|Y) ]];then
+        ok "will fetch default projects."
+    else
+        ok "will skip default_projects.";
+    fi
 else
     ok "will skip folder structure.";
 fi
@@ -106,18 +113,25 @@ else
 fi
 
 if [[ $folder_response =~ ^(y|yes|Y) ]];then
-    mkdir -p ~/Dev
-    mkdir -p ~/Dev/playground
-    mkdir -p ~/Dev/forks
-    mkdir -p ~/Dev/thibaudcolas
-    mkdir -p ~/Dev/springload
-    mkdir -p ~/Dev/django
-    mkdir -p ~/Dev/djangocon
-    mkdir -p ~/Dev/wagtail
+    mkdir -p $HOME/Dev
+    mkdir -p $HOME/Dev/playground
+    mkdir -p $HOME/Dev/forks
+    mkdir -p $HOME/Dev/thibaudcolas
+    mkdir -p $HOME/Dev/springload
+    mkdir -p $HOME/Dev/django
+    mkdir -p $HOME/Dev/wagtail
 
     ok "Created common folders"
 else
     ok "skipped common folders.";
+fi
+
+if [[ $default_projects =~ ^(y|yes|Y) ]];then
+    ./projects.sh
+
+    ok "Created default projects"
+else
+    ok "skipped default projects.";
 fi
 
 if [[ $dotfiles_response =~ ^(y|yes|Y) ]];then
