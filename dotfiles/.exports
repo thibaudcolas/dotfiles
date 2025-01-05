@@ -40,6 +40,11 @@ export GPG_TTY=$(tty);
 # http://docs.python-guide.org/en/latest/writing/gotchas/#disabling-bytecode-pyc-files
 export PYTHONDONTWRITEBYTECODE=1
 
+export PIP_DISABLE_PIP_VERSION_CHECK=1
+# https://storybook.js.org/docs/react/configure/telemetry/
+export STORYBOOK_DISABLE_TELEMETRY=1
+export GH_NO_UPDATE_NOTIFIER=true
+
 # BREWPREFIX="$(brew --prefix openssl)"
 BREWPREFIX="/usr/local/opt/openssl@1.1"
 export CFLAGS="-I$BREWPREFIX/include";
@@ -50,8 +55,7 @@ export BROWSER="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
 # Runtimes
 # ========
 
-# export NVM_DIR="$HOME/.nvm"
-# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+# https://github.com/Schniz/fnm/blob/master/docs/configuration.md
 eval "$(fnm env)"
 
 # Android SDK for React Native.
@@ -65,16 +69,20 @@ export ANDROID_HOME=$HOME/Library/Android/sdk
 # export MONO_MANAGED_WATCHER=disabled
 
 # Rbenv
+# Commented out for use on demand.
 # eval "$(rbenv init -)"
 
-eval "$(pyenv init --path)"
-# Add pyenv init to your shell to enable shims and autocompletion
-eval "$(pyenv init -)"
+# Python https://github.com/pyenv/pyenv#b-set-up-your-shell-environment-for-pyenv
+export PYENV_ROOT="$HOME/.pyenv"
 
-# Initialise opam
+# Rust
+# Commented out for use on demand.
+# . "$HOME/.cargo/env"
+
+# OCaml
+# Commented out for use on demand.
 # . ~/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
 
-[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
-
+# [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
 
 # source /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc

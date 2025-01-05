@@ -114,6 +114,7 @@ function pastcommit() {
 # https://twitter.com/paul_irish/status/749077251539341313
 auto-ls () {
     # explicit sexy ls'ing as aliases arent honored in here.
-    ls -AF
+    # ls -AF
+    eza -a
 }
 chpwd_functions=( auto-ls $chpwd_functions )

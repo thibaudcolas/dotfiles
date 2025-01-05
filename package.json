@@ -21,7 +21,7 @@
     "url": "https://github.com/thibaudcolas/dotfiles/issues"
   },
   "devDependencies": {
-    "prettier": "2.8.0"
+    "prettier": "^3.4.2"
   },
   "scripts": {
     "lint": "prettier --check '**/?(.)*.{md,css,scss,js,json,json5,yaml,yml,html}'",

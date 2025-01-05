@@ -101,8 +101,7 @@
 
   pager = less --tabs=4 -RFX
   ignorecase = false
-  # Don’t use this because it trips up newcomers.
-	# excludesfile = /Users/thibaudcolas/.gitignore_global
+	excludesfile = /Users/thibaudcolas/.gitignore_global
 
 [color]
   # Use colors in Git commands that are capable of colored output when
@@ -160,7 +159,7 @@
 [user]
   name = Thibaud Colas
   email = thibaudcolas@gmail.com
-
+	signingkey = ~/.ssh/id_mykey.pub
 [branch]
     autosetuprebase = always
 
@@ -178,11 +177,6 @@
   version = 2
 [init]
 	defaultBranch = main
-[filter "lfs"]
-	required = true
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
 [gpg "ssh"]
 	defaultKeyCommand = ssh-add -L
 [gpg]

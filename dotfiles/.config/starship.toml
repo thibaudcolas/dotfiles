@@ -70,6 +70,8 @@ disabled = true
 disabled = true
 [terraform]
 disabled = true
+[vagrant]
+disabled = true
 [zig]
 disabled = true
 
@@ -86,3 +88,9 @@ disabled = true
 [time]
 disabled = false
 format = "[$time]($style) "
+
+[git_metrics]
+disabled = false
+
+[sudo]
+disabled = false

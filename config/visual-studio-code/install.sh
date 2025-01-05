@@ -12,52 +12,58 @@ if [[ $? -eq 0 ]];then
         ok "Installing extensions please wait..."
 
         # Update this with code --list-extensions
-        code --install-extension asvetliakov.snapshot-tools
-        code --install-extension bibhasdn.unique-lines
-        code --install-extension bierner.lit-html
-        code --install-extension bpruitt-goddard.mermaid-markdown-syntax-highlighting
-        code --install-extension bradgashler.htmltagwrap
-        code --install-extension bradlc.vscode-tailwindcss
-        code --install-extension bungcip.better-toml
-        code --install-extension christian-kohler.npm-intellisense
-        code --install-extension christian-kohler.path-intellisense
-        code --install-extension daohong-emilio.yash
-        code --install-extension DavidAnson.vscode-markdownlint
-        code --install-extension dbaeumer.vscode-eslint
-        code --install-extension ecmel.vscode-html-css
-        code --install-extension EditorConfig.EditorConfig
-        code --install-extension esbenp.prettier-vscode
-        code --install-extension florianloch.text-transform
-        code --install-extension GitHub.copilot-chat
-        code --install-extension GitHub.copilot-labs
-        code --install-extension GitHub.copilot-nightly
-        code --install-extension GraphQL.vscode-graphql
-        code --install-extension GraphQL.vscode-graphql-syntax
-        code --install-extension jkjustjoshing.vscode-text-pastry
-        code --install-extension mechatroner.rainbow-csv
-        code --install-extension monokai.theme-monokai-pro-vscode
-        code --install-extension mrmlnc.vscode-json5
-        code --install-extension mrmlnc.vscode-scss
-        code --install-extension mrorz.language-gettext
-        code --install-extension ms-azuretools.vscode-docker
-        code --install-extension ms-python.python
-        code --install-extension ms-python.vscode-pylance
-        code --install-extension ms-vscode-remote.remote-containers
-        code --install-extension ms-vscode.makefile-tools
-        code --install-extension ms-vscode.Theme-MarkdownKit
-        code --install-extension ms-vsliveshare.vsliveshare
-        code --install-extension octref.vetur
-        code --install-extension prograhammer.tslint-vue
-        code --install-extension qinjia.seti-icons
-        code --install-extension streetsidesoftware.code-spell-checker
-        code --install-extension stylelint.vscode-stylelint
-        code --install-extension syler.sass-indented
-        code --install-extension sysoev.vscode-open-in-github
-        code --install-extension unifiedjs.vscode-mdx
-        code --install-extension VisualStudioExptTeam.intellicode-api-usage-examples
-        code --install-extension VisualStudioExptTeam.vscodeintellicode
-        code --install-extension Vue.volar
-        code --install-extension whatwedo.twig
+        extensions=(
+          asvetliakov.snapshot-tools
+          bibhasdn.django-html
+          bibhasdn.unique-lines
+          bierner.lit-html
+          bpruitt-goddard.mermaid-markdown-syntax-highlighting
+          bradlc.vscode-tailwindcss
+          charliermarsh.ruff
+          christian-kohler.npm-intellisense
+          christian-kohler.path-intellisense
+          csstools.postcss
+          daohong-emilio.yash
+          davidanson.vscode-markdownlint
+          dbaeumer.vscode-eslint
+          earshinov.permute-lines
+          ecmel.vscode-html-css
+          editorconfig.editorconfig
+          esbenp.prettier-vscode
+          florianloch.text-transform
+          github.copilot
+          github.copilot-chat
+          graphql.vscode-graphql
+          graphql.vscode-graphql-syntax
+          jkjustjoshing.vscode-text-pastry
+          mechatroner.rainbow-csv
+          monokai.theme-monokai-pro-vscode
+          mrmlnc.vscode-json5
+          mrmlnc.vscode-scss
+          mrorz.language-gettext
+          ms-azuretools.vscode-docker
+          ms-python.debugpy
+          ms-python.isort
+          ms-python.python
+          ms-python.vscode-pylance
+          ms-vscode-remote.remote-containers
+          pucelle.vscode-css-navigation
+          qinjia.seti-icons
+          rust-lang.rust-analyzer
+          streetsidesoftware.code-spell-checker
+          stylelint.vscode-stylelint
+          sysoev.vscode-open-in-github
+          tamasfe.even-better-toml
+          unifiedjs.vscode-mdx
+          visualstudioexptteam.intellicode-api-usage-examples
+          visualstudioexptteam.vscodeintellicode
+          vue.volar
+          whatwedo.twig
+        )
+
+        for extension in "${extensions[@]}"; do
+          code --install-extension "$extension"
+        done
 
 
         ok "Extensions for VSC have been installed. Please restart your VSC."

@@ -16,7 +16,7 @@ max_line_length = 80
 
 # Documentation.
 [*.md]
-max_line_length = 0
+max_line_length = unset
 trim_trailing_whitespace = false
 
 [*.py]
@@ -24,7 +24,7 @@ indent_size = 4
 
 # Git commit messages.
 [COMMIT_EDITMSG]
-max_line_length = 0
+max_line_length = unset
 trim_trailing_whitespace = false
 
 # Makefiles require tabs.

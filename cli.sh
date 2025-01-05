@@ -30,87 +30,131 @@ if [[ $unixresponse =~ ^(y|yes|Y) ]];then
     # For WOFF2 encoding.
     brew tap bramstein/webfonttools
 
-    require_brew aspell
-    require_brew autoconf
-    require_brew autojump
-    require_brew avifenc
-    require_brew bash
-    require_brew bash-completion
-    require_brew coreutils
-    require_brew curl
-    require_brew deno
-    require_brew diff-so-fancy
-    require_brew docker
-    require_brew docker-compose
-    require_brew dos2unix
-    require_brew exiftool
-    require_brew fizz
-    require_brew flac
-    require_brew flyctl
-    require_brew fmt
-    require_brew fnm
-    require_brew gcc
-    require_brew git
-    require_brew git-extras
-    require_brew git-lfs
-    require_brew gh
-    require_brew gron
-    require_brew guile
-    require_brew heroku
-    require_brew heroku-node
-    require_brew htop
-    require_brew hub
-    require_brew hugo
-    require_brew hunspell
-    require_brew hyperfine
-    require_brew imagemagick --with-webp
-    require_brew jpeg-xl
-    require_brew jq
-    require_brew lua
-    require_brew lynx
-    require_brew mackup
-    require_brew moreutils
-    require_brew mozjpeg
-    require_brew mysql
-    require_brew nano
-    require_brew ncurses
-    require_brew node
-    require_brew ocaml
-    require_brew pandoc
-    require_brew perl
-    require_brew postgresql
-    require_brew pyenv
-    require_brew qhull
-    require_brew r
-    require_brew rbenv
-    require_brew redis
-    require_brew rename
-    require_brew ripgrep
-    require_brew rsync
-    require_brew ruby
-    require_brew rust
-    require_brew sfnt2woff
-    require_brew sfnt2woff-zopfli
-    require_brew shellcheck
-    require_brew sqlite
-    require_brew starship
-    require_brew the_silver_searcher
-    require_brew tree
-    require_brew unzip
-    require_brew vim --override-system-vi
-    require_brew vnu
-    require_brew watchman
-    require_brew webp
-    require_brew wget --enable-iri
-    require_brew whois
-    require_brew woff2
-    require_brew x264
-    require_brew x265
-    require_brew yarn --without-node
-    require_brew youtube-dl
-    require_brew zopfli
-    require_brew zsh
-    require_brew zsh-completions
+    # See current: brew --list | pbcopy
+    tools=(
+      aspell
+      autoconf
+      autojump
+      avifenc
+      awscli
+      bash
+      bash-completion
+      bat
+      cloc
+      coreutils
+      curl
+      deno
+      diff-so-fancy
+      docker
+      docker-completion
+      docker-compose
+      docutils
+      dos2unix
+      duckdb
+      exiftool
+      eza
+      ffmpeg
+      fizz
+      flac
+      flyctl
+      fmt
+      fnm
+      fzf
+      gallery-dl
+      gcc
+      gettext
+      gh
+      git
+      git-extras
+      git-filter-repo
+      git-lfs
+      git-redate
+      gource
+      gron
+      guile
+      heroku
+      heroku-node
+      htop
+      hub
+      hugo
+      hunspell
+      hyperfine
+      imagemagick
+      imagemagick --with-webp
+      jpeg-turbo
+      jpeg-xl
+      jq
+      just
+      litestream
+      lua
+      lynx
+      mackup
+      moreutils
+      mozjpeg
+      mysql
+      nano
+      ncurses
+      neovim
+      node
+      ocaml
+      opam
+      pandoc
+      perl
+      php
+      pipx
+      pngquant
+      pnpm
+      postgresql
+      pyenv
+      qhull
+      r
+      rbenv
+      readline
+      redis
+      rename
+      ripgrep
+      rsync
+      ruby
+      ruff
+      rust
+      rustup
+      semgrep
+      sfnt2woff
+      sfnt2woff-zopfli
+      shellcheck
+      sqlite
+      starship
+      the_silver_searcher
+      tree
+      unzip
+      uv
+      vale
+      vim
+      vim --override-system-vi
+      virtualenv
+      vnu
+      watchman
+      webp
+      wget
+      wget --enable-iri
+      wget2
+      whois
+      woff2
+      x264
+      x265
+      yarn
+      yarn --without-node
+      yt-dlp
+      zeromq
+      zopfli
+      zoxide
+      zsh
+      zsh-completions
+    )
+
+    for tool in "${tools[@]}"; do
+      require_brew "$tool"
+    done
 
     ok "packages installed..."
 else
@@ -151,23 +195,44 @@ if [[ $packagesresponse =~ ^(y|yes|Y) ]];then
         ok
     }
 
-    require_npm npm
-    require_npm browser-sync
-    require_npm nodemon
-    require_npm stylelint
-    require_npm eslint
-    require_npm trello-backup
-    require_npm serve
-    require_npm prettier
+    packages=(
+      @githubnext/github-copilot-cli
+      @lhci/cli
+      @openacr/openacr
+      all-contributors-cli
+      browser-sync
+      eslint
+      nodemon
+      prettier
+      serve
+      stylelint
+      trello-backup
+      webpack-bundle-analyzer
+    )
+
+    for package in "${packages[@]}"; do
+      require_npm "$package"
+    done
 
     require_gem bundler
     require_gem rake
+    require_gem github-backup
 
-    require_pip pip
-    require_pip virtualenv
-    require_pip flake8
-    require_pip isort
-    require_pip black
+    packages=(
+      black
+      coverage
+      curlylint
+      djhtml
+      doc8
+      flake8
+      ipython
+      pre_commit
+      virtualenv
+    )
+
+    for package in "${packages[@]}"; do
+      require_pip "$package"
+    done
 
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 

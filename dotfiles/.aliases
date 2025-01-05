@@ -5,7 +5,7 @@ alias ..="cd .."
 alias h="history"
 
 # autojump
-alias z="j"
+# alias z="j"
 
 # Git aliases.
 alias ga='git add'
@@ -38,16 +38,19 @@ export LSCOLORS='BxBxhxDxfxhxhxhxhxcxcx'
 # fi
 
 # List all files colorized in long format
-alias ll="ls -lF ${colorflag}"
+# alias ll="ls -lF ${colorflag}"
+alias ll="eza --long --git"
 
 # List all files colorized in long format, including dot files
-alias la="ls -lAF ${colorflag}"
+# alias la="ls -lAF ${colorflag}"
+alias la="eza -a --long --git"
 
 # List only directories
 # alias lsd="ls -lF ${colorflag} | grep --color=never '^d'"
 
 # Always use color output for `ls`
-alias ls="command ls ${colorflag}"
+# alias ls="command ls ${colorflag}"
+alias ls="eza --git"
 
 # Always enable colored `grep` output
 # Note: `GREP_OPTIONS="--color=auto"` is deprecated, hence the alias usage.
@@ -108,3 +111,9 @@ alias venv='source .venv/bin/activate || source venv/bin/activate'
 
 # Show hidden files with ag by default
 alias ag='ag --hidden'
+
+# alias code='code-insiders'
+
+alias nvm=fnm
+
+alias fzf="fzf --preview 'bat --color=always {}' --preview-window '~3'"

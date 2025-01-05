@@ -107,7 +107,13 @@ fi
 
 if [[ $folder_response =~ ^(y|yes|Y) ]];then
     mkdir -p ~/Dev
-    mkdir -p ~/Screenshots
+    mkdir -p ~/Dev/playground
+    mkdir -p ~/Dev/forks
+    mkdir -p ~/Dev/thibaudcolas
+    mkdir -p ~/Dev/springload
+    mkdir -p ~/Dev/django
+    mkdir -p ~/Dev/djangocon
+    mkdir -p ~/Dev/wagtail
 
     ok "Created common folders"
 else

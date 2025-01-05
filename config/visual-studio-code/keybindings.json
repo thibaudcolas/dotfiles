@@ -45,7 +45,7 @@
     "when": "editorFocus"
   },
   {
-    "key": "cmd+l",
+    "key": "cmd+'",
     "command": "expandLineSelection",
     "when": "editorFocus"
   },

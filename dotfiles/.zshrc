@@ -18,7 +18,15 @@ DISABLE_UPDATE_PROMPT=true
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git git-extras docker docker-compose last-working-dir fnm)
+plugins=(
+  git
+  git-extras
+  gh
+  docker
+  docker-compose
+  last-working-dir
+  fnm
+)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -35,8 +43,24 @@ unset file;
 # zsh-specific config
 # ====================
 
+# Appends every command to the history file once it is executed
+setopt inc_append_history
+# Share history between
+setopt share_history
+
 # Will make it ask you before executing rm with a star rm folder/*.
 unsetopt RM_STAR_SILENT
 
 eval "$(starship init zsh)"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+eval "$(zoxide init zsh)"
+eval "$(pyenv init - zsh)"
+
+# if [ -z "$SCRIPT_SESSION" ]; then
+#     export SCRIPT_SESSION=$HOME/.script-sessions/$(date +%Y%m%d_%H%M%S)_session.log
+#     exec script -q -t 10 -a $SCRIPT_SESSION
+# fi
+
+
+# export PATH="$HOME/.config/herd-lite/bin:$PATH"
+# export PHP_INI_SCAN_DIR="$HOME/.config/herd-lite/bin:$PHP_INI_SCAN_DIR"
