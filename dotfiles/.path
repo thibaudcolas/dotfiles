@@ -1,1 +1,1 @@
-export PATH="$HOME/.cargo/bin:$HOME/.poetry/bin:$HOME/.local/bin:/usr/local/bin:/usr/local/opt/python/libexec/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin:$HOME/.rbenv/bin:$HOME/.yarn/bin:$PYENV_ROOT/bin:"
+export PATH="/opt/homebrew/bin:$HOME/.cargo/bin:$HOME/.poetry/bin:$HOME/.local/bin:/usr/local/bin:/usr/local/opt/python/libexec/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin:$HOME/.rbenv/bin:$HOME/.yarn/bin:$PYENV_ROOT/bin:"
