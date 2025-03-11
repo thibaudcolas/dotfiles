@@ -1,39 +1,66 @@
 #!/usr/bin/env bash
 
 projects=(
-  thibaudcolas/ranking-to-pageviews
-  thibaudcolas/cookbook
-  thibaudcolas/detect-wagtail
-  thibaudcolas/detect-wagtail-version
-  thibaudcolas/dotfiles
-  thibaudcolas/draftail-playground
-  thibaudcolas/draftail.org
-  thibaudcolas/draftjs-conductor
-  thibaudcolas/dsf-design-assets
-  thibaudcolas/future-css-today
-  thibaudcolas/oled-power
-  thibaudcolas/stylelint-accessible
-  thibaudcolas/stylelint-config-cookbook
-  thibaudcolas/thib.me
-  thibaudcolas/wagtail-tooling
   django/code-of-conduct
   django/deps
   django/django
-  django/django-admin-demo
-  django/django_admin_tests
   django/djangoproject.com
   django/dsf-working-groups
+  springload/draftail
+  springload/draftjs_exporter
+  thibaudcolas/alt-text-benchmark
+  thibaudcolas/atag-getting-started
+  thibaudcolas/bakerydemo-editor-guide
+  thibaudcolas/bakerydemo-gold-benchmark
+  thibaudcolas/bakerydemo-jinja
+  thibaudcolas/bakerydemo-localize
+  thibaudcolas/bakerydemo-nextjs
+  thibaudcolas/benchmark-wagtail-demo
+  thibaudcolas/cookbook
+  thibaudcolas/detect-wagtail
+  thibaudcolas/detect-wagtail-version
+  thibaudcolas/django_admin_tests
+  thibaudcolas/dotfiles
+  thibaudcolas/draftail-playground
+  thibaudcolas/draftail.org
+  thibaudcolas/draftjs_exporter_markdown
+  thibaudcolas/draftjs-conductor
+  thibaudcolas/dsf-design-assets
+  thibaudcolas/future-css-today
+  thibaudcolas/jsonresume-theme-eloquent
+  thibaudcolas/kontrasto
+  thibaudcolas/markov_draftjs
+  thibaudcolas/oled-power
+  thibaudcolas/pre-commit-stylelint
+  thibaudcolas/psf-annual-report-2023
+  thibaudcolas/ranking-to-pageviews
+  thibaudcolas/readability-group-survey
+  thibaudcolas/stylelint-accessible
+  thibaudcolas/stylelint-config-cookbook
+  thibaudcolas/tailwindcss-vanilla-rtl
+  thibaudcolas/tailwindcss-vanilla-sass
+  thibaudcolas/thib.me
+  thibaudcolas/timeline-of-django
+  thibaudcolas/wagtail-bakerydemo-archive
+  thibaudcolas/wagtail-contributors
+  thibaudcolas/wagtail-tooling
+  thibaudcolas/wagtail-tooling-artifacts
+  thibaudcolas/wagtail-tutorial-site
+  thibaudcolas/wagtail-ui-experiments
+  thibaudcolas/your-wagtail-portfolio
+  torchbox/django-pattern-library
+  torchbox/eslint-config-torchbox
+  torchbox/storybook-django
   wagtail/accessibility
   wagtail/bakerydemo
   wagtail/gsoc
   wagtail/gsod
   wagtail/guide
-  wagtail/nextjs-loves-wagtail
+  wagtail/low-carbon-template
+  wagtail/outreachy
   wagtail/rfcs
   wagtail/sphinx-wagtail-theme
   wagtail/wagtail.org
-  springload/draftail
-  springload/draftjs_exporter
 )
 
 for project in "${projects[@]}"; do
