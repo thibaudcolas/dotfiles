@@ -175,7 +175,6 @@ shellcheck *.sh
 
 View at: `chrome://extensions/`.
 
-- [AutoHideDownloadsBar](https://chromewebstore.google.com/detail/autohidedownloadsbar/gkmndgjgpolmikgnipipfekglbbgjcel)
 - [Tablist](https://chromewebstore.google.com/detail/tablist/eagbohciligljbgpbdbflaloangiodhe)
 - [React DevTools](https://chromewebstore.google.com/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi)
 - [Redux DevTools](https://chromewebstore.google.com/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd)
