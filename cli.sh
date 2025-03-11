@@ -42,6 +42,10 @@ if [[ $unixresponse =~ ^(y|yes|Y) ]];then
       bat
       cloc
       coreutils
+      cmake
+      ninja
+      doxygen
+      asciidoc
       curl
       deno
       diff-so-fancy
@@ -132,7 +136,6 @@ if [[ $unixresponse =~ ^(y|yes|Y) ]];then
       vim
       vim --override-system-vi
       virtualenv
-      vnu
       watchman
       webp
       wget
