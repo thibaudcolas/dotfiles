@@ -153,8 +153,6 @@
   # Do not push anything (error out) unless a refspec is given.
   # https://git-scm.com/docs/git-config
   default = nothing
-  # Make `git push` push relevant annotated tags when pushing branches out.
-  followTags = true
 
 [user]
   name = Thibaud Colas
