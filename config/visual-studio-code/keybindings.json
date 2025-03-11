@@ -9,64 +9,7 @@
     "command": "workbench.action.previousEditor"
   },
   {
-    "key": "cmd+shift+l",
-    "command": "editor.action.insertCursorAtEndOfEachLineSelected"
-  },
-  {
-    "key": "cmd+alt+g",
-    "command": "editor.action.changeAll",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "ctrl+e",
-    "command": "editor.emmet.action.expandAbbreviation",
-    "when": "editorTextFocus && !editorReadonly && !editorTabMovesFocus"
-  },
-  {
     "key": "cmd+t",
     "command": "workbench.action.quickOpen"
-  },
-  {
-    "key": "cmd+r",
-    "command": "workbench.action.gotoSymbol"
-  },
-  {
-    "key": "cmd+alt+down",
-    "command": "editor.action.goToDeclaration"
-  },
-  {
-    "key": "cmd+g",
-    "command": "editor.action.nextMatchFindAction",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "cmd+ctrl+g",
-    "command": "editor.action.selectHighlights",
-    "when": "editorFocus"
-  },
-  {
-    "key": "cmd+'",
-    "command": "expandLineSelection",
-    "when": "editorFocus"
-  },
-  {
-    "key": "cmd+shift+l",
-    "command": "editor.action.insertCursorAtEndOfEachLineSelected",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "cmd+j",
-    "command": "editor.action.joinLines",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "cmd+k cmd+u",
-    "command": "editor.action.transformToUppercase",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "cmd+k cmd+l",
-    "command": "editor.action.transformToLowercase",
-    "when": "editorTextFocus"
   }
 ]
