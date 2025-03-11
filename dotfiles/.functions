@@ -118,3 +118,26 @@ auto-ls () {
     eza -a
 }
 chpwd_functions=( auto-ls $chpwd_functions )
+
+convert_image() {
+    # Usage: convert_image "path/to/image.png" [quality]
+    # Default quality is 60 if not provided.
+    local infile="$1"
+    local quality="${2:-60}"
+    local webp_quality=$(( quality + 10 ))
+
+    # Remove file extension to get the base name.
+    local base="${infile%.*}"
+
+    # Construct output filenames.
+    local avif_out="${base}-${quality}.avif"
+    local jpg_out="${base}-${quality}.jpg"
+    local webp_out="${base}-${quality}.webp"
+
+    echo "AVIF: ${quality}"
+    avifenc -q "${quality}" "${infile}" "${avif_out}"
+    echo "JPEG: ${quality}"
+    ~/.bin/jpegli/build/tools/cjpegli -q "${quality}" "${infile}" "${jpg_out}"
+    echo "WebP: ${webp_quality}"
+    cwebp -q "${webp_quality}" "${infile}" -o "${webp_out}"
+}
