@@ -21,9 +21,6 @@ bot "Let's go! Make sure to check on your computer regularly in case something n
 if [[ $appsresponse =~ ^(y|yes|Y) ]];then
     action "install brew cask packages..."
 
-    # For Logitech G-Hub
-    brew tap homebrew/cask-drivers
-
     # To update this list,
     # brew list --cask | pbcopy
     casks=(
@@ -32,7 +29,6 @@ if [[ $appsresponse =~ ^(y|yes|Y) ]];then
       appcleaner
       avifquicklook
       beekeeper-studio
-      bettertouchtool
       betterzip
       bitwarden
       browserstacklocal
@@ -46,24 +42,25 @@ if [[ $appsresponse =~ ^(y|yes|Y) ]];then
       dropbox
       element
       firefox
-      font-dejavu
       font-fira-code
       font-inconsolata
       font-monaspace
       font-open-sans
       font-roboto
       font-source-code-pro
-      google-backup-and-sync
       google-chrome
       google-chrome-canary
       google-chrome@canary
+      google-drive
       google-cloud-sdk
       handbrake
+      whatsapp
+      figma
+      calibre
       imageoptim
       iterm2
       keycastr
       licecap
-      logitech-g-hub
       loom
       loopback
       mattermost
@@ -79,32 +76,29 @@ if [[ $appsresponse =~ ^(y|yes|Y) ]];then
       orbstack
       pdf-squeezer
       poedit
-      pop
       postman
       qlcolorcode
       qlimagesize
       qlmarkdown
       qlstephen
+      rectangle
+      multitouch
       screaming-frog-seo-spider
       screen-studio
       sequential
       shadow
       shortcat
       signal
-      sizeup
       slack
       steam
       sublime-text
       suspicious-package
-      telegram
       the-unarchiver
       transmission
       ukelele
-      vagrant
       virtualbox
       visual-studio-code
       vlc
-      warp
       webpquicklook
       zoom
       zulip
