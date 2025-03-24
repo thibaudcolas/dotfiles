@@ -82,7 +82,6 @@ if [[ $appsresponse =~ ^(y|yes|Y) ]];then
       screen-studio
       ollama
       chatgpt
-      sequential
       shadow
       shortcat
       signal
