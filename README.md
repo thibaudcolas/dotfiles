@@ -154,9 +154,8 @@ shellcheck *.sh
 
 ### Installs
 
-- [Geotag](http://geotag.sourceforge.net/)
-- [Soundflower](https://github.com/mattingalls/Soundflower)
-- [360Controller](https://github.com/360Controller/360Controller)
+- [Caffeine](https://www.caffeine-app.net/)
+- [jpegli](https://github.com/google/jpegli)
 
 ### Manual configuration
 

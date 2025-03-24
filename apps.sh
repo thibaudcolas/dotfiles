@@ -29,40 +29,36 @@ if [[ $appsresponse =~ ^(y|yes|Y) ]];then
       appcleaner
       avifquicklook
       beekeeper-studio
+      blackhole-2ch
       betterzip
       bitwarden
       browserstacklocal
-      caffeine
       capcut
       cursor
       cyberduck
-      dbeaver-community
       discord
       docker
       dropbox
       element
       firefox
-      font-fira-code
       font-inconsolata
       font-monaspace
       font-open-sans
       font-roboto
       font-source-code-pro
       google-chrome
-      google-chrome-canary
       google-chrome@canary
       google-drive
       google-cloud-sdk
       handbrake
       whatsapp
       figma
-      calibre
+      blackhole-2ch
       imageoptim
       iterm2
       keycastr
       licecap
       loom
-      loopback
       mattermost
       microsoft-auto-update
       miro
@@ -81,10 +77,11 @@ if [[ $appsresponse =~ ^(y|yes|Y) ]];then
       qlimagesize
       qlmarkdown
       qlstephen
-      rectangle
       multitouch
       screaming-frog-seo-spider
       screen-studio
+      ollama
+      chatgpt
       sequential
       shadow
       shortcat
