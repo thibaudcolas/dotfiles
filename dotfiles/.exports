@@ -86,3 +86,5 @@ export PYENV_ROOT="$HOME/.pyenv"
 # [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
 
 # source /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc
+
+export DJANGOPROJECT_DATA_DIR=./.envrc

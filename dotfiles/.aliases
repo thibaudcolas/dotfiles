@@ -117,3 +117,7 @@ alias ag='ag --hidden'
 alias nvm=fnm
 
 alias fzf="fzf --preview 'bat --color=always {}' --preview-window '~3'"
+
+alias migrate="./manage.py migrate"
+alias load_initial_data="./manage.py load_initial_data"
+alias runserver="./manage.py runserver"
