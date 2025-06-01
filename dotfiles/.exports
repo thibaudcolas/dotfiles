@@ -46,7 +46,7 @@ export STORYBOOK_DISABLE_TELEMETRY=1
 export GH_NO_UPDATE_NOTIFIER=true
 
 # BREWPREFIX="$(brew --prefix openssl)"
-BREWPREFIX="/usr/local/opt/openssl@1.1"
+BREWPREFIX="/opt/homebrew/opt/openssl@3"
 export CFLAGS="-I$BREWPREFIX/include";
 export LDFLAGS="-L$BREWPREFIX/lib";
 
