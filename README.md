@@ -119,23 +119,6 @@ To install the packages, open your Command Palette _(Cmd+Maj+P)_, type `Browse p
 
 Once this is all done, you will want to use Babel Sublime for your JavaScript syntax highlighting. [Here's how to](https://github.com/babel/babel-sublime#setting-as-the-default-syntax).
 
-## Contributing to this project
-
-If you want to tinker with the bash scripts, please install [ShellCheck](https://github.com/koalaman/shellcheck) and use it to check your changes.
-
-```bash
-# Debian distribs
-apt-get install shellcheck
-# OSX
-brew install shellcheck
-
-shellcheck *.sh
-
-# Its output should be empty:
-# $ shellcheck *.sh | wc -l
-#        0
-```
-
 ## See also
 
 - https://brew.sh/
@@ -187,5 +170,3 @@ View at: `chrome://extensions/`.
 - [Accessibility Insights](https://chromewebstore.google.com/detail/accessibility-insights-fo/pbjjkligggfmakdaogkfomddhfmpjeni)
 - [Refined GitHub](https://chromewebstore.google.com/detail/refined-github/hlepfoohegkhhmjieoechaddaejaokhf)
 - [SingleFile](https://chromewebstore.google.com/detail/singlefile/mpiodijhokgodhhofbcjdecpffjipkle)
-
-### Firefox
