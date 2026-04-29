@@ -1,0 +1,30 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "provider": {
+    "neuralwatt": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "Neuralwatt",
+      "options": {
+        "baseURL": "https://api.neuralwatt.com/v1"
+      },
+      "models": {
+        "moonshotai/Kimi-K2.5": {
+          "name": "Neuralwatt Kimi K2.5"
+        },
+        "kimi-k2.5-fast": {
+          "name": "Neuralwatt Kimi K2.5 Fast"
+        },
+        "Qwen/Qwen3-Coder-480B-A35B-Instruct": {
+          "name": "Neuralwatt Qwen3 Coder"
+        },
+        "deepseek-ai/deepseek-coder-33b-instruct": {
+          "name": "Neuralwatt DeepSeek Coder"
+        },
+        "openai/gpt-oss-20b": {
+          "name": "Neuralwatt GPT-OSS 20B"
+        }
+      }
+    }
+  },
+  "autoupdate": true
+}
