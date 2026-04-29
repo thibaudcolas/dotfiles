@@ -13,52 +13,50 @@ if [[ $? -eq 0 ]];then
 
         # Update this with code --list-extensions
         extensions=(
-          asvetliakov.snapshot-tools
-          bibhasdn.django-html
-          bibhasdn.unique-lines
-          bierner.lit-html
+          anthropic.claude-code
+          anysphere.cursorpyright
+          anysphere.remote-containers
+          batisteo.vscode-django
+          biomejs.biome
+          blueglassblock.better-json5
           bpruitt-goddard.mermaid-markdown-syntax-highlighting
           bradlc.vscode-tailwindcss
           charliermarsh.ruff
           christian-kohler.npm-intellisense
           christian-kohler.path-intellisense
+          coderabbit.coderabbit-vscode
           csstools.postcss
-          daohong-emilio.yash
           davidanson.vscode-markdownlint
           dbaeumer.vscode-eslint
+          docker.docker
           earshinov.permute-lines
           ecmel.vscode-html-css
           editorconfig.editorconfig
           esbenp.prettier-vscode
-          florianloch.text-transform
-          github.copilot
-          github.copilot-chat
+          github.vscode-github-actions
           graphql.vscode-graphql
           graphql.vscode-graphql-syntax
-          jkjustjoshing.vscode-text-pastry
           mechatroner.rainbow-csv
           monokai.theme-monokai-pro-vscode
-          mrmlnc.vscode-json5
           mrmlnc.vscode-scss
           mrorz.language-gettext
+          ms-azuretools.vscode-containers
           ms-azuretools.vscode-docker
           ms-python.debugpy
           ms-python.isort
           ms-python.python
-          ms-python.vscode-pylance
-          ms-vscode-remote.remote-containers
+          nefrob.vscode-just-syntax
+          openai.chatgpt
           pucelle.vscode-css-navigation
-          qinjia.seti-icons
+          qcz.text-power-tools
+          reduckted.vscode-gitweblinks
           rust-lang.rust-analyzer
           streetsidesoftware.code-spell-checker
           stylelint.vscode-stylelint
-          sysoev.vscode-open-in-github
+          svelte.svelte-vscode
           tamasfe.even-better-toml
           unifiedjs.vscode-mdx
-          visualstudioexptteam.intellicode-api-usage-examples
-          visualstudioexptteam.vscodeintellicode
           vue.volar
-          whatwedo.twig
         )
 
         for extension in "${extensions[@]}"; do
