@@ -1,8 +1,6 @@
-// Place your settings in this file to overwrite the default settings
 {
   "workbench.settings.editor": "json",
   "editor.fontFamily": "'Monaspace Neon', Menlo, Monaco, 'Courier New', monospace",
-  // "editor.fontFamily": "'Fira Code', 'Operator Mono', Menlo, Monaco, 'Courier New', monospace",
   "editor.fontLigatures": "'calt', 'liga', 'dlig', 'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'ss19'",
   "editor.fontSize": 16,
   "editor.wordWrap": "off",
@@ -10,9 +8,7 @@
   "editor.formatOnSave": true,
   "editor.tabSize": 4,
   "workbench.startupEditor": "newUntitledFile",
-  "workbench.iconTheme": "seti",
-  "github.copilot.chat.edits.enabled": true,
-  // "search.searchEditor.defaultNumberOfContextLines": 3,
+  "workbench.iconTheme": "Monokai Pro (Filter Machine) Icons",
   "workbench.localHistory.maxFileEntries": 200,
   "terminal.integrated.smoothScrolling": true,
   "terminal.integrated.mouseWheelScrollSensitivity": 1,
@@ -53,6 +49,7 @@
     "**/.husky": true,
     "**/.lighthouseci": true,
     "**/.jekyll-cache": true,
+    "**/.ruff_cache": true,
     "**/.next": true,
     "**/.nuxt": true,
     "**/.nyc_output": true,
@@ -221,6 +218,7 @@
     "flowtype",
     "formdata",
     "formik",
+    "fosdem",
     "getenv",
     "gettext",
     "githooks",
@@ -237,11 +235,13 @@
     "Humani",
     "Humani’s",
     "immer",
+    "inclusivity",
     "initialised",
     "Initialises",
     "internationalisation",
     "ipaddress",
     "ipynb",
+    "isinstance",
     "isort",
     "isready",
     "italicised",
@@ -290,6 +290,7 @@
     "nvalt",
     "nvmrc",
     "Oladele",
+    "oled",
     "opencollective",
     "openquote",
     "OPENSOURCE",
@@ -311,6 +312,7 @@
     "pilcrow",
     "pocwagtail",
     "popd",
+    "popstate",
     "postbuild",
     "postgres",
     "POSTGRESQL",
@@ -329,6 +331,7 @@
     "READMEs",
     "RECAPTCHA",
     "refactorings",
+    "Renderable",
     "renewables",
     "renovatebot",
     "reportname",
@@ -360,6 +363,7 @@
     "srcset",
     "standardpages",
     "staticfiles",
+    "staticmethod",
     "Steinwand",
     "storybookjs",
     "storyshots",
@@ -405,6 +409,7 @@
     "UNSTYLED",
     "uppercased",
     "urlize",
+    "urlpatterns",
     "userbar",
     "userpreference",
     "vendored",
@@ -430,6 +435,7 @@
     "WHATWG",
     "whitenoise's",
     "whitespaced",
+    "WSGI",
     "xlink",
     "xmlfeed",
     "zoomus"
@@ -443,7 +449,9 @@
     "MD024": false,
     "MD026": false,
     "MD029": false,
+    "MD030": false,
     "MD033": false,
+    "MD036": false,
     "MD041": false,
     "MD049": false
   },
@@ -460,13 +468,13 @@
   "workbench.colorTheme": "Monokai Pro (Filter Machine)",
   "typescript.check.npmIsInstalled": false,
   "explorer.confirmDragAndDrop": false,
-  "extensions.ignoreRecommendations": false,
+  "extensions.ignoreRecommendations": true,
   "editor.accessibilitySupport": "off",
   "explorer.confirmDelete": false,
   "editor.suggestSelection": "first",
   "javascript.updateImportsOnFileMove.enabled": "always",
   "editor.bracketPairColorization.enabled": true,
-  "python.languageServer": "Pylance",
+  "python.languageServer": "None",
   "typescript.updateImportsOnFileMove.enabled": "always",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "editor.codeActionsOnSave": {
@@ -506,19 +514,22 @@
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "[vue]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "[markdown]": {
+  "[vue]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "biomejs.biome"
   },
   "[scss]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[postcss]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "tailwindCSS.includeLanguages": {
@@ -528,7 +539,8 @@
   },
   "tailwindCSS.emmetCompletions": true,
   "workbench.editorAssociations": {
-    "*.ipynb": "jupyter-notebook"
+    "*.ipynb": "jupyter-notebook",
+    "*.svg": "default"
   },
   "terminal.integrated.tabs.enabled": true,
   "security.workspace.trust.untrustedFiles": "newWindow",
@@ -538,7 +550,6 @@
     "jupyter-notebook": "left"
   },
   "editor.inlineSuggest.enabled": true,
-
   "github.copilot.enable": {
     "*": true,
     "yaml": true,
@@ -550,17 +561,13 @@
   },
   "openInGitHub.defaultBranch": "main",
   "openInGitHub.defaultRemote": "origin",
-  "workbench.layoutControl.enabled": false,
-  "js/ts.implicitProjectConfig.target": "ES2022",
-  "[postcss]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
+  "js/ts.implicitProjectConfig.target": "ES2023",
   "workbench.editor.empty.hint": "hidden",
   "github.copilot.editor.enableAutoCompletions": true,
-  "editor.minimap.enabled": true,
+  "editor.minimap.enabled": false,
   "terminal.integrated.enableMultiLinePasteWarning": "never",
   "editor.unicodeHighlight.ambiguousCharacters": false,
-  "djangoTemplateLsp.enableLogging": true,
-  "chat.editing.alwaysSaveWithGeneratedChanges": true
-  // "files.autoSave": "afterDelay"
+  "files.autoSave": "afterDelay",
+  "security.promptForLocalFileProtocolHandling": false,
+  "git.blame.editorDecoration.enabled": false
 }
