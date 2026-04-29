@@ -55,6 +55,9 @@ eval "$(starship init zsh)"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 eval "$(zoxide init zsh)"
 eval "$(pyenv init - zsh)"
+eval "$(rv shell init zsh)"
+eval "$(rv shell completions zsh)"
+eval "$(gh copilot alias -- zsh)"
 
 # if [ -z "$SCRIPT_SESSION" ]; then
 #     export SCRIPT_SESSION=$HOME/.script-sessions/$(date +%Y%m%d_%H%M%S)_session.log
@@ -64,3 +67,6 @@ eval "$(pyenv init - zsh)"
 
 # export PATH="$HOME/.config/herd-lite/bin:$PATH"
 # export PHP_INI_SCAN_DIR="$HOME/.config/herd-lite/bin:$PHP_INI_SCAN_DIR"
+
+fpath+=~/.zfunc; autoload -Uz compinit; compinit
+zstyle ':completion:*' menu select

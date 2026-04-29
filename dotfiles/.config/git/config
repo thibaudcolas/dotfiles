@@ -79,7 +79,7 @@
 
 [core]
   # Use custom `.gitignore` and `.gitattributes`
-  # excludesfile = ~/.gitignore
+  excludesfile = ~/.gitignore
   # attributesfile = ~/.gitattributes
 
   # Treat spaces before tabs and all kinds of trailing whitespace as an error
@@ -99,9 +99,18 @@
   # https://git-scm.com/docs/git-update-index#_untracked_cache
   untrackedCache = true
 
-  pager = less --tabs=4 -RFX
   ignorecase = false
-	excludesfile = /Users/thibaudcolas/.gitignore_global
+  pager = delta
+
+[interactive]
+    diffFilter = delta --color-only
+
+[delta]
+    line-numbers = true
+    navigate = true  # use n and N to move between diff sections
+    dark = true # or light = true, or omit for auto-detection
+    hyperlinks = true
+    hyperlinks-file-link-format = "vscode://file/{path}:{line}"
 
 [color]
   # Use colors in Git commands that are capable of colored output when
@@ -128,10 +137,13 @@
 [commit]
   # https://help.github.com/articles/signing-commits-using-gpg/
   gpgsign = false
+  verbose = true
 
 [diff]
-  # Detect copies as well as renames
-  renames = copies
+  algorithm = histogram
+  colorMoved = plain
+  mnemonicPrefix = true
+  renames = true
   # Enable an experimental heuristic that shifts the hunk boundary in an
   # attempt to make the resulting patch easier to read.
   indentHeuristic = true
@@ -145,21 +157,26 @@
   autocorrect = immediate
 
 [merge]
-  # Include summaries of merged commits in newly created merge commit messages
-  log = true
-	conflictStyle = zdiff3
+  # Include summaries o
 
 [push]
   # Do not push anything (error out) unless a refspec is given.
   # https://git-scm.com/docs/git-config
   default = nothing
+  autoSetupRemote = true
+  followTags = true
 
 [user]
   name = Thibaud Colas
   email = thibaudcolas@gmail.com
 	signingkey = ~/.ssh/id_mykey.pub
+
 [branch]
     autosetuprebase = always
+    sort = -committerdate
+
+[tag]
+    sort = version:refname
 
 [pull]
   # Always use rebase when pulling.
@@ -169,6 +186,8 @@
 [fetch]
   # Always prune old references when fetch/pull-ing
   prune = true
+  pruneTags = true
+  all = true
 
 [protocol]
   # https://github.blog/2020-03-22-highlights-from-git-2-26/
@@ -181,3 +200,14 @@
 	format = ssh
 [blame]
 #	ignoreRevsFile = .git-blame-ignore-revs
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[url "git@github.com:"]
+	insteadOf = gh:
+[coderabbit]
+	machineId = cli/1770387ac511445ea088de59b2d0339b
+[advice]
+	diverging = false

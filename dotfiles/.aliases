@@ -121,3 +121,6 @@ alias fzf="fzf --preview 'bat --color=always {}' --preview-window '~3'"
 alias migrate="./manage.py migrate"
 alias load_initial_data="./manage.py load_initial_data"
 alias runserver="./manage.py runserver"
+
+# Lazy Python
+alias python=python3

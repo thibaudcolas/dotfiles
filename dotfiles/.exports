@@ -46,7 +46,7 @@ export STORYBOOK_DISABLE_TELEMETRY=1
 export GH_NO_UPDATE_NOTIFIER=true
 
 # BREWPREFIX="$(brew --prefix openssl)"
-BREWPREFIX="/opt/homebrew/opt/openssl@3"
+BREWPREFIX="/usr/local/opt/openssl@1.1"
 export CFLAGS="-I$BREWPREFIX/include";
 export LDFLAGS="-L$BREWPREFIX/lib";
 
@@ -60,6 +60,8 @@ eval "$(fnm env)"
 
 # Android SDK for React Native.
 export ANDROID_HOME=$HOME/Library/Android/sdk
+
+export MAGICK_HOME=/opt/homebrew
 
 # Load RVM into a shell session *as a function*
 # [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
