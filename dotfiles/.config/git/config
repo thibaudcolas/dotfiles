@@ -1,3 +1,5 @@
+
+
 [alias]
   ci = commit
   co = checkout
@@ -66,6 +68,10 @@
   # Remove branches that have already been merged with master
   # a.k.a. ‘delete merged’
   dm = "!git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"
+
+  # https://github.com/cli/cli/issues/2189#issuecomment-1922458559
+  pushPR = !git push $(git config --get branch.$(git symbolic-ref HEAD --short).pushRemote) +@:$(git config --get branch.$(git symbolic-ref HEAD --short).merge | sed \"s|refs/heads/||\")
+
 
   # List contributors with number of commits
   contributors = shortlog --summary --numbered
@@ -136,7 +142,7 @@
 
 [commit]
   # https://help.github.com/articles/signing-commits-using-gpg/
-  gpgsign = false
+	gpgsign = true
   verbose = true
 
 [diff]
@@ -169,7 +175,7 @@
 [user]
   name = Thibaud Colas
   email = thibaudcolas@gmail.com
-	signingkey = ~/.ssh/id_mykey.pub
+	signingkey = /Users/thibaudcolas/.ssh/id_ed25519.pub
 
 [branch]
     autosetuprebase = always
@@ -177,6 +183,7 @@
 
 [tag]
     sort = version:refname
+	gpgsign = true
 
 [pull]
   # Always use rebase when pulling.
@@ -207,7 +214,5 @@
 	required = true
 [url "git@github.com:"]
 	insteadOf = gh:
-[coderabbit]
-	machineId = cli/1770387ac511445ea088de59b2d0339b
 [advice]
 	diverging = false
