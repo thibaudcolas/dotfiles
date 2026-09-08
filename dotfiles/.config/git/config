@@ -142,7 +142,7 @@
 
 [commit]
   # https://help.github.com/articles/signing-commits-using-gpg/
-	gpgsign = true
+  gpgsign = true
   verbose = true
 
 [diff]
@@ -175,14 +175,14 @@
 [user]
   name = Thibaud Colas
   email = thibaudcolas@gmail.com
-	signingkey = /Users/thibaudcolas/.ssh/id_ed25519.pub
+	signingkey = ~/.ssh/id_ed25519.pub
 
 [branch]
     autosetuprebase = always
     sort = -committerdate
 
 [tag]
-    sort = version:refname
+  sort = version:refname
 	gpgsign = true
 
 [pull]
@@ -216,3 +216,13 @@
 	insteadOf = gh:
 [advice]
 	diverging = false
+[pi]
+	assisted-by = "Assisted-by: pi with $modelname"
+[trailer "assisted-by"]
+	key = Assisted-by
+[trailer "co-authored-by"]
+	key = Assisted-by
+[opencode "trailer"]
+	model = "{{model}}"
+	assisted-by = OpenCode with "{{model}}"
+	co-authored-by = AI Assistant <ai@opencode.ai>

@@ -1,5 +1,6 @@
 {
   "$schema": "https://opencode.ai/config.json",
+  "plugins": ["opencode-git-trailers"],
   "provider": {
     "neuralwatt": {
       "npm": "@ai-sdk/openai-compatible",
@@ -8,22 +9,97 @@
         "baseURL": "https://api.neuralwatt.com/v1"
       },
       "models": {
-        "moonshotai/Kimi-K2.5": {
-          "name": "Neuralwatt Kimi K2.5"
-        },
-        "kimi-k2.5-fast": {
-          "name": "Neuralwatt Kimi K2.5 Fast"
-        },
-        "Qwen/Qwen3-Coder-480B-A35B-Instruct": {
-          "name": "Neuralwatt Qwen3 Coder"
-        },
-        "deepseek-ai/deepseek-coder-33b-instruct": {
-          "name": "Neuralwatt DeepSeek Coder"
-        },
-        "openai/gpt-oss-20b": {
-          "name": "Neuralwatt GPT-OSS 20B"
+        "kimi-k3": { "name": "Kimi K3" },
+        "kimi-k3-flex": { "name": "Kimi K3 Flex" },
+        "deepseek-v4-flash": { "name": "DeepSeek V4 Flash" },
+        "deepseek-v4-flash-flex": { "name": "DeepSeek V4 Flash Flex" }
+      }
+    },
+    "inceptron": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "Inceptron",
+      "options": {
+        "apiKey": "{env:INCEPTRON_API_KEY}",
+        "baseURL": "https://openrouter.inceptron.io/v1"
+      },
+      "models": {
+        "deepseek-ai/DeepSeek-V4-Flash-0731": {
+          "name": "DeepSeek V4 Flash"
         }
       }
+    },
+    "tensorx": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "TensorX",
+      "options": {
+        "baseURL": "https://api.tensorx.ai/v1"
+      },
+      "models": {
+        "z-ai/glm-5.3-flash": { "name": "GLM 5.3 Flash" },
+        "z-ai/glm-5.3": { "name": "GLM 5.3" }
+      }
+    },
+    "kilo": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "Kilo Gateway",
+      "options": {
+        "apiKey": "{env:KILO_API_KEY}",
+        "baseURL": "https://api.kilo.ai/api/gateway"
+      }
+    },
+    "scaleway": {
+      "npm": "@ai-sdk/openai-compatible",
+      "options": {
+        "apiKey": "{env:SCW_SECRET_KEY}",
+        "baseURL": "https://api.scaleway.ai/{env:SCW_PROJECT_ID}/v1"
+      },
+      "models": {
+        "glm-5.2": {
+          "name": "GLM-5.2",
+          "maxTokens": 16384
+        }
+      }
+    },
+    "argyll": {
+      "name": "Argyll",
+      "options": {
+        "apiKey": "{env:ARGYLL_API_KEY}",
+        "baseURL": "https://api.argylldev.ai/v1"
+      },
+      "models": {
+        "MiniMax-M2.7": {
+          "name": "MiniMax M2.7"
+        }
+      }
+    },
+    "qwen": {
+      "name": "Qwen",
+      "options": {
+        "apiKey": "{env:QWEN_API_KEY}",
+        "baseURL": "https://dashscope-intl.aliyuncs.com/compatible-mode/v1"
+      },
+      "models": {
+        "qwen3.8-max": {
+          "name": "Qwen3.8 Max"
+        }
+      }
+    }
+  },
+  "mcp": {
+    "miro": {
+      "type": "remote",
+      "url": "https://mcp.miro.com/",
+      "enabled": false
+    },
+    "Astro docs": {
+      "type": "remote",
+      "url": "https://mcp.docs.astro.build/mcp",
+      "enabled": true
+    },
+    "Scout APM": {
+      "type": "remote",
+      "url": "https://scoutapm.com/mcp",
+      "enabled": true
     }
   },
   "autoupdate": true

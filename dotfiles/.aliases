@@ -18,6 +18,9 @@ alias gdw='git diff -w'
 alias gci='git commit -m'
 alias gcia='git commit -am'
 alias gc='git checkout'
+alias gpom='git pull origin main'
+alias gpum='git pull upstream main'
+
 
 # alias sa='svn add'
 # alias sr='svn rm'
@@ -122,5 +125,4 @@ alias migrate="./manage.py migrate"
 alias load_initial_data="./manage.py load_initial_data"
 alias runserver="./manage.py runserver"
 
-# Lazy Python
 alias python=python3

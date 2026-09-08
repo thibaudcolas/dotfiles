@@ -2,8 +2,16 @@
 
 ## dotfiles sync
 
+To copy the dotfiles from this repo into your home directory, run:
+
 ```sh
-rsync -avh --no-perms --existing ~/ ./dotfiles/
+./dotfiles.sh
+```
+
+To copy the dotfiles from your home directory back into this repo, run:
+
+```sh
+./sync.sh
 ```
 
 ## Shell scripts
