@@ -1,12 +1,14 @@
 # Documentation
 
-## Automated Installation on Windows `(¬_¬)`
+## Automated Installation on Windows `(^_^)`
 
-Automated Software Installation is not supported. Please have a look at the following ressources:
+Software installation uses [WinGet](https://learn.microsoft.com/en-us/windows/package-manager/winget/).
 
-- [Ninite](https://ninite.com/) – Install and update all your programs at once
-- [Chocolatey](https://chocolatey.org/) – Chocolatey is a Machine Package Manager
-- [Boxstarter](http://boxstarter.org/) – Repeatable, reboot resilient windows environment installations
+```powershell
+winget import --accept-package-agreements --accept-source-agreements -i windows\packages.json
+```
+
+To update the list after installing things by hand, run `winget export -o windows\packages.json` and commit the result.
 
 ## Automated Installation on Linux `(¬.¬)`
 

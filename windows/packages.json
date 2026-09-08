@@ -1,0 +1,110 @@
+{
+  "$schema": "https://aka.ms/winget-packages.schema.2.0.json",
+  "CreationDate": "2026-09-08",
+  "Sources": [
+    {
+      "Packages": [
+        {
+          "PackageIdentifier": "7zip.7zip"
+        },
+        {
+          "PackageIdentifier": "AgileBits.1Password"
+        },
+        {
+          "PackageIdentifier": "astral-sh.uv"
+        },
+        {
+          "PackageIdentifier": "Casey.Just"
+        },
+        {
+          "PackageIdentifier": "Docker.DockerDesktop"
+        },
+        {
+          "PackageIdentifier": "Dropbox.Dropbox"
+        },
+        {
+          "PackageIdentifier": "eza-community.eza"
+        },
+        {
+          "PackageIdentifier": "Fly-io.flyctl"
+        },
+        {
+          "PackageIdentifier": "GitHub.cli"
+        },
+        {
+          "PackageIdentifier": "GitHub.GitLFS"
+        },
+        {
+          "PackageIdentifier": "Git.Git"
+        },
+        {
+          "PackageIdentifier": "GNU.Wget2"
+        },
+        {
+          "PackageIdentifier": "Google.Chrome"
+        },
+        {
+          "PackageIdentifier": "Google.GoogleDrive"
+        },
+        {
+          "PackageIdentifier": "jqlang.jq"
+        },
+        {
+          "PackageIdentifier": "junegunn.fzf"
+        },
+        {
+          "PackageIdentifier": "Microsoft.PowerShell"
+        },
+        {
+          "PackageIdentifier": "Microsoft.VisualStudioCode"
+        },
+        {
+          "PackageIdentifier": "Microsoft.WindowsTerminal"
+        },
+        {
+          "PackageIdentifier": "Mozilla.Firefox"
+        },
+        {
+          "PackageIdentifier": "NordSecurity.NordVPN"
+        },
+        {
+          "PackageIdentifier": "Schniz.fnm"
+        },
+        {
+          "PackageIdentifier": "SlackTechnologies.Slack"
+        },
+        {
+          "PackageIdentifier": "SQLite.SQLite"
+        },
+        {
+          "PackageIdentifier": "Starship.Starship"
+        },
+        {
+          "PackageIdentifier": "SublimeHQ.SublimeText.4"
+        },
+        {
+          "PackageIdentifier": "Transmission.Transmission"
+        },
+        {
+          "PackageIdentifier": "Valve.Steam"
+        },
+        {
+          "PackageIdentifier": "VaclavSlavik.Poedit"
+        },
+        {
+          "PackageIdentifier": "VideoLAN.VLC"
+        },
+        {
+          "PackageIdentifier": "yt-dlp.yt-dlp"
+        }
+      ],
+      "SourceDetails": {
+        "Argument": "https://cdn.winget.microsoft.com/cache",
+        "Identifier": "Microsoft.Winget.Source_8wekyb3d8bbwe",
+        "Name": "winget",
+        "Type": "Microsoft.PreIndexed.Package"
+      }
+    }
+  ],
+  "WinGetVersion": "1.11.400"
+}
