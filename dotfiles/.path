@@ -1,1 +1,9 @@
-export PATH="/opt/homebrew/bin:$HOME/.cargo/bin:$HOME/.poetry/bin:$HOME/.local/bin:/usr/local/bin:/usr/local/opt/python/libexec/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin:$HOME/.lmstudio/bin:$HOME/.opencode/bin:$HOME/.yarn/bin:$PYENV_ROOT/bin:$HOME/.bin/codeql:$MAGICK_HOME/bin"
+case "$(uname -s)" in
+  Darwin)
+    export PATH="/opt/homebrew/bin:$HOME/.cargo/bin:$HOME/.poetry/bin:$HOME/.local/bin:/usr/local/bin:/usr/local/opt/python/libexec/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin:$HOME/.lmstudio/bin:$HOME/.opencode/bin:$HOME/.yarn/bin:$PYENV_ROOT/bin:$HOME/.bin/codeql:$MAGICK_HOME/bin"
+    ;;
+  *)
+    # Linux (Arch / Omarchy): mise shims and user bins first, system PATH last.
+    export PATH="$HOME/.local/share/mise/shims:$HOME/.local/bin:$HOME/bin:$HOME/.bun/bin:$PATH"
+    ;;
+esac

@@ -1,0 +1,67 @@
+# Zsh configuration for Arch Linux / Omarchy.
+#
+# Deployed as ~/.zshrc by linux/install.sh. Derived from dotfiles/.zshrc (macOS):
+# fnm, pyenv and the macOS-only paths are replaced by mise, and the shared
+# dotfiles (~/.path, ~/.exports, ~/.aliases, ~/.functions) are sourced below
+# exactly like on macOS.
+
+export ZSH=$HOME/.oh-my-zsh
+
+# Uncomment the following line if you want to change the command execution time
+# stamp shown in the history command output.
+HIST_STAMPS="yyyy-mm-dd"
+
+# Automatically upgrade oh-my-zsh itself without prompting.
+DISABLE_UPDATE_PROMPT=true
+
+# Which plugins would you like to load?
+plugins=(
+  git
+  git-extras
+  gh
+  docker
+  docker-compose
+  last-working-dir
+)
+
+source $ZSH/oh-my-zsh.sh
+
+# Dotfiles configuration
+
+# Load the shell dotfiles, and then some:
+# * ~/.path can be used to extend `$PATH`.
+# * ~/.extra can be used for other settings you don’t want to commit.
+for file in ~/.{path,exports,aliases,functions,extra}; do
+    [ -r "$file" ] && [ -f "$file" ] && source "$file";
+done;
+unset file;
+
+# zsh-specific config
+# ====================
+
+# Appends every command to the history file once it is executed
+setopt inc_append_history
+# Share history between
+setopt share_history
+
+# Will make it ask you before executing rm with a star rm folder/*.
+unsetopt RM_STAR_SILENT
+
+# Prompt (Omarchy themes ~/.config/starship.toml).
+eval "$(starship init zsh)"
+
+# Directory jumping, fuzzy finding (Arch packages).
+eval "$(zoxide init zsh)"
+[ -r /usr/share/fzf/key-bindings.zsh ] && source /usr/share/fzf/key-bindings.zsh
+[ -r /usr/share/fzf/completion.zsh ] && source /usr/share/fzf/completion.zsh
+
+# Toolchain versions, replacing fnm / pyenv / rbenv from the macOS setup.
+eval "$(mise activate zsh)"
+
+# Extra completions.
+fpath+=~/.zfunc
+zstyle ':completion:*' menu select
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"

@@ -50,10 +50,12 @@ function gz() {
 # `o` with no arguments opens the current directory, otherwise opens the given
 # location
 function o() {
+	local opener="xdg-open";
+	[ "$(uname -s)" = Darwin ] && opener="open";
 	if [ $# -eq 0 ]; then
-		open .;
+		$opener .;
 	else
-		open "$@";
+		$opener "$@";
 	fi;
 }
 
@@ -137,7 +139,11 @@ convert_image() {
     echo "AVIF: ${quality}"
     avifenc -q "${quality}" "${infile}" "${avif_out}"
     echo "JPEG: ${quality}"
-    ~/.bin/jpegli/build/tools/cjpegli -q "${quality}" "${infile}" "${jpg_out}"
+    if command -v cjpegli > /dev/null 2>&1; then
+        cjpegli -q "${quality}" "${infile}" "${jpg_out}"
+    else
+        ~/.bin/jpegli/build/tools/cjpegli -q "${quality}" "${infile}" "${jpg_out}"
+    fi
     echo "WebP: ${webp_quality}"
     cwebp -q "${webp_quality}" "${infile}" -o "${webp_out}"
 }

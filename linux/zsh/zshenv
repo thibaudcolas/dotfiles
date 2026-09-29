@@ -1,0 +1,13 @@
+# Omarchy environment for zsh: OMARCHY_PATH, mise shims and ~/.local/bin on PATH.
+#
+# Omarchy puts its bootstrap in /etc/profile.d/omarchy.sh, which is only read by
+# login shells (the zsh package's /etc/zsh/zprofile sources /etc/profile for
+# those). Interactive shells launched from the Omarchy session inherit it too,
+# but non-interactive, non-login shells — ssh commands, tmux, `zsh -c` — read no
+# rc file at all. Omarchy solves this for bash by re-sourcing the bootstrap from
+# ~/.bashrc; zsh reads every ~/.zshenv first, so mirror it here.
+#
+# Deployed as ~/.zshenv by linux/install.sh. Sourced by every zsh, interactive
+# or not, which is what tools such as omarchy-launch-editor and mise rely on.
+[ -r /usr/share/omarchy/default/bash/env-bootstrap ] &&
+  . /usr/share/omarchy/default/bash/env-bootstrap

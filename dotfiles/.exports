@@ -1,5 +1,19 @@
-# Make vim the default editor
-export EDITOR="vim";
+# Editor: vim on macOS, Omarchy's editor launcher on Linux.
+case "$(uname -s)" in
+  Darwin)
+    export EDITOR="vim";
+    ;;
+  *)
+    if command -v omarchy-launch-editor > /dev/null 2>&1; then
+      export EDITOR="omarchy-launch-editor --inline";
+    elif command -v nvim > /dev/null 2>&1; then
+      export EDITOR="nvim";
+    else
+      export EDITOR="vim";
+    fi
+    export SUDO_EDITOR="$EDITOR";
+    ;;
+esac
 export REACT_EDITOR="code";
 
 # Larger bash history (allow 32³ entries; default is 500)
@@ -31,7 +45,9 @@ export LESS_TERMCAP_md="${yellow}";
 export MANPAGER="less -X";
 
 # Link Homebrew casks in `/Applications` rather than `~/Applications`
-export HOMEBREW_CASK_OPTS="--appdir=/Applications";
+case "$(uname -s)" in
+  Darwin) export HOMEBREW_CASK_OPTS="--appdir=/Applications" ;;
+esac
 
 # Avoid issues with `gpg` as installed via Homebrew.
 # https://stackoverflow.com/a/42265848/96656
@@ -45,23 +61,34 @@ export PIP_DISABLE_PIP_VERSION_CHECK=1
 export STORYBOOK_DISABLE_TELEMETRY=1
 export GH_NO_UPDATE_NOTIFIER=true
 
-# BREWPREFIX="$(brew --prefix openssl)"
-BREWPREFIX="/usr/local/opt/openssl@1.1"
-export CFLAGS="-I$BREWPREFIX/include";
-export LDFLAGS="-L$BREWPREFIX/lib";
-
-export BROWSER="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
-
 # Runtimes
 # ========
 
-# https://github.com/Schniz/fnm/blob/master/docs/configuration.md
-eval "$(fnm env)"
+case "$(uname -s)" in
+  Darwin)
+    # BREWPREFIX="$(brew --prefix openssl)"
+    BREWPREFIX="/usr/local/opt/openssl@1.1"
+    export CFLAGS="-I$BREWPREFIX/include";
+    export LDFLAGS="-L$BREWPREFIX/lib";
 
-# Android SDK for React Native.
-export ANDROID_HOME=$HOME/Library/Android/sdk
+    export BROWSER="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
 
-export MAGICK_HOME=/opt/homebrew
+    # https://github.com/Schniz/fnm/blob/master/docs/configuration.md
+    eval "$(fnm env)"
+
+    # Android SDK for React Native.
+    export ANDROID_HOME=$HOME/Library/Android/sdk
+
+    export MAGICK_HOME=/opt/homebrew
+    ;;
+  *)
+    # Omarchy opens URLs through its own launcher. Keep it shell-scoped, like
+    # Omarchy's default bash envs, so `xdg-settings` can still change defaults.
+    command -v omarchy-launch-browser > /dev/null 2>&1 && export BROWSER="omarchy-launch-browser"
+
+    # Runtimes are managed with mise on Linux, see ~/.zshrc.
+    ;;
+esac
 
 # Load RVM into a shell session *as a function*
 # [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
@@ -75,7 +102,9 @@ export MAGICK_HOME=/opt/homebrew
 # eval "$(rbenv init -)"
 
 # Python https://github.com/pyenv/pyenv#b-set-up-your-shell-environment-for-pyenv
-export PYENV_ROOT="$HOME/.pyenv"
+case "$(uname -s)" in
+  Darwin) export PYENV_ROOT="$HOME/.pyenv" ;;
+esac
 
 # Rust
 # Commented out for use on demand.

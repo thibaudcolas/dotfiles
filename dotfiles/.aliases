@@ -29,7 +29,11 @@ alias gpum='git pull upstream main'
 # alias sd='svn diff'
 # alias sci='svn commit -m'
 
-alias cwd="pwd | pbcopy"
+if command -v pbcopy > /dev/null 2>&1; then
+  alias cwd="pwd | pbcopy"
+elif command -v wl-copy > /dev/null 2>&1; then
+  alias cwd="pwd | wl-copy"
+fi
 
 # Detect which `ls` flavor is in use
 # if ls --color > /dev/null 2>&1; then # GNU `ls`
@@ -117,7 +121,9 @@ alias ag='ag --hidden'
 
 # alias code='code-insiders'
 
-alias nvm=fnm
+case "$(uname -s)" in
+  Darwin) alias nvm=fnm ;;
+esac
 
 alias fzf="fzf --preview 'bat --color=always {}' --preview-window '~3'"
 
